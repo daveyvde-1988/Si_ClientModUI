@@ -1,4 +1,41 @@
-Current client: **0.17.3**, with cheats **0.4.1**. Alphabetical mod lists, persistent custom-command deletion, player cheats access while enabled, descriptions and compact darker UI. See [changes and live checks](FOLLOW_UP_0.17.3.md).
+# Si_ClientModUI
+
+A client-side mod menu for Silica. Browse available commands, use controls exposed by installed mods, and build your own shortcut sidebar. **Current client version: 0.17.3.** Requires the client's MelonLoader installation.
+
+## Features at a glance
+
+- **HELP, COMMANDS, MODS and SETTINGS** pages, with mod descriptions and alphabetical navigation.
+- Clickable command menus and controls supplied by compatible client mods and the optional server companion.
+- Custom chat commands and sidebar buttons, with symbols, colors and role/team settings.
+- Selectable status displays, notifications and received command feedback.
+- Movable, resizable windows with saved layout, text size and transparency preferences.
+- Client diagnostics and network activity displays.
+
+Works in singleplayer and as a standalone client menu. **Si_ServerModUI** adds server-advertised commands and structured controls; available features depend on installed providers and your permissions. The optional **cheats** mod is a separate provider.
+
+## Commands and controls
+
+This mod has no dedicated gameplay chat commands. It displays commands supplied by other mods or saved by you.
+
+| Control | What it does |
+| --- | --- |
+| **F6** | Open or close the mod menu during gameplay. |
+| **Escape** | Close the open menu. |
+| **Hold F7** | Temporarily show/use the FPS sidebar when the hold-F7 option is enabled. |
+| **Command button** | Run a complete action; if arguments are needed, prepare it for editing. |
+| **SEND / Enter** | Submit the command or text in the chat entry bar. |
+| **Sidebar button** | Run its assigned command or provider action. |
+| **ADD CHAT BUTTON** | Create a shortcut with your own label and command. |
+| **IMPORT SHARED JSON** | Import shared command definitions through Settings. |
+
+Server commands keep their normal permission checks. Provider panels can handle their own input; Enter there does not submit the hidden chat draft.
+
+For integration APIs, see the [developer guide](README-DEVELOPERS.md). For local deployment records, see [installation status](INSTALLATION_STATUS.md).
+
+<details>
+<summary>Detailed documentation and historical release notes</summary>
+
+Current client: **0.17.3**. Alphabetical mod lists, persistent custom-command deletion, provider access, descriptions and compact darker UI. See [changes and live checks](FOLLOW_UP_0.17.3.md). The optional cheats provider is versioned separately; see [installation status](INSTALLATION_STATUS.md) for its current local version.
 
 # Build candidate: Si_ClientModUI 0.17.0 / Si_ServerModUI 2.0.0
 Si_ClientModUI 0.17.2 is prepared with cheats 0.4.0: custom `DrawCommands` content now appears under COMMANDS -> CLIENT MODS -> its provider, replacing EXTRA PANEL. Interactive `DrawPanel` content stays under MODS. Provider admin gates and Enter input isolation apply in both locations. See [cheats integration and status support](../cheats/MODUI_INTEGRATION.md). The paired client DLLs are in `../cheats/Releases/0.4.0`; this update is prepared only, with live verification pending.
@@ -84,3 +121,5 @@ Build passed with zero warnings/errors. 189 combined command and UI-policy check
 
 
 
+
+</details>

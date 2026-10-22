@@ -1,0 +1,9 @@
+# Generated build output and local development artifacts
+bin/
+obj/
+.cli-home/
+.dotnet-home/
+/tests/fixtures/
+/shell-checkpoint.txt
+/sidebar-checkpoint.txt
+/standalone-checkpoint.txt
