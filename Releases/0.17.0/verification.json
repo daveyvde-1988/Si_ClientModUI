@@ -1,0 +1,15 @@
+﻿{
+    "verifiedUtc":  "2026-10-21T14:51:15.8305552Z",
+    "installed":  false,
+    "runtimeVerified":  false,
+    "checks":  {
+                   "total":  301,
+                   "serverExports":  18,
+                   "installerRollback":  24,
+                   "clientNetwork":  259
+               },
+    "sourceFiles":  230,
+    "verifiedFiles":  5,
+    "installedFriendBinariesUnchanged":  true,
+    "logisticsFormationRanksInstalledUnchanged":  true
+}

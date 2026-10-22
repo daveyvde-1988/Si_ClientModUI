@@ -1,0 +1,12 @@
+﻿{
+    "record":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\ClientMods\\Si_ClientModUI\\installation\\20261022T164708668Z\\installation.json",
+    "side":  "client",
+    "clientVersion":  "0.17.3",
+    "providerVersion":  "0.4.1",
+    "completedUtc":  "2026-10-22T16:49:23.9653394Z",
+    "installedHashesVerified":  true,
+    "backupsVerified":  true,
+    "unrelatedSettingsPreserved":  true,
+    "settingsCleanup":  "Backups/ModUI-menu-followups-20261022T164103646Z/command-cleanup.json",
+    "runtimeVerified":  false
+}

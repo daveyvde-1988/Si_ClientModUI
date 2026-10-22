@@ -1,0 +1,67 @@
+﻿{
+    "schema":  2,
+    "clientVersion":  "0.9.0",
+    "preparedUtc":  "2026-10-20T10:58:02.1132322Z",
+    "companionRequired":  false,
+    "clientGameAssemblySha256":  "358b2a17997d1406b45d52c0f341034fb6fe614aba0eb390cb3b7ec310ed0601",
+    "clientMetadataSha256":  "7ba17d1dafaf8f0bb02651c3ccd618219b458fde4f4d22e859c0ee595ebe32b4",
+    "clientInteropSha256":  "235bee283a231aacb2a000744999e4249b8bbf15019b0d3f2c9c9ea6cf692a62",
+    "files":  [
+                  {
+                      "file":  "client\\Si_SquadHUD.dll",
+                      "sha256":  "84fa95880a01b65d0a779729b1e10f55eb5994eed7896f89642fcf7991afc2b3",
+                      "bytes":  99328
+                  }
+              ],
+    "sources":  [
+                    {
+                        "file":  "Client\\CommandController.cs",
+                        "sha256":  "bf6f8c606fd7897fcd5775d112765c120fbbeb067566675bf4b28c12a6011162"
+                    },
+                    {
+                        "file":  "Client\\CommanderSidebar.cs",
+                        "sha256":  "5ec976558d5d3bd3d7213be5f54ff66d4beb3333ee08b2a2824da5ac06287fdb"
+                    },
+                    {
+                        "file":  "Client\\ControllerMenu.cs",
+                        "sha256":  "189163eb290b019d6c936c668d769b6f98e271702aff3bb00607291b1e536685"
+                    },
+                    {
+                        "file":  "Client\\FactionAppearance.cs",
+                        "sha256":  "07750e231045b18baa2b25a8bff31ec20fac8976e820d861204ebc5e0d9ec7c0"
+                    },
+                    {
+                        "file":  "Client\\FormationPanel.cs",
+                        "sha256":  "6cbc03e67080b148868d1d526c64408c2d9c764b0220a273b135db1807e828bc"
+                    },
+                    {
+                        "file":  "Client\\LocalModControls.cs",
+                        "sha256":  "28f9e3e7cfbae98cf1f338b3b321b0496be3fcd2b465b84aabac8a7e109c0644"
+                    },
+                    {
+                        "file":  "Client\\OverlayWindows.cs",
+                        "sha256":  "b10929876583feb123e9e8c5b8663b11f683180df3eefddf56d6d7d1606ce8a6"
+                    },
+                    {
+                        "file":  "Client\\Si_SquadHUD.csproj",
+                        "sha256":  "c172a7208285a423a546810793ea59b22c9185ae004aed8d84b406926b4c37f3"
+                    },
+                    {
+                        "file":  "Client\\SquadHud.cs",
+                        "sha256":  "ab79293d192b8719bae515cf6dd722eee34c05c28ce1bb92d4bad00adc8dde76"
+                    },
+                    {
+                        "file":  "Client\\WindowPlacement.cs",
+                        "sha256":  "733c2a08e6233757a58092601874090ae0b92fa7e26eb208e2aadff2aecf5791"
+                    },
+                    {
+                        "file":  "Catalog\\commands.json",
+                        "sha256":  "5b17c5961683f389b7096d557a4ab30cc8b58c7345e3c353812fd78a6783febe"
+                    },
+                    {
+                        "file":  "Catalog\\installed-command-inputs.json",
+                        "sha256":  "737d66e52c98ab0841b27ebee44dcbb87228f1f984b93ad6bc6c4fa0544d6bbe"
+                    }
+                ],
+    "validation":  "Release build: zero warnings/errors. No tests or game/server launches. Runtime verification pending."
+}

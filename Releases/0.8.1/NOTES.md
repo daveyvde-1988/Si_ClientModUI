@@ -1,0 +1,16 @@
+# HUD 0.8.1 follow-up fixes
+
+Installed client/server 0.8.1, with verified backups and SHA-256 copies. Both Release builds completed with zero warnings/errors. No tests or game/server start/stop actions were performed. User live verification is pending.
+
+- Permanently unsupported NO LIVE SWITCH buttons stay disabled/grey. Background-read appearance is now explicit per control, so it cannot accidentally enable the appearance of unsupported controls. Tabs retain their normal appearance while click guards still honor pending work. Read-only Unitbalance does not poll for fresh JSON continuously; its existing published cache/reload semantics are retained.
+- Enabled notifications also intercept authenticated native ChatMessage deliveries marked as server messages on the client. This covers remaining Ranks/server announcements without guessing from player text. Ordinary player chat keeps its original path, and existing native recipient/team filtering is respected. Server AdminMod notices still use the reviewed recipient-scoped bridge. The broad server SendServerPacket hook was removed, avoiding interception of every gameplay packet. Malformed/unrecognized native data fails back to the game.
+- MOD NOTIFICATIONS replaces MOD NOTICES. Separators in the notification window are removed; entries use a small gap. Decorative separator-only lines in captured notification text are removed. No native chat/player styling is changed.
+- The header is Mod status (collapsed and expanded); its expanded navigation button remains MOD MENU [F6]. Selected values render Label: value, without a mod-name prefix.
+- All window geometry now has independent -fps and -commander keys within each Steam user's existing local layout file. The old shared geometry is copied as the starting point for each role, then each is saved independently. Original legacy entries/files remain. Installation does not modify any local layout/preference JSON.
+- New/default status selections start empty, and newly available statuses remain unselected. Explicit old choices (an existing nonempty HiddenStatus list) migrate once to a positive SelectedStatus set after the complete provider catalog arrives. The old all-selected default becomes empty; manually customized selections are retained. SHOW ALL/HIDE ALL and individual choices cancel pending legacy migration.
+- The status picker groups parameters under collapsible + / - module entries with selected/total counts. Group expansion and selections persist locally; no extra selection/layout traffic is sent.
+
+Source checkpoint: Backups/HUD-followups-20261020T005735078Z (also retains client layout JSON copies).
+Installation/rollback receipt: Backups/SquadHUD-install-20261020T010049517Z/installation.json.
+
+Gameplay DLLs/source and configuration are unchanged. Formation 2.15.1, Ranks 1.4.3, Unit Balance 7.7.1, Starter Units 1.0.0 and Diagnostics 0.1.0 retained. AntiGrief ownership/direct harvester-Shrimp control and the Centauri rendering repair remain intact. Major 1.0 extraction remains deferred.

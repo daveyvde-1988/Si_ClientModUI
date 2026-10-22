@@ -1,0 +1,14 @@
+D:\SteamLibrary\steamapps\common\Silica Dedicated Server\ClientMods\Si_ClientModUI\tests\obj\Release\net8.0\NetworkChecks.GeneratedMSBuildEditorConfig.editorconfig
+D:\SteamLibrary\steamapps\common\Silica Dedicated Server\ClientMods\Si_ClientModUI\tests\obj\Release\net8.0\NetworkChecks.AssemblyInfoInputs.cache
+D:\SteamLibrary\steamapps\common\Silica Dedicated Server\ClientMods\Si_ClientModUI\tests\obj\Release\net8.0\NetworkChecks.AssemblyInfo.cs
+D:\SteamLibrary\steamapps\common\Silica Dedicated Server\ClientMods\Si_ClientModUI\tests\obj\Release\net8.0\NetworkChecks.csproj.CoreCompileInputs.cache
+D:\SteamLibrary\steamapps\common\Silica Dedicated Server\ClientMods\Si_ClientModUI\tests\bin\Release\net8.0\NetworkChecks.exe
+D:\SteamLibrary\steamapps\common\Silica Dedicated Server\ClientMods\Si_ClientModUI\tests\bin\Release\net8.0\NetworkChecks.deps.json
+D:\SteamLibrary\steamapps\common\Silica Dedicated Server\ClientMods\Si_ClientModUI\tests\bin\Release\net8.0\NetworkChecks.runtimeconfig.json
+D:\SteamLibrary\steamapps\common\Silica Dedicated Server\ClientMods\Si_ClientModUI\tests\bin\Release\net8.0\NetworkChecks.dll
+D:\SteamLibrary\steamapps\common\Silica Dedicated Server\ClientMods\Si_ClientModUI\tests\bin\Release\net8.0\NetworkChecks.pdb
+D:\SteamLibrary\steamapps\common\Silica Dedicated Server\ClientMods\Si_ClientModUI\tests\obj\Release\net8.0\NetworkChecks.dll
+D:\SteamLibrary\steamapps\common\Silica Dedicated Server\ClientMods\Si_ClientModUI\tests\obj\Release\net8.0\refint\NetworkChecks.dll
+D:\SteamLibrary\steamapps\common\Silica Dedicated Server\ClientMods\Si_ClientModUI\tests\obj\Release\net8.0\NetworkChecks.pdb
+D:\SteamLibrary\steamapps\common\Silica Dedicated Server\ClientMods\Si_ClientModUI\tests\obj\Release\net8.0\NetworkChecks.genruntimeconfig.cache
+D:\SteamLibrary\steamapps\common\Silica Dedicated Server\ClientMods\Si_ClientModUI\tests\obj\Release\net8.0\ref\NetworkChecks.dll

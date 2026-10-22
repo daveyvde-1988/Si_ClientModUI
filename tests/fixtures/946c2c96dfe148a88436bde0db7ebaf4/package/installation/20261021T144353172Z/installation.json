@@ -1,0 +1,86 @@
+﻿{
+    "schema":  3,
+    "createdUtc":  "2026-10-21T14:43:53.2028163Z",
+    "complete":  true,
+    "files":  [
+                  {
+                      "source":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\ClientMods\\Si_ClientModUI\\tests\\fixtures\\946c2c96dfe148a88436bde0db7ebaf4\\package\\Releases\\0.16.0\\client\\Mods\\Si_ClientModUI.dll",
+                      "destination":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\ClientMods\\Si_ClientModUI\\tests\\fixtures\\946c2c96dfe148a88436bde0db7ebaf4\\client\\Mods\\Si_ClientModUI.dll",
+                      "root":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\ClientMods\\Si_ClientModUI\\tests\\fixtures\\946c2c96dfe148a88436bde0db7ebaf4\\client",
+                      "sha256":  "041af8fc8627f01e3ed045135f50a360e357ddf0e5042c7e1e7c055075e118a0",
+                      "backup":  null,
+                      "side":  "client",
+                      "oldSha256":  null
+                  },
+                  {
+                      "source":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\ClientMods\\Si_ClientModUI\\tests\\fixtures\\946c2c96dfe148a88436bde0db7ebaf4\\package\\Releases\\0.16.0\\client\\OptionalProviders\\cheats.dll",
+                      "destination":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\ClientMods\\Si_ClientModUI\\tests\\fixtures\\946c2c96dfe148a88436bde0db7ebaf4\\client\\Mods\\cheats.dll",
+                      "root":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\ClientMods\\Si_ClientModUI\\tests\\fixtures\\946c2c96dfe148a88436bde0db7ebaf4\\client",
+                      "sha256":  "31be6bfa013ce903860de0297c05dc65c2a24b1be1a6086abba4262ff6bd1e62",
+                      "backup":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\ClientMods\\Si_ClientModUI\\tests\\fixtures\\946c2c96dfe148a88436bde0db7ebaf4\\package\\installation\\20261021T144353172Z\\client-cheats.dll",
+                      "side":  "client",
+                      "oldSha256":  "d1fb6a999e5cd04d3b75bd1c46a5268be881ffa789179a28576880659eeb40a2"
+                  },
+                  {
+                      "source":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\ClientMods\\Si_ClientModUI\\tests\\fixtures\\946c2c96dfe148a88436bde0db7ebaf4\\package\\Releases\\0.16.0\\server\\Mods\\Si_ServerModUI.dll",
+                      "destination":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\ClientMods\\Si_ClientModUI\\tests\\fixtures\\946c2c96dfe148a88436bde0db7ebaf4\\server\\Mods\\Si_ServerModUI.dll",
+                      "root":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\ClientMods\\Si_ClientModUI\\tests\\fixtures\\946c2c96dfe148a88436bde0db7ebaf4\\server",
+                      "sha256":  "cf3e890ffda251f1997d1df0bfe94fcd7ab9fdb61af166e8f3fcfea0cc87bb58",
+                      "backup":  null,
+                      "side":  "server",
+                      "oldSha256":  null
+                  },
+                  {
+                      "source":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\ClientMods\\Si_ClientModUI\\tests\\fixtures\\946c2c96dfe148a88436bde0db7ebaf4\\package\\Releases\\0.16.0\\server\\GameplayProviders\\Si_Logistics.dll",
+                      "destination":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\ClientMods\\Si_ClientModUI\\tests\\fixtures\\946c2c96dfe148a88436bde0db7ebaf4\\server\\Mods\\Si_Logistics.dll",
+                      "root":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\ClientMods\\Si_ClientModUI\\tests\\fixtures\\946c2c96dfe148a88436bde0db7ebaf4\\server",
+                      "sha256":  "cc323ad55d8f4db95454d0faa868208ceccbd32e338f0cb895e734bf3b860b99",
+                      "backup":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\ClientMods\\Si_ClientModUI\\tests\\fixtures\\946c2c96dfe148a88436bde0db7ebaf4\\package\\installation\\20261021T144353172Z\\server-Si_Logistics.dll",
+                      "side":  "server",
+                      "oldSha256":  "d365ab0403946fbe1a3f1ba03928132d16d7a4c39ad7b1bebff73ecfbc61600b"
+                  },
+                  {
+                      "source":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\ClientMods\\Si_ClientModUI\\tests\\fixtures\\946c2c96dfe148a88436bde0db7ebaf4\\package\\Releases\\0.16.0\\server\\GameplayProviders\\Si_Formation.dll",
+                      "destination":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\ClientMods\\Si_ClientModUI\\tests\\fixtures\\946c2c96dfe148a88436bde0db7ebaf4\\server\\Mods\\Si_Formation.dll",
+                      "root":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\ClientMods\\Si_ClientModUI\\tests\\fixtures\\946c2c96dfe148a88436bde0db7ebaf4\\server",
+                      "sha256":  "69953b3dd9867845a443ee5d8c1496e4783f47434714fc8d5a95d8e8297b3f9f",
+                      "backup":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\ClientMods\\Si_ClientModUI\\tests\\fixtures\\946c2c96dfe148a88436bde0db7ebaf4\\package\\installation\\20261021T144353172Z\\server-Si_Formation.dll",
+                      "side":  "server",
+                      "oldSha256":  "669ff18a037cd514ab1c63f8d77600849b726e57e4406c3d969eb79a67f01290"
+                  }
+              ],
+    "retired":  [
+                    {
+                        "original":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\ClientMods\\Si_ClientModUI\\tests\\fixtures\\946c2c96dfe148a88436bde0db7ebaf4\\client\\Mods\\Si_SquadHUD.dll",
+                        "root":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\ClientMods\\Si_ClientModUI\\tests\\fixtures\\946c2c96dfe148a88436bde0db7ebaf4\\client",
+                        "disabled":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\ClientMods\\Si_ClientModUI\\tests\\fixtures\\946c2c96dfe148a88436bde0db7ebaf4\\client\\Mods\\Si_SquadHUD.dll.disabled-20261021T144353172Z",
+                        "sha256":  "21c51a465a86515be4a83e3de29bba7b50106871c54439941ed666fe5aae1bc0",
+                        "backup":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\ClientMods\\Si_ClientModUI\\tests\\fixtures\\946c2c96dfe148a88436bde0db7ebaf4\\package\\installation\\20261021T144353172Z\\client-legacy-Si_SquadHUD.dll",
+                        "side":  "client"
+                    },
+                    {
+                        "original":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\ClientMods\\Si_ClientModUI\\tests\\fixtures\\946c2c96dfe148a88436bde0db7ebaf4\\client\\Mods\\Si_ModUI.dll",
+                        "root":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\ClientMods\\Si_ClientModUI\\tests\\fixtures\\946c2c96dfe148a88436bde0db7ebaf4\\client",
+                        "disabled":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\ClientMods\\Si_ClientModUI\\tests\\fixtures\\946c2c96dfe148a88436bde0db7ebaf4\\client\\Mods\\Si_ModUI.dll.disabled-20261021T144353172Z",
+                        "sha256":  "3361a04bf868d3bd1aaef0fffb7733eb1578fa21718728d708cdaceac5c124ff",
+                        "backup":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\ClientMods\\Si_ClientModUI\\tests\\fixtures\\946c2c96dfe148a88436bde0db7ebaf4\\package\\installation\\20261021T144353172Z\\client-legacy-Si_ModUI.dll",
+                        "side":  "client"
+                    },
+                    {
+                        "original":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\ClientMods\\Si_ClientModUI\\tests\\fixtures\\946c2c96dfe148a88436bde0db7ebaf4\\server\\Mods\\Si_SquadHUD_Server.dll",
+                        "root":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\ClientMods\\Si_ClientModUI\\tests\\fixtures\\946c2c96dfe148a88436bde0db7ebaf4\\server",
+                        "disabled":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\ClientMods\\Si_ClientModUI\\tests\\fixtures\\946c2c96dfe148a88436bde0db7ebaf4\\server\\Mods\\Si_SquadHUD_Server.dll.disabled-20261021T144353172Z",
+                        "sha256":  "f529cbddb65164f78e913ff9372c0d357683c1a1b380c7607bf299e3b4bc4142",
+                        "backup":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\ClientMods\\Si_ClientModUI\\tests\\fixtures\\946c2c96dfe148a88436bde0db7ebaf4\\package\\installation\\20261021T144353172Z\\server-legacy-Si_SquadHUD_Server.dll",
+                        "side":  "server"
+                    },
+                    {
+                        "original":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\ClientMods\\Si_ClientModUI\\tests\\fixtures\\946c2c96dfe148a88436bde0db7ebaf4\\server\\Mods\\Si_ModUI_Server.dll",
+                        "root":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\ClientMods\\Si_ClientModUI\\tests\\fixtures\\946c2c96dfe148a88436bde0db7ebaf4\\server",
+                        "disabled":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\ClientMods\\Si_ClientModUI\\tests\\fixtures\\946c2c96dfe148a88436bde0db7ebaf4\\server\\Mods\\Si_ModUI_Server.dll.disabled-20261021T144353172Z",
+                        "sha256":  "f49cd882318b35d706245997bca78451de3816195a930757bf483bd0ebf60ce3",
+                        "backup":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\ClientMods\\Si_ClientModUI\\tests\\fixtures\\946c2c96dfe148a88436bde0db7ebaf4\\package\\installation\\20261021T144353172Z\\server-legacy-Si_ModUI_Server.dll",
+                        "side":  "server"
+                    }
+                ]
+}

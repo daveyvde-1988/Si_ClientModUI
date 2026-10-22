@@ -1,0 +1,17 @@
+D:\SteamLibrary\steamapps\common\Silica Dedicated Server\ClientMods\Si_ClientModUI\tests\bin\ServerExports\Release\net8.0\ServerExportChecks.exe
+D:\SteamLibrary\steamapps\common\Silica Dedicated Server\ClientMods\Si_ClientModUI\tests\bin\ServerExports\Release\net8.0\ServerExportChecks.deps.json
+D:\SteamLibrary\steamapps\common\Silica Dedicated Server\ClientMods\Si_ClientModUI\tests\bin\ServerExports\Release\net8.0\ServerExportChecks.runtimeconfig.json
+D:\SteamLibrary\steamapps\common\Silica Dedicated Server\ClientMods\Si_ClientModUI\tests\bin\ServerExports\Release\net8.0\ServerExportChecks.dll
+D:\SteamLibrary\steamapps\common\Silica Dedicated Server\ClientMods\Si_ClientModUI\tests\bin\ServerExports\Release\net8.0\ServerExportChecks.pdb
+D:\SteamLibrary\steamapps\common\Silica Dedicated Server\ClientMods\Si_ClientModUI\tests\bin\ServerExports\Release\net8.0\Newtonsoft.Json.dll
+D:\SteamLibrary\steamapps\common\Silica Dedicated Server\ClientMods\Si_ClientModUI\tests\obj\ServerExports\Release\net8.0\ServerExportChecks.csproj.AssemblyReference.cache
+D:\SteamLibrary\steamapps\common\Silica Dedicated Server\ClientMods\Si_ClientModUI\tests\obj\ServerExports\Release\net8.0\ServerExportChecks.GeneratedMSBuildEditorConfig.editorconfig
+D:\SteamLibrary\steamapps\common\Silica Dedicated Server\ClientMods\Si_ClientModUI\tests\obj\ServerExports\Release\net8.0\ServerExportChecks.AssemblyInfoInputs.cache
+D:\SteamLibrary\steamapps\common\Silica Dedicated Server\ClientMods\Si_ClientModUI\tests\obj\ServerExports\Release\net8.0\ServerExportChecks.AssemblyInfo.cs
+D:\SteamLibrary\steamapps\common\Silica Dedicated Server\ClientMods\Si_ClientModUI\tests\obj\ServerExports\Release\net8.0\ServerExportChecks.csproj.CoreCompileInputs.cache
+D:\SteamLibrary\steamapps\common\Silica Dedicated Server\ClientMods\Si_ClientModUI\tests\obj\ServerExports\Release\net8.0\ServerEx.42454726.Up2Date
+D:\SteamLibrary\steamapps\common\Silica Dedicated Server\ClientMods\Si_ClientModUI\tests\obj\ServerExports\Release\net8.0\ServerExportChecks.dll
+D:\SteamLibrary\steamapps\common\Silica Dedicated Server\ClientMods\Si_ClientModUI\tests\obj\ServerExports\Release\net8.0\refint\ServerExportChecks.dll
+D:\SteamLibrary\steamapps\common\Silica Dedicated Server\ClientMods\Si_ClientModUI\tests\obj\ServerExports\Release\net8.0\ServerExportChecks.pdb
+D:\SteamLibrary\steamapps\common\Silica Dedicated Server\ClientMods\Si_ClientModUI\tests\obj\ServerExports\Release\net8.0\ServerExportChecks.genruntimeconfig.cache
+D:\SteamLibrary\steamapps\common\Silica Dedicated Server\ClientMods\Si_ClientModUI\tests\obj\ServerExports\Release\net8.0\ref\ServerExportChecks.dll

@@ -1,0 +1,44 @@
+﻿{
+    "schema":  3,
+    "createdUtc":  "2026-10-20T15:48:21.0621398Z",
+    "complete":  true,
+    "files":  [
+                  {
+                      "source":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\ClientMods\\Si_ClientModUI\\Releases\\0.15.0\\client\\Mods\\Si_ClientModUI.dll",
+                      "destination":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Silica\\Mods\\Si_ClientModUI.dll",
+                      "root":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Silica",
+                      "sha256":  "6d4c8779fbda4afff331922751450f278df7e7f7cf93fb855167a7710d896093",
+                      "backup":  null,
+                      "side":  "client",
+                      "oldSha256":  null
+                  },
+                  {
+                      "source":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\ClientMods\\Si_ClientModUI\\Releases\\0.15.0\\client\\OptionalProviders\\cheats.dll",
+                      "destination":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Silica\\Mods\\cheats.dll",
+                      "root":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Silica",
+                      "sha256":  "53ed5f3adeaae47de2467036d33ccfb372dc905ef8c94528638ada772987ea81",
+                      "backup":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\ClientMods\\Si_ClientModUI\\installation\\20261020T154820752Z\\client-cheats.dll",
+                      "side":  "client",
+                      "oldSha256":  "b8a83686916bbf4b0217ec7736165a894838e2908b270bceca72874eaf9924dd"
+                  },
+                  {
+                      "source":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\ClientMods\\Si_ClientModUI\\Releases\\0.15.0\\server\\Mods\\Si_ServerModUI.dll",
+                      "destination":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\Si_ServerModUI.dll",
+                      "root":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server",
+                      "sha256":  "fd4e07448d5971483842818787ac24017ef13feb5066a143e5cf520721a25ab6",
+                      "backup":  null,
+                      "side":  "server",
+                      "oldSha256":  null
+                  }
+              ],
+    "retired":  [
+                    {
+                        "original":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Silica\\Mods\\Si_SquadHUD.dll",
+                        "root":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Silica",
+                        "disabled":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Silica\\Mods\\Si_SquadHUD.dll.disabled-20261020T154820752Z",
+                        "sha256":  "07abaa2b122ccaa8be9660bdeca9757d51c6ee40465f2cc22cb6a99a18746e9b",
+                        "backup":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\ClientMods\\Si_ClientModUI\\installation\\20261020T154820752Z\\client-legacy-Si_SquadHUD.dll",
+                        "side":  "client"
+                    }
+                ]
+}

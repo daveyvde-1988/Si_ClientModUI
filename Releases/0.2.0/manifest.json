@@ -1,0 +1,77 @@
+﻿{
+    "schema":  1,
+    "preparedUtc":  "2026-10-19T15:57:11.6196972Z",
+    "hudVersion":  "0.2.0",
+    "clientVersion":  "0.2.0",
+    "ranksVersion":  "1.4.3",
+    "formationVersion":  "2.15.0",
+    "serverCoreSha256":  "33969f93ebbe60c4182e18c590974bce046bd0f440b7003d888f2e7640b1bcf5",
+    "clientGameAssemblySha256":  "358b2a17997d1406b45d52c0f341034fb6fe614aba0eb390cb3b7ec310ed0601",
+    "clientMetadataSha256":  "7ba17d1dafaf8f0bb02651c3ccd618219b458fde4f4d22e859c0ee595ebe32b4",
+    "clientInteropSha256":  "235bee283a231aacb2a000744999e4249b8bbf15019b0d3f2c9c9ea6cf692a62",
+    "files":  [
+                  {
+                      "file":  "client\\Si_SquadHUD.dll",
+                      "bytes":  37888,
+                      "sha256":  "9533d0d2a4ad55eb13d665af50c60aae6c32ed8cdd4ee30fd6765d8a19f87f71"
+                  },
+                  {
+                      "file":  "server\\Si_SquadHUD_Server.dll",
+                      "bytes":  28672,
+                      "sha256":  "d9d604ff8bdeb4a077baaa3bff5a468157e2d3b286a980e9a1b8c7c73c181a35"
+                  },
+                  {
+                      "file":  "server\\Si_Ranks.dll",
+                      "bytes":  78336,
+                      "sha256":  "7dfb81694ec2f1149d4eea8c3ad24711bb62ef4e469f22199b4a423a37e656b9"
+                  },
+                  {
+                      "file":  "server\\Si_Formation.dll",
+                      "bytes":  637952,
+                      "sha256":  "b001ac5f18968029e2e5203228659a41e78121746f12a6ed2c83e2ee8f56d333"
+                  }
+              ],
+    "sources":  [
+                    {
+                        "file":  "Client\\FactionAppearance.cs",
+                        "sha256":  "fd2ec801a701b108fb7d3e24dc09a22794f75d2d1802bda62149661157a23f30"
+                    },
+                    {
+                        "file":  "Client\\FormationPanel.cs",
+                        "sha256":  "02da02e786f1a639c22267be48b4044980a8d25d216accbbb09bea6095d20573"
+                    },
+                    {
+                        "file":  "Client\\Si_SquadHUD.csproj",
+                        "sha256":  "2ab7d4b4bd8b265a0fa6dc7c8c86daecab48f3e77ecaced5d50ea86455b868e0"
+                    },
+                    {
+                        "file":  "Client\\SquadHud.cs",
+                        "sha256":  "ed2c7f17dfe3a8660df74d1eea4750ee467dbce57f10d3057a560b0ab5b62dc7"
+                    },
+                    {
+                        "file":  "Server\\HudProviders.cs",
+                        "sha256":  "ba3c5a0efad425f4ad31667891f807ccf07a7f63beba322da2c62f4180b1379c"
+                    },
+                    {
+                        "file":  "Server\\PanelBackend.cs",
+                        "sha256":  "860b3ceff9d879825f9c4a75ff53d4931c75ae59447465f6ac9ed93e6bcd7b8f"
+                    },
+                    {
+                        "file":  "Server\\ServerHud.cs",
+                        "sha256":  "50c47f17fd4e0bef9a2a145d9d3a1c14608e2bf207a77ea011693cb8e9e88693"
+                    },
+                    {
+                        "file":  "Server\\Si_SquadHUD_Server.csproj",
+                        "sha256":  "0ac7e68a79360f144313d3491af425628101362f5dfb6f2f698b1ef75341ac45"
+                    },
+                    {
+                        "file":  "Shared\\FormationProtocol.cs",
+                        "sha256":  "460b9fa19c2d6aac987c6d69425b528bfaf56407b20d76b49e746c461b1b99cf"
+                    },
+                    {
+                        "file":  "Shared\\HudProtocol.cs",
+                        "sha256":  "ec68b8d7655a06d52e7fcd0f93c57c01e7088ea4ba34e80592191d5800b41030"
+                    }
+                ],
+    "validation":  "Client 0.2.0, companion 0.2.0 and Formation 2.15.0 compiled with zero warnings/errors. No tests or game/server launch performed for this release. User verified the earlier 0.1.0 HUD; the new interactive panel, input focus, extended protocol and wallet require live verification. Ranks 1.4.3 is unchanged."
+}

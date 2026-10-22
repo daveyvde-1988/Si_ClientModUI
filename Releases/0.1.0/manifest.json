@@ -1,0 +1,54 @@
+﻿{
+    "schema":  1,
+    "preparedUtc":  "2026-10-19T14:44:48.1321044Z",
+    "hudVersion":  "0.1.0",
+    "ranksVersion":  "1.4.2",
+    "serverCoreSha256":  "33969f93ebbe60c4182e18c590974bce046bd0f440b7003d888f2e7640b1bcf5",
+    "clientGameAssemblySha256":  "358b2a17997d1406b45d52c0f341034fb6fe614aba0eb390cb3b7ec310ed0601",
+    "clientMetadataSha256":  "7ba17d1dafaf8f0bb02651c3ccd618219b458fde4f4d22e859c0ee595ebe32b4",
+    "clientInteropSha256":  "235bee283a231aacb2a000744999e4249b8bbf15019b0d3f2c9c9ea6cf692a62",
+    "files":  [
+                  {
+                      "file":  "client\\Si_SquadHUD.dll",
+                      "bytes":  19456,
+                      "sha256":  "70ad1ff6e9dd9c76bcb00498d17b6166b321b672f27709398e6b9d3d9ea1928b"
+                  },
+                  {
+                      "file":  "server\\Si_SquadHUD_Server.dll",
+                      "bytes":  18944,
+                      "sha256":  "cbaa9e5f1a637591d9787c9499af7cfb465c272320313518d8fcd657f89651fd"
+                  },
+                  {
+                      "file":  "server\\Si_Ranks.dll",
+                      "bytes":  78336,
+                      "sha256":  "878e97392c7ebc0f6f776bd63dbb4dc32f71eeccaae9602de9f37e10f76a2478"
+                  }
+              ],
+    "sources":  [
+                    {
+                        "file":  "Client\\Si_SquadHUD.csproj",
+                        "sha256":  "53132589b388a09b4d44def84bfe07de60ab389a82bc690f286fcb25b03ef463"
+                    },
+                    {
+                        "file":  "Client\\SquadHud.cs",
+                        "sha256":  "1d1c4e88d99b25f143283b73a97a537c3d96f7c463d6f6e6f1ebaff106d70ab7"
+                    },
+                    {
+                        "file":  "Server\\HudProviders.cs",
+                        "sha256":  "e8f950b1ff9d2818217b29318ccca020bd1232b9398c5a4d817938f39ad64b58"
+                    },
+                    {
+                        "file":  "Server\\ServerHud.cs",
+                        "sha256":  "7393b242af61b7ed789cd009ad7cbe52d95185a22db5423a2831adf16a56f9af"
+                    },
+                    {
+                        "file":  "Server\\Si_SquadHUD_Server.csproj",
+                        "sha256":  "ee4a5f61f159573452f4f8bc7fe24faaba1d1f36a452e0affaa03e6672212118"
+                    },
+                    {
+                        "file":  "Shared\\HudProtocol.cs",
+                        "sha256":  "14d44ec99828e743644b07dedbfe81dcd9fb74ff3cf2a9386edc74236defa9cb"
+                    }
+                ],
+    "validation":  "Client/server/Ranks Release builds: zero warnings/errors. 47 protocol/cache checks, 160 rank assertions, 13 recruitment/control regression checks passed. In-game networking/HUD not yet tested."
+}

@@ -1,0 +1,61 @@
+﻿{
+    "schema":  1,
+    "preparedUtc":  "2026-10-19T15:12:43.9852250Z",
+    "hudVersion":  "0.1.1",
+    "clientVersion":  "0.1.0",
+    "ranksVersion":  "1.4.3",
+    "formationVersion":  "2.14.2",
+    "serverCoreSha256":  "33969f93ebbe60c4182e18c590974bce046bd0f440b7003d888f2e7640b1bcf5",
+    "clientGameAssemblySha256":  "358b2a17997d1406b45d52c0f341034fb6fe614aba0eb390cb3b7ec310ed0601",
+    "clientMetadataSha256":  "7ba17d1dafaf8f0bb02651c3ccd618219b458fde4f4d22e859c0ee595ebe32b4",
+    "clientInteropSha256":  "235bee283a231aacb2a000744999e4249b8bbf15019b0d3f2c9c9ea6cf692a62",
+    "files":  [
+                  {
+                      "file":  "client\\Si_SquadHUD.dll",
+                      "bytes":  19456,
+                      "sha256":  "70ad1ff6e9dd9c76bcb00498d17b6166b321b672f27709398e6b9d3d9ea1928b"
+                  },
+                  {
+                      "file":  "server\\Si_SquadHUD_Server.dll",
+                      "bytes":  19968,
+                      "sha256":  "06625a3abe1451a9bcb613a7f14c7a9fd198b44af4ab07156106854e1e258262"
+                  },
+                  {
+                      "file":  "server\\Si_Ranks.dll",
+                      "bytes":  78336,
+                      "sha256":  "7dfb81694ec2f1149d4eea8c3ad24711bb62ef4e469f22199b4a423a37e656b9"
+                  },
+                  {
+                      "file":  "server\\Si_Formation.dll",
+                      "bytes":  634880,
+                      "sha256":  "934fcb671232d12820335cbe069f78eedf3ac8bc7e774d5cdb0465a14ea16ac7"
+                  }
+              ],
+    "sources":  [
+                    {
+                        "file":  "Client\\Si_SquadHUD.csproj",
+                        "sha256":  "53132589b388a09b4d44def84bfe07de60ab389a82bc690f286fcb25b03ef463"
+                    },
+                    {
+                        "file":  "Client\\SquadHud.cs",
+                        "sha256":  "1d1c4e88d99b25f143283b73a97a537c3d96f7c463d6f6e6f1ebaff106d70ab7"
+                    },
+                    {
+                        "file":  "Server\\HudProviders.cs",
+                        "sha256":  "717ab8ef2af76551b47f885c42eab6e433e6a3234c233e7febb9fb89518aabb6"
+                    },
+                    {
+                        "file":  "Server\\ServerHud.cs",
+                        "sha256":  "8efa926ec3b32bb601d1044c0890b0fc910552a1f2386862e2ae1b38fd90d67c"
+                    },
+                    {
+                        "file":  "Server\\Si_SquadHUD_Server.csproj",
+                        "sha256":  "b29ef2ce64ea17a3f1942bf638bea577fd6f2f87b12d337ce6505643a4cfc44f"
+                    },
+                    {
+                        "file":  "Shared\\HudProtocol.cs",
+                        "sha256":  "14d44ec99828e743644b07dedbfe81dcd9fb74ff3cf2a9386edc74236defa9cb"
+                    }
+                ],
+    "validation":  "Current server patch: compilation only; live verification remains user-owned. Client/protocol are unchanged from the initial build with 47 protocol/cache checks. User confirmed the initial HUD works. Historical Ranks suite results do not validate the new ownership option."
+}

@@ -1,0 +1,414 @@
+﻿[
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\Si_AdminMod.dll",
+        "sha256":  "51F113348FA0FA30C200451EA4BDEDDFD0D7F65E40D15F13A9D007297C041432"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\Si_AFKManager.dll",
+        "sha256":  "E369EA1BA6BA6C66D1006B68132CBDCDF0AB1A48819DCB73F5984319C3CFA830"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\Si_Announcements.dll",
+        "sha256":  "CE6B84FF5E7B7139D723A9E2AB4B8A575FE637D9B69BB8E4B6E85F8585728285"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\Si_AntiGrief.dll",
+        "sha256":  "9532D91B4093D502B2A2FFE9E0F74A68D12635D4EE9F8B1C52A97CA964261864"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\Si_BasicBanlist.dll",
+        "sha256":  "5828A8A28BE735BFE40C8269E5D80FD3DD9373B46B1F409DA5412CDB4A8E15D7"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\Si_BasicTeamBalance.dll",
+        "sha256":  "B3D5427A2C4960BC3A8B8523BB1A4DEDF3C9F2421A77B4461954B44E1A37DD11"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\Si_BuildLimits.dll",
+        "sha256":  "8CEAB9A0AFF97AB65D631BA56C9010916514B17594D2B925919BE67F8CB189FA"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\Si_Buy.dll",
+        "sha256":  "F681B817E174AE7FF16F700F764CC16043B3513DEDA92E774446588AF205C678"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\Si_ChatSilence.dll",
+        "sha256":  "3A950B823FE45EEAC6C632D4DBB9CBE099BEFBBD9866D79B62CE3482997D4800"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\Si_ChipmunkVoices.dll",
+        "sha256":  "CBD35184675232A9B09F979DB46649271D13C4E3955CACF6AAB5E1B1E4B9C7DF"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\Si_CommManagement.dll",
+        "sha256":  "F4235CA5B9FA7DB8DA0A2F78250CE8899A86FC33A2CFE8A2449C60D05EFBB266"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\Si_CrabCannon.dll",
+        "sha256":  "3D489D0A977966B4D75A033CDB27CFAA3922253DDD027539BD8BAB53B74A4E11"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\Si_EarlyEncounters.dll",
+        "sha256":  "372156294FA6D24D61BDB594739FB50BEB0DC74219F24048C73C217F75BC1184"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\Si_Eject.dll",
+        "sha256":  "805B19BC0CD043E2E5049488DC89582F5B484FEEC0A7C99D38FAF9E241C1F02B"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\Si_EloMatchmaking.dll",
+        "sha256":  "1F211982AB0078EB81CB117ECC8EB56D03E91A6611F2454F4A01A793777071B3"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\Si_EndRound.dll",
+        "sha256":  "C6831512B8BFD31B6F1BA229E79BDC7671BE2887172FA7E29A0B580E1D1346FB"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\Si_Formation.dll",
+        "sha256":  "1EEC328151C5A74DC9ED70E8D2F44889072623B762A37660702F5A0A5BA1FA75"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\Si_FriendlyFireLimits.dll",
+        "sha256":  "1712FA7E5D1B7EFD7FC9FA286DD8EB0B1A322648F09E9CB2C07490AA46BE1333"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\Si_HeavyTeleporter.dll",
+        "sha256":  "1DABDAC4218ED8D30E3E6619D0DECDF70249390A45FAD3F4E70CDFF9BF98328D"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\Si_HQlessHumansLose.dll",
+        "sha256":  "0F6762111289C004A84913C7546F139DC1BB4473E21D6349866FBDD3929A6917"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\Si_KingOfTheHill.dll",
+        "sha256":  "9C2539D6CB669F9175C38D327B7AE2F2C40323FB4DCF1065B88C36F0EA041570"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\Si_Leaderboard.dll",
+        "sha256":  "CA28F5621B647D1D6E6A28B24CCF771DA410CA4C025751924C9F92888E4F918C"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\Si_Logging.dll",
+        "sha256":  "156F94886F2EA01265B76FF2D61E4CE8486FEBB414043C7BFCFE38142B293107"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\Si_Logistics.dll",
+        "sha256":  "14E5EA24FA48BA0639E4017FBB43D40AD419E2FCCB03E8E5C700ED8B75499DBF"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\Si_MapBalance.dll",
+        "sha256":  "BEE9A77CCD71E6A6D5C49E9CCD4CAFD6564647497197152614CB21C88774A63C"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\Si_Mapcycle.dll",
+        "sha256":  "E0BD3F635AD43790AFD622CAE87355D284B9F9C45E648E562141004E725B73BB"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\Si_MatchSettings.dll",
+        "sha256":  "E2DD523EAC6A9E3038F8FAD0B894EC7D0F5A970F705BC33EF6A1235D113D8166"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\Si_ModPerfMonitor.dll",
+        "sha256":  "34504BA843F4BAAC08219708187EC38B17698B8F5CBE37DD4445E0C2E2F69093"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\Si_ModUI_Server.dll.disabled-20261021T145722965Z",
+        "sha256":  "897D22AC5E7AEF4ABA8E6B34AA21A157E35B9AF4651D5C3DD5C5D8EAA7FCB3A0"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\Si_PacketChunker.dll",
+        "sha256":  "C3CF804ED5214C928DF57F3797D37A5833D7CC30DAB0BDCF841530F817866BB1"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\Si_Ranks.dll",
+        "sha256":  "7DFB81694EC2F1149D4EEA8C3AD24711BB62EF4E469F22199B4A423A37E656B9"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\Si_RepairFacility.dll",
+        "sha256":  "5B7A656360396F9BE2A3176A7BC5DDEE3A4E2874A1FC81EF380E563C8675C652"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\Si_ReplayLogging.dll",
+        "sha256":  "BCDB3B7DFE29641BADAF71783CECBEBDD2035417BC1C5BF68EE6DF44318A4F80"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\Si_Resources.dll",
+        "sha256":  "CC23ADC67DBEAF5483D4E973F589EE7C77D933C362886E74BD2A06D56B870544"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\Si_RTS_AI.dll",
+        "sha256":  "4973B0C52E2B05B560C8AE1EE818F6BB533DF8DA0D07F41415F5FF4BAA56923B"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\Si_ServerModUI.dll",
+        "sha256":  "4341745F35B82B461C217A17B43452EE08EBF2EC50E63170356455992CFCF1A2"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\Si_ServerOptimizer.dll",
+        "sha256":  "FFF76A6A5590C4A6C38A24D3C570A1FCBD0121074C2408C2C42318C0A2AC8CB0"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\Si_SpawnConfigs.dll",
+        "sha256":  "4F5FD7D3A233A17860FB6354CAF389CE6231B1BC5D909AA4BDEDD39D5A49FFDA"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\Si_StarterUnits.dll",
+        "sha256":  "048C449449F89955E4E2AF6E21D75FE6EE466CFDFCE523954AFFAD48113412C2"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\Si_SurrenderCommand.dll",
+        "sha256":  "EBA60464DFEB0B0A6DC79AAFACC31B49B19B9A12F023FC9256CF888855EC01CE"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\Si_TechGlitch.dll",
+        "sha256":  "0919BB95F4C73F3176D77FD2947EDC12510A02161DC823567A9F362BB6CF09D9"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\Si_TimeOfDay.dll",
+        "sha256":  "E49CE11A97A956F70BD8BA0E9895AB82D023644002A6AE85488B4F356258F97A"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\Si_UnitBalance .txt",
+        "sha256":  "B2F03C85BCA72941BA73656EAD056B7968279875486D349DA419D856747BBD48"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\Si_UnitBalance.dll",
+        "sha256":  "829B06C5125618821D4E7B734B6A97C6E80E6AC79E382F2584F147399F299023"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\Si_WormBounty.dll",
+        "sha256":  "F7A0A7CB37B828D1DFA6FF9FAF55669045A51903852FEA1040F213597B003278"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\~backup\\Si_AdminMod.dll",
+        "sha256":  "308639B9BA2BA24E9F9081982D6F5E962E153C39493D275C0617542D258A54C5"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\~backup\\Si_AntiGrief.dll",
+        "sha256":  "01C286104646109AA6BCB3906EE88E6B9FD5171B855F69CD1DF528C682007F85"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\~backup\\Si_BuildLimits.dll",
+        "sha256":  "8F444A503FB1FAB3700F26CBAB7D23BF73BA617C3BA59B80516A4C8ADF60899C"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\~backup\\Si_CommManagement.dll",
+        "sha256":  "C7107840BEA7CAF2644FF1491325FB0B1E89B65381FE9DE0E52D66B6F76CA857"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\~backup\\Si_FriendlyFireLimits.dll",
+        "sha256":  "8E5F772196601C04CDC03A263386388A1108D35251A56FE6024F22DA3E30FD6B"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\~backup\\Si_Logging.dll",
+        "sha256":  "BDBA8292CAFEF1626048AB480A1AC0D8AC159C7A6ABA5AEDB6B01DAD0931D1AB"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\~backup\\Si_RepairFacility.dll",
+        "sha256":  "69416AD43277894DD65114921A90D7B0F764BF3B081FFCBA3A24D78B0AA1D178"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\~backup\\Si_ServerOptimizer.dll",
+        "sha256":  "2A489058C067E4D422D78218795B6762CD6EF4BFCED60CEF3BD12D236AE10F9B"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\~backup\\Si_Formation-20260928-194417\\Si_Formation.dll",
+        "sha256":  "5905AE897616DA2FE57DEF322198BA2CF9DFADE657D474308429755B4ED6A5B9"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\~backup\\Si_Formation-20260928-194855\\Si_Formation.dll",
+        "sha256":  "A4C764B1BBDDEFF9384DF776F67865A65DC4CA51024F7992F2A8CC7FA29141A8"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\~backup\\Si_Formation-20260928-195854\\Si_Formation.dll",
+        "sha256":  "BEBA0ADCFF510E99C071A67E315F64D4892FDF210D0767BCBD406EAB0B2D9C1B"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\~backup\\Si_Formation-20260928-203435\\silica-formation-editor.zip",
+        "sha256":  "4A89649173CB3F4FF922E665A50913351295037319E601C0F8F6097BDA3A6A36"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\~backup\\Si_Formation-20260928-203435\\Si_Formation.dll",
+        "sha256":  "85FE190C561E4BE6EA6BB0B901926C5E1F7899D7FBA8D9F980CFD45245E07D49"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\~disabled\\Si_AlienAura.dll",
+        "sha256":  "E554826A59F8E0BD69465577836444582277934C8A58843EED81B3C6B8BC6776"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\~disabled\\Si_RTS_AI.dll",
+        "sha256":  "B9DF85073BDD2FCACA06108CC1C8B8C1306487952F2C5858FF042E8A24C542D4"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\~disabled\\Si_Webhooks.dll",
+        "sha256":  "4574B2C8FCA051C61939AA5EDB4DD61467CB5B9DCF099588E43A1BFD9E211370"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\~disabled\\obe\\Si_AutoTeamsSelect.dll",
+        "sha256":  "CF390CEE51C97582DB01992D003074E76C258B9F4B391B7A7912581D99CCD0F1"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\~disabled\\unsafe\\Si_BetterSpawns.dll",
+        "sha256":  "F8C90865DF5912B274F72BF64EF32DF515122B582BE7A380D5EF35D36618DD25"
+    },
+    {
+        "path":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Mods\\~disabled\\unsafe\\Si_DefaultUnits.dll",
+        "sha256":  "E28B515005D60EE46ECBB3313359EB4F5A988E051DF2895B90579A6F0A251655"
+    },
+    {
+        "path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Silica\\Mods\\cheats.dll",
+        "sha256":  "D0E4D5A4DBB96485F359B0A280BD27EB8C19A7DC5B77AA41FDFA9394BB960BD3"
+    },
+    {
+        "path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Silica\\Mods\\cheats.dll.disabled-friend-test-20261021T161446",
+        "sha256":  "013E3802CF4968969CE49DBDCDBD02E812D57BD39AB58D7EA8886660D7E8FD4D"
+    },
+    {
+        "path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Silica\\Mods\\Si_ClientDiagnostics.dll.disabled-20261020T141129213Z",
+        "sha256":  "F647E85ED68F8FA973BD81014727524078C1F7CDBCDA1FB2B267564C7093A555"
+    },
+    {
+        "path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Silica\\Mods\\Si_ClientModUI.dll",
+        "sha256":  "B81BA9A55311EB1000B5DD89E00181D89B9CE7D064F0F5C6CB80D9B593FD28D5"
+    },
+    {
+        "path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Silica\\Mods\\Si_ClientModUI.dll.disabled-friend-test-20261021T161446",
+        "sha256":  "C93FB1C3633033B6C4EB6774F7B8F753BE7691B4C8E8F7F7FFE3B57B092532FA"
+    },
+    {
+        "path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Silica\\Mods\\Si_ModUI.dll.disabled-20261021T145722965Z",
+        "sha256":  "72B6FF42ADFB8EF95C6F8D5DA33D11E804C0B99E0D63E50533D24DFEA1B46C1C"
+    },
+    {
+        "path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Silica\\Mods\\Si_SquadHUD.dll.disabled-20261020T154820752Z",
+        "sha256":  "07ABAA2B122CCAA8BE9660BDECA9757D51C6EE40465F2CC22CB6A99A18746E9B"
+    },
+    {
+        "path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Silica\\UserData\\Si_ModMenu\\commands-76561199630250354.json",
+        "sha256":  "5884DFF6CCFAC5AF1F7644CFD81A66EF7CF3080BAC307E745DC654D018D796F6"
+    },
+    {
+        "path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Silica\\UserData\\Si_ModMenu\\commands-76561199630250354.json.20261020T164836638Z.bak",
+        "sha256":  "1559EF960109033DD7D10A87A66D5CBC764CD1AD7557B2C82F0F131E3947D29D"
+    },
+    {
+        "path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Silica\\UserData\\Si_ModMenu\\commands-76561199630250354.json.20261020T182911549Z.bak",
+        "sha256":  "D47B7177084569996C61EDCDB073E2C4EB7556A86145222C3E8508E796D893D8"
+    },
+    {
+        "path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Silica\\UserData\\Si_ModMenu\\created-commands.json",
+        "sha256":  "E3A141EF44736A63E14FAF39BA2997A81813C95AA1E25E2E1BF0CF29A53CE59B"
+    },
+    {
+        "path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Silica\\UserData\\Si_ModMenu\\created-commands.json.20261020T135753613Z.bak",
+        "sha256":  "08ABE320F20D85B9CC254C574B875A4063AD896F8C3298F8D802DFB541EDEFAB"
+    },
+    {
+        "path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Silica\\UserData\\Si_ModMenu\\created-commands.json.20261020T161644105Z.bak",
+        "sha256":  "47BFCF0C51AD62D5267A101C68FD0F4F5DC48E882EABBFC2A4C93C2584B47B03"
+    },
+    {
+        "path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Silica\\UserData\\Si_ModMenu\\created-commands.json.20261020T161749423Z.bak",
+        "sha256":  "B90BE802C72BEA465B52012EE83F89CE19D2F9A48AD6361EC9A6BE80A664C915"
+    },
+    {
+        "path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Silica\\UserData\\Si_ModMenu\\created-commands.json.20261020T164836643Z.bak",
+        "sha256":  "67E484DDB2ED57816F910FADA52E98564DE2F767C720009E00BFEE1C17CB40F7"
+    },
+    {
+        "path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Silica\\UserData\\Si_ModMenu\\created-commands.json.20261020T182911554Z.bak",
+        "sha256":  "27E4C355F8A5F24DEE841D00915BD1D0DCB72092BC10A4B8336F5EF329958482"
+    },
+    {
+        "path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Silica\\UserData\\Si_ModMenu\\created-commands.json.20261022T132710828Z.bak",
+        "sha256":  "7AF2AE48E0A7E2B353559C451209AD7F9AA165D2627468718AC650F3F4EA57F1"
+    },
+    {
+        "path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Silica\\UserData\\Si_ModMenu\\created-commands.json.20261022T133439490Z.bak",
+        "sha256":  "A992442F6BA8A077C6EAE2F428C2CB50328021869CCE5B12CF346FC81C9934EB"
+    },
+    {
+        "path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Silica\\UserData\\Si_ModMenu\\created-commands.json.20261022T133522795Z.bak",
+        "sha256":  "9880B5B2C693AADCE6B5F334B838931AB599FBB68935DDACC964D6A8175A7135"
+    },
+    {
+        "path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Silica\\UserData\\Si_ModMenu\\created-commands.json.20261022T134020460Z.bak",
+        "sha256":  "8B3AD73A54839EF1100095B98CB0BC623994EB6A67A9FD9B3583ECAA0CFD54DD"
+    },
+    {
+        "path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Silica\\UserData\\Si_ModMenu\\created-commands.json.20261022T134100762Z.bak",
+        "sha256":  "333FA1BD087A867C77CFED46DAFB9C766A59617CBEF5C7B85FF8693DC58491A4"
+    },
+    {
+        "path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Silica\\UserData\\Si_ModMenu\\created-commands.json.20261022T134205384Z.bak",
+        "sha256":  "4DAD030CFA4C2D1D2544FEBCF27C77E688BA0A679BDA90E300A832310C5A76DF"
+    },
+    {
+        "path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Silica\\UserData\\Si_ModMenu\\created-commands.json.20261022T134253605Z.bak",
+        "sha256":  "6DE97F62DC401D4C07168C05AD84497BAA16BE27FF61379E31CF96B914B3FCCA"
+    },
+    {
+        "path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Silica\\UserData\\Si_ModMenu\\created-commands.json.20261022T135904275Z.bak",
+        "sha256":  "DC1DA147634B910ECC7068657F53D18EA3FC8C75111DCFD7A54C56468A048AA7"
+    },
+    {
+        "path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Silica\\UserData\\Si_ModMenu\\layout-76561199630250354.json",
+        "sha256":  "1CEADB217B6C71781C4A2572AC02FA2228BC0FB573F59A4FE70C1BD3DBA35005"
+    },
+    {
+        "path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Silica\\UserData\\Si_ModMenu\\layout-76561199630250354.json.before-team-sidebar-20261020T155126367Z.bak",
+        "sha256":  "58BD1D51D63D3F0DDB8462DDCD726CCD6CA372CE2AEABB99866BCF195021E497"
+    },
+    {
+        "path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Silica\\UserData\\Si_ModMenu\\session-20261020T122311665Z.log",
+        "sha256":  "FC963549B07494842FF6DD332153B0A9FCA7D09956084C5CD9F12A6159DDE407"
+    },
+    {
+        "path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Silica\\UserData\\Si_ModMenu\\session-20261020T133151625Z.log",
+        "sha256":  "C7BAE3A2F45DC4152F425CC982ABDF2F4F220CABFE9E53A13C4FB90560A81131"
+    },
+    {
+        "path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Silica\\UserData\\Si_ModMenu\\session-20261020T142026137Z.log",
+        "sha256":  "75720DA847E6363B0E210B7EA47551A7AD083CAE6C6E2F1DA067466D0DB76060"
+    },
+    {
+        "path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Silica\\UserData\\Si_ModMenu\\session-20261020T154934520Z.log",
+        "sha256":  "42F68334B632AB023BB8E4B9BF03C1BBB3ACB966327AD3F4D11F64ABB5B7772A"
+    },
+    {
+        "path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Silica\\UserData\\Si_ModMenu\\session-20261020T180331092Z.log",
+        "sha256":  "629BB7C2A4EA3B8E292E78520221AD03C069B7CD382745E5EDC716DE3C948F8F"
+    },
+    {
+        "path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Silica\\UserData\\Si_ModMenu\\session-20261021T145850258Z.log",
+        "sha256":  "F120482D353412212565CDCC50D18727755CB3E05EFC85DC8B73DD066EDA6B4E"
+    },
+    {
+        "path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Silica\\UserData\\Si_ModMenu\\session-20261022T130437514Z.log",
+        "sha256":  "92E275111A189C64F7D97160F79F8CE361C0A9462DD88119321D8BBEF063FA24"
+    },
+    {
+        "path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Silica\\UserData\\Si_ModMenu\\session-20261022T133655278Z.log",
+        "sha256":  "E54A9F48456E5A4531D053BC0E9A5E051D0E26470EBC8E7E9F710F73530EE777"
+    },
+    {
+        "path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Silica\\UserData\\Si_ModMenu\\server-frames\\17a8cb8f2bd7.json",
+        "sha256":  "D6837796958D8A35F8D6F41B776B1E069DFEFC8A1970A4D74186C2C1C93D71A1"
+    },
+    {
+        "path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Silica\\UserData\\Si_ModMenu\\server-frames\\406f0a82ffa6.json",
+        "sha256":  "3B1B5DC9CDA9494D4CDE4A27E6E60C299CAC276ECD01DACFA25D7E98D4A1961D"
+    },
+    {
+        "path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Silica\\UserData\\Si_ModMenu\\server-frames\\5aac80e81325.json",
+        "sha256":  "D6837796958D8A35F8D6F41B776B1E069DFEFC8A1970A4D74186C2C1C93D71A1"
+    },
+    {
+        "path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Silica\\UserData\\Si_ModMenu\\server-frames\\7f3ee05535c6.json",
+        "sha256":  "E8E1636E3A9BF91C1BB00ADD82702EA4881A6342F12BFD6A4516AB4B0CC7976F"
+    },
+    {
+        "path":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Silica\\UserData\\Si_ModMenu\\server-frames\\b5dec7d3ef29.json",
+        "sha256":  "03754464721587D9812AC396CD6B5F990411EF8EAD220E9C0457143322041E9A"
+    }
+]

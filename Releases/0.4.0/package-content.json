@@ -1,0 +1,127 @@
+﻿[
+    {
+        "file":  "ClientMods/Si_SquadHUD/Client/FactionAppearance.cs",
+        "bytes":  25804,
+        "sha256":  "788d1598da2813b4a62b81c43367af6b9c9fb5cd71a7c33bc88263ab880da605"
+    },
+    {
+        "file":  "ClientMods/Si_SquadHUD/Client/FormationPanel.cs",
+        "bytes":  9114,
+        "sha256":  "cc9b72c1cebc6945a352b2e6979af38c368290b6f0e50cea80c4755b671429ca"
+    },
+    {
+        "file":  "ClientMods/Si_SquadHUD/Client/Si_SquadHUD.csproj",
+        "bytes":  1765,
+        "sha256":  "ede77c62cd432852d1cc7639fdc0050046d2c8985f4b72259da09efd55a0e90e"
+    },
+    {
+        "file":  "ClientMods/Si_SquadHUD/Client/SquadHud.cs",
+        "bytes":  11185,
+        "sha256":  "e93f75f28fc8ae373b7415124244fb48901e889e1dcd60e38a26a0256ae1743f"
+    },
+    {
+        "file":  "ClientMods/Si_SquadHUD/Client/WindowPlacement.cs",
+        "bytes":  2888,
+        "sha256":  "6eb598606b61a25ba9f6b331981b43577dac46810236abaf5864c10e0aeb17ed"
+    },
+    {
+        "file":  "ClientMods/Si_SquadHUD/INSTALLATION_STATUS.md",
+        "bytes":  2041,
+        "sha256":  "c173361f3a76afe09216737e37bde42e97be32557cd77297d71ba6b9500577ef"
+    },
+    {
+        "file":  "ClientMods/Si_SquadHUD/Install-SquadHUD.ps1",
+        "bytes":  4650,
+        "sha256":  "b337342f028faafe548d431c7da5120d16c335ac7675935620f58443bc703beb"
+    },
+    {
+        "file":  "ClientMods/Si_SquadHUD/NETWORKING.md",
+        "bytes":  6783,
+        "sha256":  "64d06bb87e470bb9509a1ae17ee25600d833628592e3285486ae5f7271315c61"
+    },
+    {
+        "file":  "ClientMods/Si_SquadHUD/Prepare-Release.ps1",
+        "bytes":  2898,
+        "sha256":  "783caf923e3a53e432ee8af420610126882b574a8ab47a94d419f4d4dba253c1"
+    },
+    {
+        "file":  "ClientMods/Si_SquadHUD/README.md",
+        "bytes":  6365,
+        "sha256":  "e1549967869b2f8dbb39ccf95d8c88a63f9fef40d81ee7ba65bd1ed251b1f242"
+    },
+    {
+        "file":  "ClientMods/Si_SquadHUD/Releases/0.4.0/client/Si_SquadHUD.dll",
+        "bytes":  62976,
+        "sha256":  "c2e0122b680b5a8ef51266e7017154b68298df54790130f035476fe255c2cfa8"
+    },
+    {
+        "file":  "ClientMods/Si_SquadHUD/Releases/0.4.0/manifest.json",
+        "bytes":  5796,
+        "sha256":  "93971c0e07974bc2a2da8074d62b3b515a51ab88fd45cea5f41c37458cdc7ed2"
+    },
+    {
+        "file":  "ClientMods/Si_SquadHUD/Releases/0.4.0/NOTES.md",
+        "bytes":  1288,
+        "sha256":  "e3641b51b51c0e23e91c9fc5b9a870708cc7969091e38e3e9482715c10191afe"
+    },
+    {
+        "file":  "ClientMods/Si_SquadHUD/Releases/0.4.0/server/Si_SquadHUD_Server.dll",
+        "bytes":  65024,
+        "sha256":  "20c91d86ffe2cdc6da38f07de3606ebb77eeed28af0588bdbf3dc30c9ae5dc23"
+    },
+    {
+        "file":  "ClientMods/Si_SquadHUD/Rollback-SquadHUD.ps1",
+        "bytes":  1894,
+        "sha256":  "f48901e70443785946fc55a8668b8edd43d5edd23ce0a32c89701034928bcc72"
+    },
+    {
+        "file":  "ClientMods/Si_SquadHUD/Server/AdminControls.cs",
+        "bytes":  5013,
+        "sha256":  "0c31afa8fcbb219fbe547e08a26d4558b0c23b325e16d68f12f3b28a8e079e81"
+    },
+    {
+        "file":  "ClientMods/Si_SquadHUD/Server/HudProviders.cs",
+        "bytes":  7777,
+        "sha256":  "ba3c5a0efad425f4ad31667891f807ccf07a7f63beba322da2c62f4180b1379c"
+    },
+    {
+        "file":  "ClientMods/Si_SquadHUD/Server/MenuCatalog.cs",
+        "bytes":  22295,
+        "sha256":  "f7893716e703bc033ba384d5146e12591570d526c79b28cc7314823ea2cac9e2"
+    },
+    {
+        "file":  "ClientMods/Si_SquadHUD/Server/PanelBackend.cs",
+        "bytes":  3218,
+        "sha256":  "5b0fdbf5adca23a59eb75c200798ab744b2acb4aaef1303e6ffc0633f0a6455a"
+    },
+    {
+        "file":  "ClientMods/Si_SquadHUD/Server/ServerHud.cs",
+        "bytes":  9540,
+        "sha256":  "b4ead06d346a639d7e2cb0ca92f9ee8c8dc3d38c20df08158e576e3e8568c906"
+    },
+    {
+        "file":  "ClientMods/Si_SquadHUD/Server/Si_SquadHUD_Server.csproj",
+        "bytes":  937,
+        "sha256":  "ad8222456a483aae84a8d453ceabf1c828f3bf0127f173545ed282c152e90d29"
+    },
+    {
+        "file":  "ClientMods/Si_SquadHUD/Shared/CatalogProtocol.cs",
+        "bytes":  5105,
+        "sha256":  "8d21d7a016ebaac74a98e7d5298230b0109df9b195b965a907035a1eeb688da6"
+    },
+    {
+        "file":  "ClientMods/Si_SquadHUD/Shared/FormationProtocol.cs",
+        "bytes":  6614,
+        "sha256":  "dcbca3dff07e5d95e327ca98566ccf5404b9d9ea13f5f2f23146e6e2f30a3541"
+    },
+    {
+        "file":  "ClientMods/Si_SquadHUD/Shared/HudProtocol.cs",
+        "bytes":  7340,
+        "sha256":  "ec68b8d7655a06d52e7fcd0f93c57c01e7088ea4ba34e80592191d5800b41030"
+    },
+    {
+        "file":  "ClientMods/Si_SquadHUD/TESTING.md",
+        "bytes":  3445,
+        "sha256":  "ac0a0fdd3ce25c87eec1e8da4dc9767cdf8288fa673856db43094252da81bb41"
+    }
+]

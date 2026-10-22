@@ -1,0 +1,132 @@
+﻿{
+    "schema":  1,
+    "preparedUtc":  "2026-10-19T21:32:07.6145688Z",
+    "hudVersion":  "0.6.0",
+    "clientVersion":  "0.6.0",
+    "ranksVersion":  "1.4.3",
+    "formationVersion":  "2.15.1",
+    "serverCoreSha256":  "33969f93ebbe60c4182e18c590974bce046bd0f440b7003d888f2e7640b1bcf5",
+    "clientGameAssemblySha256":  "358b2a17997d1406b45d52c0f341034fb6fe614aba0eb390cb3b7ec310ed0601",
+    "clientMetadataSha256":  "7ba17d1dafaf8f0bb02651c3ccd618219b458fde4f4d22e859c0ee595ebe32b4",
+    "clientInteropSha256":  "235bee283a231aacb2a000744999e4249b8bbf15019b0d3f2c9c9ea6cf692a62",
+    "kohSha256":  "5377b71a034e065df76d5a3f595de733daf24d9a875def9d0c092bccaaabf8bc",
+    "adminModSha256":  "51f113348fa0fa30c200451ea4bdeddfd0d7f65e40d15f13a9d007297c041432",
+    "providers":  [
+                      {
+                          "sha256":  "14e9ae2e4df4536a80ca1c6ae01954d6c7f1a9c5b4f92eb1bfd40766d641b896",
+                          "file":  "Mods\\Si_Formation.dll"
+                      },
+                      {
+                          "sha256":  "7dfb81694ec2f1149d4eea8c3ad24711bb62ef4e469f22199b4a423a37e656b9",
+                          "file":  "Mods\\Si_Ranks.dll"
+                      },
+                      {
+                          "sha256":  "9ba61fe9acf1e9a34c6773bc9de9c4d0b7e23ce44c1e99e48d34f27741efe20e",
+                          "file":  "Mods\\Si_Logistics.dll"
+                      },
+                      {
+                          "sha256":  "803bfab9601df2c9c648af7c3d2fee675914ffe0966a7e862d8ca2b63e5bb62f",
+                          "file":  "Mods\\Si_CrabCannon.dll"
+                      },
+                      {
+                          "sha256":  "2e94428ce783db6ffe618265f3cca32784830ad6faed742e7dacf3e67640f6d3",
+                          "file":  "Mods\\Si_HeavyTeleporter.dll"
+                      },
+                      {
+                          "sha256":  "23e5f58f3337e081b784d4d940f46ec81451c630c900cc3610fac11f68609c66",
+                          "file":  "Mods\\Si_UnitBalance.dll"
+                      }
+                  ],
+    "files":  [
+                  {
+                      "file":  "client\\Si_SquadHUD.dll",
+                      "bytes":  97280,
+                      "sha256":  "10205c38638b57da89db276e3e920dcaa4d2bec2a5a540b21554d26c8575fae1"
+                  },
+                  {
+                      "file":  "server\\Si_SquadHUD_Server.dll",
+                      "bytes":  92160,
+                      "sha256":  "84bae3a8949e542274cc7dabd4420c558b74f6f6cf3412ab6e1b1efafe7eb669"
+                  },
+                  {
+                      "file":  "server\\Si_Formation.dll",
+                      "bytes":  638976,
+                      "sha256":  "14e9ae2e4df4536a80ca1c6ae01954d6c7f1a9c5b4f92eb1bfd40766d641b896"
+                  }
+              ],
+    "sources":  [
+                    {
+                        "file":  "Client\\CommanderSidebar.cs",
+                        "sha256":  "3c47718bed109fb92a99d22aa33385e1dd6a5e30e270cb6b5f77a6864ea5da15"
+                    },
+                    {
+                        "file":  "Client\\FactionAppearance.cs",
+                        "sha256":  "6e40884ec4c67edc20c2625418f19ba3afccf81a8bfac489c67f50d39171fbf1"
+                    },
+                    {
+                        "file":  "Client\\FormationPanel.cs",
+                        "sha256":  "c7815c0b779c404d8a0d1d5763535420cae1aac9257c1e939ce569626627ba5d"
+                    },
+                    {
+                        "file":  "Client\\Si_SquadHUD.csproj",
+                        "sha256":  "393d50d4ba494427cb50e9a16da5efb4b535eaed0c079ab42289408df2d4ae16"
+                    },
+                    {
+                        "file":  "Client\\SquadHud.cs",
+                        "sha256":  "08d977bb1e8838fcec445d2cfead20597ad805333233fe522ba50bde595ec58f"
+                    },
+                    {
+                        "file":  "Client\\UnitBalancePanel.cs",
+                        "sha256":  "a356deb0bdc505e77dcdbf008c489ce4aef6c8621e21debdeb5d827ee8f2775a"
+                    },
+                    {
+                        "file":  "Client\\WindowPlacement.cs",
+                        "sha256":  "6eb598606b61a25ba9f6b331981b43577dac46810236abaf5864c10e0aeb17ed"
+                    },
+                    {
+                        "file":  "Server\\AdminControls.cs",
+                        "sha256":  "ac3f5d748ebe0b6f02d78f643344362f4b623078ee56ad6b9128cb3ee984ce78"
+                    },
+                    {
+                        "file":  "Server\\HudProviders.cs",
+                        "sha256":  "ba3c5a0efad425f4ad31667891f807ccf07a7f63beba322da2c62f4180b1379c"
+                    },
+                    {
+                        "file":  "Server\\MenuCatalog.cs",
+                        "sha256":  "c8bda0d59e3bf298c26f3fe711874b220fa032b7a053d5fec089a5aac77beb91"
+                    },
+                    {
+                        "file":  "Server\\PanelBackend.cs",
+                        "sha256":  "b7319104b8cf951b2af2d5d82f4e321cf48cf8fa1924880569a21d0c0138106b"
+                    },
+                    {
+                        "file":  "Server\\ServerHud.cs",
+                        "sha256":  "f223e806103aa6ee9fdccbe1baf867fc7ce2c3cd7fc1c05dbe529259748cc6b0"
+                    },
+                    {
+                        "file":  "Server\\Si_SquadHUD_Server.csproj",
+                        "sha256":  "f01604e3b8b9ad643e2ea74e3d56e106519afc085b9915907ddce751691136a8"
+                    },
+                    {
+                        "file":  "Server\\UnitBalanceBackend.cs",
+                        "sha256":  "c0c4e226d8497c15961d60f1b5bc25e57e65a641c25dc9a0a5b17b80267756ab"
+                    },
+                    {
+                        "file":  "Shared\\BalanceProtocol.cs",
+                        "sha256":  "0e76e46fddb71f922f7745fe499b04ac6fa51f565a2afa9ff245482117820722"
+                    },
+                    {
+                        "file":  "Shared\\CatalogProtocol.cs",
+                        "sha256":  "8d21d7a016ebaac74a98e7d5298230b0109df9b195b965a907035a1eeb688da6"
+                    },
+                    {
+                        "file":  "Shared\\FormationProtocol.cs",
+                        "sha256":  "dcbca3dff07e5d95e327ca98566ccf5404b9d9ea13f5f2f23146e6e2f30a3541"
+                    },
+                    {
+                        "file":  "Shared\\HudProtocol.cs",
+                        "sha256":  "7d5e1ef444b08fad1429d74408bdbc41752837d31abd81a158a5d026d58b1973"
+                    }
+                ],
+    "validation":  "Client/companion 0.6.0 compiled with zero warnings/errors. Adds Unit Balance cached public browser/admin editor, atomic JSON save with verified backups, native reload observation and client redistribution, and authoritative tab visibility. Unit Balance DLL/source, configuration and all gameplay DLLs retained. Existing sidebar and Centauri rendering repair retained. No tests or game/server launches performed; live verification remains user-owned."
+}

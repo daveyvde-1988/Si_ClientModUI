@@ -1,0 +1,83 @@
+﻿{
+    "schema":  2,
+    "clientVersion":  "0.14.0",
+    "preparedUtc":  "2026-10-20T14:55:51.9809133Z",
+    "companionRequired":  false,
+    "clientGameAssemblySha256":  "358b2a17997d1406b45d52c0f341034fb6fe614aba0eb390cb3b7ec310ed0601",
+    "clientMetadataSha256":  "7ba17d1dafaf8f0bb02651c3ccd618219b458fde4f4d22e859c0ee595ebe32b4",
+    "clientInteropSha256":  "235bee283a231aacb2a000744999e4249b8bbf15019b0d3f2c9c9ea6cf692a62",
+    "files":  [
+                  {
+                      "file":  "client\\Si_SquadHUD.dll",
+                      "sha256":  "07abaa2b122ccaa8be9660bdeca9757d51c6ee40465f2cc22cb6a99a18746e9b",
+                      "bytes":  104960
+                  }
+              ],
+    "sources":  [
+                    {
+                        "file":  "Client\\ClientDebug.cs",
+                        "sha256":  "f0d971f7b7d1e0f6b4b07910dbe8dc654ce92188e861c9f9d0faaa2cd05e1486"
+                    },
+                    {
+                        "file":  "Client\\CommandController.cs",
+                        "sha256":  "c4af02d95add0a409550209d55eedcfb62286ec412fb0e1c0f5a126dd2cd2aef"
+                    },
+                    {
+                        "file":  "Client\\ControllerMenu.cs",
+                        "sha256":  "bd572a2ff5a9f1254517290d868a023e68fda637be801d1c51db20952600abf6"
+                    },
+                    {
+                        "file":  "Client\\InputGuard.cs",
+                        "sha256":  "9ab6f15aa0f6c43131580ec86448b6152a202255d294ecf1e451241d89631e3b"
+                    },
+                    {
+                        "file":  "Client\\LocalModControls.cs",
+                        "sha256":  "e19307e12651f5b4217e1e932b95eaf761ee48747868b3d4ba19dc1a33e9fbc6"
+                    },
+                    {
+                        "file":  "Client\\MenuAppearance.cs",
+                        "sha256":  "651fcc4b95c5086ca2185acb92f726021a2ac70df5c09a4ae1f1f498902d411c"
+                    },
+                    {
+                        "file":  "Client\\MenuInput.cs",
+                        "sha256":  "60a40f2c4f41430374f7c5e679aaf8c24f80e6c28750a0f94fd3a0fa9c19ed3d"
+                    },
+                    {
+                        "file":  "Client\\MenuSettings.cs",
+                        "sha256":  "41b689d1ac4c17cbdfcc07cb8ea0b6f44c425627886eb5d56f04f9c6b82cac38"
+                    },
+                    {
+                        "file":  "Client\\OverlayWindows.cs",
+                        "sha256":  "ec916e9bd01e79756b362c66840747ca2a0086d635204df4b3c11686f2e0cb3c"
+                    },
+                    {
+                        "file":  "Client\\PortableCommands.cs",
+                        "sha256":  "ccb77cf5372ee644c485a10cb2e1bed5e275909f3860dbfa8c814a70f9e9081e"
+                    },
+                    {
+                        "file":  "Client\\ShellRules.cs",
+                        "sha256":  "e0e1814c3f1daea310fdb915f59ad946b623d80a5179e44aae3b57104ed3f6af"
+                    },
+                    {
+                        "file":  "Client\\Sidebar.cs",
+                        "sha256":  "4b1c7e6405347035051676825ebc48618b90c9e2e1bfaffe6eb51d43f4216b5e"
+                    },
+                    {
+                        "file":  "Client\\SidebarSymbols.cs",
+                        "sha256":  "4fdbc29a39db2075d96727319b12490f09a8dc5bf3fb65ea96e91e64ef8d4d9a"
+                    },
+                    {
+                        "file":  "Client\\Si_SquadHUD.csproj",
+                        "sha256":  "f5f6a1e1e27d93b817328e60d0205321d65b3cffa3f8c78334974e0cba8bd237"
+                    },
+                    {
+                        "file":  "Client\\SquadHud.cs",
+                        "sha256":  "580eb0888254766a852bcb153e9b14e70bfeeeb27e0e3e9dad09a7e00748f1c2"
+                    },
+                    {
+                        "file":  "Client\\WindowPlacement.cs",
+                        "sha256":  "5186ba2e3c6e0ad93871dadbaf6890d4ca1300360d76213264aa9908d841928d"
+                    }
+                ],
+    "validation":  "Release build: zero warnings/errors. 189 combined command and UI-policy checks pass. No game/server launches. Runtime verification pending."
+}

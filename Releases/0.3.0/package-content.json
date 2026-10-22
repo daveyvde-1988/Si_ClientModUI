@@ -1,0 +1,352 @@
+﻿[
+    {
+        "file":  "ClientMods/Si_SquadHUD/Client/FactionAppearance.cs",
+        "bytes":  18605,
+        "sha256":  "021173d6250a8d4e3f6eff67671a6656a2051e4875b4565528c1ddc22b7854dc"
+    },
+    {
+        "file":  "ClientMods/Si_SquadHUD/Client/FormationPanel.cs",
+        "bytes":  7380,
+        "sha256":  "d2a329fb42fc00160954cb4fad42bd998b4b22371ad8d28724cfa6f60a16854d"
+    },
+    {
+        "file":  "ClientMods/Si_SquadHUD/Client/Si_SquadHUD.csproj",
+        "bytes":  1765,
+        "sha256":  "0a7154cff7d1116eff55fbdfe9c0fa30cb634cad58f8b6c12d5bcfdbb21d8925"
+    },
+    {
+        "file":  "ClientMods/Si_SquadHUD/Client/SquadHud.cs",
+        "bytes":  11012,
+        "sha256":  "22979b003000dd47842c8041548896b61d69205dc852325b79d6ac42b31941c3"
+    },
+    {
+        "file":  "ClientMods/Si_SquadHUD/INSTALLATION_STATUS.md",
+        "bytes":  1958,
+        "sha256":  "f5440896fbcc5ef1c55970e0eb449d7d86131d6a038176fbe4ca74f5fcd92a54"
+    },
+    {
+        "file":  "ClientMods/Si_SquadHUD/Install-SquadHUD.ps1",
+        "bytes":  4946,
+        "sha256":  "318134d7cc265d7e7359d6b9a86e5d4b71b7e7e00735b49227d230216fd6f6be"
+    },
+    {
+        "file":  "ClientMods/Si_SquadHUD/NETWORKING.md",
+        "bytes":  9426,
+        "sha256":  "74934e504698dfbbd503eacefa5b44949d3949128ff8ec3ae0b4d5dcfdadb134"
+    },
+    {
+        "file":  "ClientMods/Si_SquadHUD/Prepare-Release.ps1",
+        "bytes":  2958,
+        "sha256":  "f8ddd59013946073f476873f8ca6340b2ef141f9b17caa200ccca86df8c7b5a4"
+    },
+    {
+        "file":  "ClientMods/Si_SquadHUD/README.md",
+        "bytes":  5873,
+        "sha256":  "eef4a83f70b7db5b4f9c1f8c540e7860ba09a33daaaa85fa54f956b2dc2d619f"
+    },
+    {
+        "file":  "ClientMods/Si_SquadHUD/Releases/0.3.0/client/Si_SquadHUD.dll",
+        "bytes":  49152,
+        "sha256":  "544e0c842d7b78b605ab8f06b0caa6c4de85c4db6682ab991e18e7097c0c2b44"
+    },
+    {
+        "file":  "ClientMods/Si_SquadHUD/Releases/0.3.0/manifest.json",
+        "bytes":  4502,
+        "sha256":  "84cd0b73de61bc0e19357d365b4c7eaf818bb1b749d7e8fc5ea829063b4504e7"
+    },
+    {
+        "file":  "ClientMods/Si_SquadHUD/Releases/0.3.0/NOTES.md",
+        "bytes":  1097,
+        "sha256":  "80309a4d2c03634c62bd28a5e14a1073c7e6f32c507bf5e068e2916263306335"
+    },
+    {
+        "file":  "ClientMods/Si_SquadHUD/Releases/0.3.0/server/Si_Formation.dll",
+        "bytes":  637952,
+        "sha256":  "b001ac5f18968029e2e5203228659a41e78121746f12a6ed2c83e2ee8f56d333"
+    },
+    {
+        "file":  "ClientMods/Si_SquadHUD/Releases/0.3.0/server/Si_Ranks.dll",
+        "bytes":  78336,
+        "sha256":  "7dfb81694ec2f1149d4eea8c3ad24711bb62ef4e469f22199b4a423a37e656b9"
+    },
+    {
+        "file":  "ClientMods/Si_SquadHUD/Releases/0.3.0/server/Si_SquadHUD_Server.dll",
+        "bytes":  47104,
+        "sha256":  "3574d75c4bab79be9d8357cbe7cd2f142925d7a28ece8f8946a9de8feb87a888"
+    },
+    {
+        "file":  "ClientMods/Si_SquadHUD/Rollback-SquadHUD.ps1",
+        "bytes":  1894,
+        "sha256":  "f48901e70443785946fc55a8668b8edd43d5edd23ce0a32c89701034928bcc72"
+    },
+    {
+        "file":  "ClientMods/Si_SquadHUD/Server/HudProviders.cs",
+        "bytes":  7777,
+        "sha256":  "ba3c5a0efad425f4ad31667891f807ccf07a7f63beba322da2c62f4180b1379c"
+    },
+    {
+        "file":  "ClientMods/Si_SquadHUD/Server/MenuCatalog.cs",
+        "bytes":  16175,
+        "sha256":  "9693a98da52b7e80b5915eaa6f9f1f7fbe41f37d7f1bbff6cffbd06ccc334c32"
+    },
+    {
+        "file":  "ClientMods/Si_SquadHUD/Server/PanelBackend.cs",
+        "bytes":  2179,
+        "sha256":  "df353000356ddfbc7e0e9ad45d3ea58db8ba2cb738d089e35cb06c4544b09b13"
+    },
+    {
+        "file":  "ClientMods/Si_SquadHUD/Server/ServerHud.cs",
+        "bytes":  9368,
+        "sha256":  "32c17bb536e95573b78dec1f5d6a3af325521d9bebe134e51992e89031f51599"
+    },
+    {
+        "file":  "ClientMods/Si_SquadHUD/Server/Si_SquadHUD_Server.csproj",
+        "bytes":  937,
+        "sha256":  "21d3ee2f89a3138be41112e925cc74b5c66247ff89fd8065ff241ce4e6fc5fa8"
+    },
+    {
+        "file":  "ClientMods/Si_SquadHUD/Shared/FormationProtocol.cs",
+        "bytes":  6403,
+        "sha256":  "9087dda27c3fe1f5622d26bdcb3e080eda0270f97d8722991c170196e7469e9b"
+    },
+    {
+        "file":  "ClientMods/Si_SquadHUD/Shared/HudProtocol.cs",
+        "bytes":  7340,
+        "sha256":  "ec68b8d7655a06d52e7fcd0f93c57c01e7088ea4ba34e80592191d5800b41030"
+    },
+    {
+        "file":  "ClientMods/Si_SquadHUD/TESTING.md",
+        "bytes":  3788,
+        "sha256":  "f793d17b52724425f211c5ea6d2dab84f95144f914d6a0104f7aeaba2c679426"
+    },
+    {
+        "file":  "Silica-1283/si_formation/AGENTS.md",
+        "bytes":  1987,
+        "sha256":  "367dc4585da6e7a51c7cbf84ca3e0ecfa29067d081639c2442bcafb1ac94374c"
+    },
+    {
+        "file":  "Silica-1283/si_formation/CentreCoordination.cs",
+        "bytes":  1565,
+        "sha256":  "7d967c82dff3b4815bed6f9450772d7fe1d5f42a6181e909872c20cdcbcb81cc"
+    },
+    {
+        "file":  "Silica-1283/si_formation/ClientPanelApi.cs",
+        "bytes":  4174,
+        "sha256":  "3a6701683630515bf4917ab6e7e4215ddb863566a9ac1ec7321f3be918f18ad3"
+    },
+    {
+        "file":  "Silica-1283/si_formation/CommanderHandover.cs",
+        "bytes":  2903,
+        "sha256":  "18f604f5b43f6b1e17e667110360ba9d4f0d63d30a2c07f24f5d8721b9f3b51d"
+    },
+    {
+        "file":  "Silica-1283/si_formation/CommanderLocks.cs",
+        "bytes":  13466,
+        "sha256":  "808386afed27fc16ca7495abac5637a4303ae0fdce1c5627f42c73a19362635d"
+    },
+    {
+        "file":  "Silica-1283/si_formation/CommanderOptions.cs",
+        "bytes":  7880,
+        "sha256":  "dfcb35751e45e517fddd1cb5b31ffe1e363bb78b99758033c7a6efdf88872a53"
+    },
+    {
+        "file":  "Silica-1283/si_formation/CommanderScouting.cs",
+        "bytes":  6658,
+        "sha256":  "821ca5b93afc8026e981790252f9bf9785c01cd7f80194c7d2ff9ad6957a8424"
+    },
+    {
+        "file":  "Silica-1283/si_formation/CoordinationPolicy.cs",
+        "bytes":  2628,
+        "sha256":  "017ee11d3e49b1b335588768c6315f0e07bb7be057a30bc9c0565a94d9dfcc94"
+    },
+    {
+        "file":  "Silica-1283/si_formation/CurvedFollow.cs",
+        "bytes":  8902,
+        "sha256":  "6bbef148782d947fee4c5ae2af554b7333ae0ed277a290797ac2c9851a20d10b"
+    },
+    {
+        "file":  "Silica-1283/si_formation/DepartureSettings.cs",
+        "bytes":  5419,
+        "sha256":  "63c6c3990f5d8089f798fe3c90e0eebad05c1fe44b2c8d1575dfa1f225a314fa"
+    },
+    {
+        "file":  "Silica-1283/si_formation/DepartureSpeed.cs",
+        "bytes":  4751,
+        "sha256":  "ed623a5e9b7df17bd75643751ffbb3c518adf42f5430ccb2c0e48ba72506a186"
+    },
+    {
+        "file":  "Silica-1283/si_formation/EditorMetadata.cs",
+        "bytes":  3400,
+        "sha256":  "19839fe74d1e84e4517149dc0692b444252462d1dc6cda109b28d463c918d5d9"
+    },
+    {
+        "file":  "Silica-1283/si_formation/FixedFollow.cs",
+        "bytes":  14920,
+        "sha256":  "b412f58cc6df523d773bab70647fcfd16b6fd554712726db8d8cb006867d0f34"
+    },
+    {
+        "file":  "Silica-1283/si_formation/FollowFormation.cs",
+        "bytes":  22342,
+        "sha256":  "feb23076dc28ba7a0446ebd5ffa83403b5b6f0dc22cb1b482421b3ddae3a9288"
+    },
+    {
+        "file":  "Silica-1283/si_formation/FormationData.cs",
+        "bytes":  19451,
+        "sha256":  "952ca0b3ae3685e3a373dda4aee19683859758c9b31c24ace299cbb399f46b4a"
+    },
+    {
+        "file":  "Silica-1283/si_formation/FormationHeading.cs",
+        "bytes":  1528,
+        "sha256":  "4d539ade6a8e45f47083704d0cc1cb3285f9f6047d47595ca8ecc8f87a518d16"
+    },
+    {
+        "file":  "Silica-1283/si_formation/FormationHelp.cs",
+        "bytes":  3545,
+        "sha256":  "ce000b882d682b725194a40f2edca2a0b09b4db2a4bbd0c52a0f4359332e33b7"
+    },
+    {
+        "file":  "Silica-1283/si_formation/FormationMenu.cs",
+        "bytes":  11845,
+        "sha256":  "654afdc44c6287455360ee1563c031f393d184608eb5231e8012db53100143e3"
+    },
+    {
+        "file":  "Silica-1283/si_formation/FormationOrders.cs",
+        "bytes":  15217,
+        "sha256":  "617786577905038396008196c57f9880cf79fb647ed635b20200ee721413063a"
+    },
+    {
+        "file":  "Silica-1283/si_formation/FormationSettings.cs",
+        "bytes":  18708,
+        "sha256":  "c123c9f54d6cd6a1ce0b28f4b9376906f6ad733742723206b7082b26cb446627"
+    },
+    {
+        "file":  "Silica-1283/si_formation/FpsCoordination.cs",
+        "bytes":  6533,
+        "sha256":  "8cface70e48fc168e8ce6398d31d3b57f98ca1bc60f9424978856b77a66355f6"
+    },
+    {
+        "file":  "Silica-1283/si_formation/FpsMoveTask.cs",
+        "bytes":  3735,
+        "sha256":  "e294edc7f6103a1514fc1d7ce6975d9105c7400d5a08480b7ddd9a5de9c3d5a7"
+    },
+    {
+        "file":  "Silica-1283/si_formation/InitialFormationMove.cs",
+        "bytes":  2794,
+        "sha256":  "9341ed87210ecb96f02c15a4bf8788bb3a0c73262303836402be04cc1275a760"
+    },
+    {
+        "file":  "Silica-1283/si_formation/MenuIsolation.cs",
+        "bytes":  3021,
+        "sha256":  "0158372277f64477bdc73f6826c0042c28d2d94ed0877c460212b2b4127dfa48"
+    },
+    {
+        "file":  "Silica-1283/si_formation/PlacementCache.cs",
+        "bytes":  3262,
+        "sha256":  "42ea6b0bcf245712c926bc44e6c51d1809feda32228bf7ec72ed3cdedfde4757"
+    },
+    {
+        "file":  "Silica-1283/si_formation/PlacementRetries.cs",
+        "bytes":  8305,
+        "sha256":  "3f732980ed76e4bcd539523ce94b4b2adfaa5c3bf94f4d459d6e17c7d9f2205e"
+    },
+    {
+        "file":  "Silica-1283/si_formation/PlayerPolicies.cs",
+        "bytes":  7282,
+        "sha256":  "a467c4c551921c36ce8337f2c640891fc7ec49daed3dc40499b2b0fb3a36e347"
+    },
+    {
+        "file":  "Silica-1283/si_formation/PreferenceLayout.cs",
+        "bytes":  5455,
+        "sha256":  "850a8056802b07ee7b988eb22ce5ff37359f27ad112af5d673fa99576fa9c603"
+    },
+    {
+        "file":  "Silica-1283/si_formation/PriorityPlacement.cs",
+        "bytes":  7046,
+        "sha256":  "731b2f8d226a3eea1b84e5d4980a1cf7b881c328e96fefa078333c3631d370bf"
+    },
+    {
+        "file":  "Silica-1283/si_formation/RallyFix.cs",
+        "bytes":  26701,
+        "sha256":  "21e5e79f4ae1bed62a17ade8d454e1c39653118877febcfb07cda6883ef4b3d1"
+    },
+    {
+        "file":  "Silica-1283/si_formation/README.md",
+        "bytes":  55812,
+        "sha256":  "e5a85a1c36e3dd62b27a4c12f8abf3ca3393b644badb7dcd0e90561c3cb4116d"
+    },
+    {
+        "file":  "Silica-1283/si_formation/RouteHistory.cs",
+        "bytes":  4399,
+        "sha256":  "66a32619617da026dc2959f51855e29b0dddb12e3cc8f3b1c87a08656a76f605"
+    },
+    {
+        "file":  "Silica-1283/si_formation/Si_Formation.csproj",
+        "bytes":  2616,
+        "sha256":  "841879891215cdd0652c41d6851baab8bcea0fa1a7c50bcc53c25b3f8fd18ebf"
+    },
+    {
+        "file":  "Silica-1283/si_formation/SoftLocks.cs",
+        "bytes":  8916,
+        "sha256":  "2c0bf24a184fd7f093bdf6fce656473b34ec177f846893650ce8def9f5310a7a"
+    },
+    {
+        "file":  "Silica-1283/si_formation/TerrainProjection.cs",
+        "bytes":  1355,
+        "sha256":  "dfc0bf8d493ae766fc20224b73b315e2999bea57fd400a514b08887b04783f2d"
+    },
+    {
+        "file":  "Silica-1283/si_ranks/Adapters.cs",
+        "bytes":  4922,
+        "sha256":  "aec37e68fe0759cfed6cff682cb360f6199fdc7963eae372d0948f26b557cf41"
+    },
+    {
+        "file":  "Silica-1283/si_ranks/HarvesterRestrictions.cs",
+        "bytes":  3038,
+        "sha256":  "efb2b88897310b47ff159a2be7a48706fb5698c7dc63509f966176bbfccffc0b"
+    },
+    {
+        "file":  "Silica-1283/si_ranks/INTEGRATION_REQUESTS.md",
+        "bytes":  5060,
+        "sha256":  "d803b3320b93714ae3faa2a4e5cbee50ab6871a6bf3dd71a4229e019b36a5e91"
+    },
+    {
+        "file":  "Silica-1283/si_ranks/RankEngine.cs",
+        "bytes":  28960,
+        "sha256":  "5fdcf86dae18ded7e41863551687cc859119b797f6799be328463638f1380762"
+    },
+    {
+        "file":  "Silica-1283/si_ranks/RankLog.cs",
+        "bytes":  486,
+        "sha256":  "9fdabbcda9beaabd0f27b3a495bdc72d82020197e0bff094c91ef2fafbd6a748"
+    },
+    {
+        "file":  "Silica-1283/si_ranks/RankMod.cs",
+        "bytes":  20288,
+        "sha256":  "cf433bd28158aec5c7631225c1c994a38205975ba9e5761e7e54ecdf6923e445"
+    },
+    {
+        "file":  "Silica-1283/si_ranks/RankSounds.cs",
+        "bytes":  7681,
+        "sha256":  "98b152aed1f3d7f1e369d49f207416e91edb4c50a17908378562d2ad7171b14a"
+    },
+    {
+        "file":  "Silica-1283/si_ranks/README.md",
+        "bytes":  26156,
+        "sha256":  "1d1f087463f0ea1e44b0be6e710730618d2c172f828b8ffde31a3f4a226583cf"
+    },
+    {
+        "file":  "Silica-1283/si_ranks/RewardPatches.cs",
+        "bytes":  22820,
+        "sha256":  "e2357507d542bbda62d944cd43a7f5e3877141609bcba5f50d24a6582fd1047d"
+    },
+    {
+        "file":  "Silica-1283/si_ranks/Si_Ranks.csproj",
+        "bytes":  1170,
+        "sha256":  "19c61cf0b0f25a1d79749947efea154a815b1d8e0239c121af6e8f49bf82647a"
+    },
+    {
+        "file":  "Silica-1283/si_ranks/VALIDATION.md",
+        "bytes":  13819,
+        "sha256":  "bad7742c1e6e471266223ac2bc4d78be3349dfd2af1f0a3e8c644711e2bf3e4a"
+    }
+]

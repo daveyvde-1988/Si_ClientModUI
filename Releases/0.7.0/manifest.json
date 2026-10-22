@@ -1,0 +1,152 @@
+﻿{
+    "schema":  1,
+    "preparedUtc":  "2026-10-19T22:36:13.2160580Z",
+    "hudVersion":  "0.7.0",
+    "clientVersion":  "0.7.0",
+    "ranksVersion":  "1.4.3",
+    "formationVersion":  "2.15.1",
+    "serverCoreSha256":  "33969f93ebbe60c4182e18c590974bce046bd0f440b7003d888f2e7640b1bcf5",
+    "clientGameAssemblySha256":  "358b2a17997d1406b45d52c0f341034fb6fe614aba0eb390cb3b7ec310ed0601",
+    "clientMetadataSha256":  "7ba17d1dafaf8f0bb02651c3ccd618219b458fde4f4d22e859c0ee595ebe32b4",
+    "clientInteropSha256":  "235bee283a231aacb2a000744999e4249b8bbf15019b0d3f2c9c9ea6cf692a62",
+    "kohSha256":  "5377b71a034e065df76d5a3f595de733daf24d9a875def9d0c092bccaaabf8bc",
+    "adminModSha256":  "51f113348fa0fa30c200451ea4bdeddfd0d7f65e40d15f13a9d007297c041432",
+    "providers":  [
+                      {
+                          "sha256":  "14e9ae2e4df4536a80ca1c6ae01954d6c7f1a9c5b4f92eb1bfd40766d641b896",
+                          "file":  "Mods\\Si_Formation.dll"
+                      },
+                      {
+                          "sha256":  "7dfb81694ec2f1149d4eea8c3ad24711bb62ef4e469f22199b4a423a37e656b9",
+                          "file":  "Mods\\Si_Ranks.dll"
+                      },
+                      {
+                          "sha256":  "9ba61fe9acf1e9a34c6773bc9de9c4d0b7e23ce44c1e99e48d34f27741efe20e",
+                          "file":  "Mods\\Si_Logistics.dll"
+                      },
+                      {
+                          "sha256":  "803bfab9601df2c9c648af7c3d2fee675914ffe0966a7e862d8ca2b63e5bb62f",
+                          "file":  "Mods\\Si_CrabCannon.dll"
+                      },
+                      {
+                          "sha256":  "2e94428ce783db6ffe618265f3cca32784830ad6faed742e7dacf3e67640f6d3",
+                          "file":  "Mods\\Si_HeavyTeleporter.dll"
+                      },
+                      {
+                          "sha256":  "23e5f58f3337e081b784d4d940f46ec81451c630c900cc3610fac11f68609c66",
+                          "file":  "Mods\\Si_UnitBalance.dll"
+                      },
+                      {
+                          "sha256":  "048c449449f89955e4e2af6e21d75fe6ee466cfdfce523954affad48113412c2",
+                          "file":  "Mods\\Si_StarterUnits.dll"
+                      }
+                  ],
+    "files":  [
+                  {
+                      "file":  "client\\Si_SquadHUD.dll",
+                      "bytes":  108544,
+                      "sha256":  "73543d3c1540048f3d05005cb4f5b9bd4c371c45a2a5d90cc34a33239ed53730"
+                  },
+                  {
+                      "file":  "server\\Si_SquadHUD_Server.dll",
+                      "bytes":  119808,
+                      "sha256":  "223e902bc25c1d179e6061d9b5006523ab4d0da8851dde95670825ecd5aa12de"
+                  },
+                  {
+                      "file":  "server\\Si_Formation.dll",
+                      "bytes":  638976,
+                      "sha256":  "14e9ae2e4df4536a80ca1c6ae01954d6c7f1a9c5b4f92eb1bfd40766d641b896"
+                  }
+              ],
+    "sources":  [
+                    {
+                        "file":  "Client\\AdminMenuPanel.cs",
+                        "sha256":  "86bff5a4300210c3e8e7436cdb7fef8cb9ee6b92d4ef3fe5c2b9078d01f15524"
+                    },
+                    {
+                        "file":  "Client\\CommanderSidebar.cs",
+                        "sha256":  "3c47718bed109fb92a99d22aa33385e1dd6a5e30e270cb6b5f77a6864ea5da15"
+                    },
+                    {
+                        "file":  "Client\\FactionAppearance.cs",
+                        "sha256":  "f69ee7741f8aed7e9496035605ec02bfc57105ab6f7f9537ec9bbe5aca389069"
+                    },
+                    {
+                        "file":  "Client\\FormationPanel.cs",
+                        "sha256":  "f42c9ace216fb4fcee8aeaa7f9e97322c13c74b5b499fe7cabef0209667cf85b"
+                    },
+                    {
+                        "file":  "Client\\Si_SquadHUD.csproj",
+                        "sha256":  "a6495ad389c63b8fca7892999d8439717e29951edc22ed57c5297dd9205e8eb6"
+                    },
+                    {
+                        "file":  "Client\\SquadHud.cs",
+                        "sha256":  "79077a68cb20ba03afce23c9dcc34826ad95deec05e86ed5281bca6e373d3cb1"
+                    },
+                    {
+                        "file":  "Client\\UnitBalancePanel.cs",
+                        "sha256":  "cfdc012d6e5d5008e2de69beb79f3273bd5eda346edba312e814472e1e9a7918"
+                    },
+                    {
+                        "file":  "Client\\WindowPlacement.cs",
+                        "sha256":  "6eb598606b61a25ba9f6b331981b43577dac46810236abaf5864c10e0aeb17ed"
+                    },
+                    {
+                        "file":  "Server\\AdminControls.cs",
+                        "sha256":  "043eb3b3dccb506a4b99687da295ee58a365ab9fc646e182af936e69dba7a8f0"
+                    },
+                    {
+                        "file":  "Server\\HudProviders.cs",
+                        "sha256":  "ba3c5a0efad425f4ad31667891f807ccf07a7f63beba322da2c62f4180b1379c"
+                    },
+                    {
+                        "file":  "Server\\MenuCatalog.cs",
+                        "sha256":  "dbe57dc1539118e000f925ecbcf5f0e0052a4765b4f3b4263f1739b0ff339ca0"
+                    },
+                    {
+                        "file":  "Server\\NativeAdminMenus.cs",
+                        "sha256":  "545ae5365f8925b985ba053da47021792b11585e1e7bef189b51ee76f0a297ce"
+                    },
+                    {
+                        "file":  "Server\\PanelBackend.cs",
+                        "sha256":  "b7319104b8cf951b2af2d5d82f4e321cf48cf8fa1924880569a21d0c0138106b"
+                    },
+                    {
+                        "file":  "Server\\ServerHud.cs",
+                        "sha256":  "c7106b7ee9de3fe13674d12e61a0679caea72c0a86fa3b01a35a7855f7fd51e7"
+                    },
+                    {
+                        "file":  "Server\\Si_SquadHUD_Server.csproj",
+                        "sha256":  "f2444868df4597d5d31ad64079fda469eebd6b18f5885fd8bac82cc838b599e8"
+                    },
+                    {
+                        "file":  "Server\\StarterUnitsMenus.cs",
+                        "sha256":  "085009e3c79cb43543a3c2bb2dc8a00e895642741bd9d7037fc9a1f71e8b4e85"
+                    },
+                    {
+                        "file":  "Server\\UnitBalanceBackend.cs",
+                        "sha256":  "c0c4e226d8497c15961d60f1b5bc25e57e65a641c25dc9a0a5b17b80267756ab"
+                    },
+                    {
+                        "file":  "Shared\\AdminMenuModels.cs",
+                        "sha256":  "e666c717d87de84b494f4250c1d22e63e06e74accc5cc2024da2516aef03f0bb"
+                    },
+                    {
+                        "file":  "Shared\\BalanceProtocol.cs",
+                        "sha256":  "83ad1573825206e00341139d3ab4f5dc032afc2884cae2d88911b491e1226987"
+                    },
+                    {
+                        "file":  "Shared\\CatalogProtocol.cs",
+                        "sha256":  "a26865cc700555710c43fda8051267bb11ddf0b94a567575dcfd0e85fc7be7fb"
+                    },
+                    {
+                        "file":  "Shared\\FormationProtocol.cs",
+                        "sha256":  "33ce11c003c8ff634f658303dd4c75d998fb23aa9711d9d850e663c574a89d29"
+                    },
+                    {
+                        "file":  "Shared\\HudProtocol.cs",
+                        "sha256":  "ae88ce1aa44c9c72ba6f5fb8abf3f5e88a6a429f48f74819c1277ce166168970"
+                    }
+                ],
+    "validation":  "Client/companion 0.7.0 compiled with zero warnings/errors. Dark text fields; native Unit Balance menu bridge with current-node responses and verified pre-write backups; Starter Units configuration menu with next-round saves; conditional catalog replies and upload counters. Read-only balance browser retained. Gameplay DLLs/source and existing JSON/settings retained. No tests or game/server start/stop actions; live verification remains user-owned."
+}

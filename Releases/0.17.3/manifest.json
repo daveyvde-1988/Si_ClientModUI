@@ -1,0 +1,318 @@
+﻿{
+    "schema":  3,
+    "clientVersion":  "0.17.3",
+    "providerVersion":  "0.4.1",
+    "serverVersion":  "2.0.0",
+    "companionRequired":  false,
+    "preparedUtc":  "2026-10-22T16:46:42.3910128Z",
+    "files":  [
+                  {
+                      "file":  "client\\Mods\\Si_ClientModUI.dll",
+                      "sha256":  "6204cbc10c1b72e7daaf3a62ad2053c04ec49ab30a7c0a360f9dc605062484a1",
+                      "bytes":  190976
+                  },
+                  {
+                      "file":  "client\\OptionalProviders\\cheats.dll",
+                      "sha256":  "97eaf6e3f5d26d21eea27f3ed77d7191d83cb81e00f176a2497cebbc41bc9bd0",
+                      "bytes":  60928
+                  }
+              ],
+    "gameInputs":  [
+                       {
+                           "path":  "GameAssembly.dll",
+                           "sha256":  "358b2a17997d1406b45d52c0f341034fb6fe614aba0eb390cb3b7ec310ed0601"
+                       },
+                       {
+                           "path":  "Silica_Data\\il2cpp_data\\Metadata\\global-metadata.dat",
+                           "sha256":  "7ba17d1dafaf8f0bb02651c3ccd618219b458fde4f4d22e859c0ee595ebe32b4"
+                       },
+                       {
+                           "path":  "MelonLoader\\Il2CppAssemblies\\Il2CppSilicaCore.dll",
+                           "sha256":  "235bee283a231aacb2a000744999e4249b8bbf15019b0d3f2c9c9ea6cf692a62"
+                       }
+                   ],
+    "serverInputs":  [
+                         {
+                             "path":  "Silica_Data\\Managed\\SilicaCore.dll",
+                             "sha256":  "33969f93ebbe60c4182e18c590974bce046bd0f440b7003d888f2e7640b1bcf5"
+                         },
+                         {
+                             "path":  "Mods\\Si_AdminMod.dll",
+                             "sha256":  "51f113348fa0fa30c200451ea4bdeddfd0d7f65e40d15f13a9d007297c041432"
+                         },
+                         {
+                             "path":  "MelonLoader\\net35\\MelonLoader.dll",
+                             "sha256":  "92e7d4d50b8f627a23c38edb9da9426b6df6561d86f10de03dc5831d8ac76af0"
+                         }
+                     ],
+    "sources":  [
+                    {
+                        "file":  "source\\SILICA_PROJECT_HANDOFF.md",
+                        "sha256":  "ada117f283690521c112b556b2d8be52577ba7c59eee97f359dfc2d514747eab"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\cheats\\Catalog.cs",
+                        "sha256":  "375acf72a6afd55fc1477ed61bb868478a4971f3ec66ea5f7a29a11f0919cd22"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\cheats\\cheats.csproj",
+                        "sha256":  "f15611e025b0ff0abf7e6cd531068f614ed1e5bd58d886874f2db44d821cc085"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\cheats\\CheatsMod.cs",
+                        "sha256":  "f54f6ac9b57941e3b03e299402e7ec7f24f044fc368f99f897efc98a84e7b339"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\cheats\\CheatStatusRules.cs",
+                        "sha256":  "3203eff61b01382386443a5520fda76c6c6d01c5e9cd32677a68dce80a4e6e94"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\cheats\\CommandRules.cs",
+                        "sha256":  "12b7bb46a8bcfe2f8a3d37c7969ef2af522615495210a1e72d9775a51b67eea9"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\cheats\\Install-Cheats.ps1",
+                        "sha256":  "bf7d044d1a9d47b3ab8f760d1fe4c4ecb220fbeee53a0504c6acaa77a53c9264"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\cheats\\INSTALLATION_STATUS.md",
+                        "sha256":  "487d03a1269764e2cbd40ec7710e5396edcc0e1c3d96ea6521eb60b8fbd2a8ae"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\cheats\\InstantControls.cs",
+                        "sha256":  "f59e70080bdf9f381fbf0a3fe2163a6187d67b66aaa7df372e16342429732b15"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\cheats\\MODUI_INTEGRATION.md",
+                        "sha256":  "997207c3f85fb3da91cf1981768f11c2fdb915e6abc97471151f26a5085e9068"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\cheats\\Prepare-Cheats.ps1",
+                        "sha256":  "b826e398b6d3affafd9434f75c8a18af0bcb39b4a7a8b559f9ac625ff1aa273b"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\cheats\\README.md",
+                        "sha256":  "e61cc376864b416e64651c91541d38e9dc31062cbf772a9808e2604c40413248"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\cheats\\StatusReporting.cs",
+                        "sha256":  "0ac36b3b5a8154086946735a4ccf8f655644f4382251aa833a2ba793056db5b7"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\Si_ClientModUI\\Apply-ClientRenderFix.ps1",
+                        "sha256":  "a91f4e0f74ec605bf01527f80f9a5e5f1ecb7f506882f98c526851934c1da3d6"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\Si_ClientModUI\\BUNDLE_REVIEW_2026-10-21.md",
+                        "sha256":  "7c4062df3e94dfd74587243df3647f73c519c20e694273e3ca1a09efca023098"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\Si_ClientModUI\\EXTENDING.md",
+                        "sha256":  "3d108b3f4d28a87c085b70b492e9a776718ea3749a82ecef7e1ef188296414d1"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\Si_ClientModUI\\FOLLOWUP_0.16.0.md",
+                        "sha256":  "1f01d464aefdbd7a9dcc9c4a4bf12d007aec4d88f1b35ced3edee1306abb8dba"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\Si_ClientModUI\\FOLLOW_UP_0.17.1.md",
+                        "sha256":  "914a92953f05d92128d9dfe75e3429ec9a02aaaff665748829ecb762dae01c3f"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\Si_ClientModUI\\FOLLOW_UP_0.17.3.md",
+                        "sha256":  "4ef716eaf746e850ca37f4b6537350eda777a7e0cbf5afae9b81cef8eb31317a"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\Si_ClientModUI\\FRIEND_TEST_INSTALL_2026-10-21.md",
+                        "sha256":  "00f649c50632eec41974d3bf396a093df4b85d66e87583160c7e69b474c6aa02"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\Si_ClientModUI\\Install-ModUI.ps1",
+                        "sha256":  "d87562b43f50c0d5cc1d0551f69b8ba59f5207be4ee45475335b44c05062d222"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\Si_ClientModUI\\Install-SquadHUD.ps1",
+                        "sha256":  "f2ddfde38233fc7f6f606efa4822cce592596876150cb9f6e71e28cbe9e77d6c"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\Si_ClientModUI\\INSTALLATION_STATUS.md",
+                        "sha256":  "b7dd74341b9ddd94d2103727888e9611970e078809904a0b46d4f495e97bf48a"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\Si_ClientModUI\\INTEGRATION_ANALYSIS.md",
+                        "sha256":  "b70f8d493137961f0ba27a8a51d4c3e1bcd5b7a6e04e9e20ee4429bd7eb07c9c"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\Si_ClientModUI\\MENU_COMPATIBILITY.md",
+                        "sha256":  "a32af4292bf71b6d88026961bab330c02cc25a1de8aefcb2b6473d0d9eab5a56"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\Si_ClientModUI\\NETWORKING.md",
+                        "sha256":  "43d6d1fe28cdaf2225d5264b695dfe5b8bb3c6d8a5470bfaa58aedf8a9c92f53"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\Si_ClientModUI\\Prepare-FollowupRelease.ps1",
+                        "sha256":  "e3cabcff1d5feb354bb2be9c16bf6678704426a4a8efb6d64fe4251408f4a4c0"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\Si_ClientModUI\\Prepare-MenuPatch.ps1",
+                        "sha256":  "d138d28d8a20e98778c8ab60714c17d78ed417ba0391de238b66fc6ad544f08a"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\Si_ClientModUI\\Prepare-Release.ps1",
+                        "sha256":  "083c4750b52a1fa965ca3f06799037609b430a7b0a86f5143f8f1173a52ad8a2"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\Si_ClientModUI\\README-DEVELOPERS.md",
+                        "sha256":  "8aedf28a70a0f272b78375c0180193357e25f119c52c4a04d8f0c49de04e59de"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\Si_ClientModUI\\README.md",
+                        "sha256":  "a5939dff50a95e105e803bcde8da75792f636107129f40c264cf7c606fbe0710"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\Si_ClientModUI\\Rollback-ModUI.ps1",
+                        "sha256":  "345aa976f365a6e38a6c62cdab69b1466d39870b3dfb04a02e7343e00586a53c"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\Si_ClientModUI\\Rollback-SquadHUD.ps1",
+                        "sha256":  "2cc5c0ef45374af67773e2c2e7899e24d9daee739a05804d54b60310f18a909f"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\Si_ClientModUI\\STRUCTURED_INTEGRATION_0.17.0.md",
+                        "sha256":  "260aaecbd3d262d6502ef67f6ea13f64e34be3b21c1c70a30c07978bd63d92fe"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\Si_ClientModUI\\TESTING.md",
+                        "sha256":  "d57ce6e3322b0bf7f35f35a68330e715e1281a094ff7d3d95d390a140efa06f4"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\Si_ClientModUI\\Client\\ClientDebug.cs",
+                        "sha256":  "9d1b71278d0358738cdcd18d854d1f9e3862fc7c1aaffe9c3da19c8c6cfbd725"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\Si_ClientModUI\\Client\\CommandController.cs",
+                        "sha256":  "f3369a334a5c77394ae54156217ea66a651088094067b9c1037a946cbb6c4cd6"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\Si_ClientModUI\\Client\\CommandModels.cs",
+                        "sha256":  "e67f1c9986243f4b663435ac870c87f3735c8b291af7b10f8660bdf448717844"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\Si_ClientModUI\\Client\\CompanionCatalog.cs",
+                        "sha256":  "e1dd974cb4a1f96de14515e20729cce53972a98f0352e36b5fa9cba7a05b9d05"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\Si_ClientModUI\\Client\\CompanionNetwork.cs",
+                        "sha256":  "9666ca8bef6d6562bf4e78ba7f37abd43f16125eee42dc58c52621e53b832d97"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\Si_ClientModUI\\Client\\ControllerMenu.cs",
+                        "sha256":  "5084912ee4c208e00390942d5dff5ea568479f652cf0822c7a2df9fb54e36195"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\Si_ClientModUI\\Client\\ControlPresentation.cs",
+                        "sha256":  "e70007ba666bae89dc3c9c669f48748e2185c11a14e4d4e54f32dce62b293bef"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\Si_ClientModUI\\Client\\CustomCommands.cs",
+                        "sha256":  "f3499dc128c1227ff66aff89ac853a12314a8e731a07a2064ba295df6f441302"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\Si_ClientModUI\\Client\\FeedbackDivider.cs",
+                        "sha256":  "a0426c23e38ec9d2eec585500d34108e3ced29a7c064acebc7ee4cf7625f1098"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\Si_ClientModUI\\Client\\InputGuard.cs",
+                        "sha256":  "e18aa19548f1cf5119cc7f2e8d2a0be457c626e7b8e6096fc44eee9f63ae9d0f"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\Si_ClientModUI\\Client\\LayoutModels.cs",
+                        "sha256":  "4f0b52f4ccfb2cc65a130eb2bc90560d04d0e30720a790bd0b5b039e25caa333"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\Si_ClientModUI\\Client\\LocalModControls.cs",
+                        "sha256":  "e08bebfd9b6e2900f40346e6d302e9474e3fb7dfab7e6c2d934fcb1862b318c3"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\Si_ClientModUI\\Client\\MenuAppearance.cs",
+                        "sha256":  "f295bfafe52b2131f17d9304a8a0ea9e38b3b680d2facfad326b1b50c2a119b2"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\Si_ClientModUI\\Client\\MenuInput.cs",
+                        "sha256":  "7de33b4fa8cad58f6f27dde6801ad5941a224e6a80150ec113fb847f40731543"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\Si_ClientModUI\\Client\\MenuSettings.cs",
+                        "sha256":  "1023a05268f851e387ac7ae425fc9850b98cbffed43ee41165e5b83de3c60ace"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\Si_ClientModUI\\Client\\NetworkAnalytics.cs",
+                        "sha256":  "0371687de895529fba9611147f2642961f0f5aac1cc8849b2a6c63415b8cfcff"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\Si_ClientModUI\\Client\\OverlayWindows.cs",
+                        "sha256":  "5ad24edae2ee906d5cd646110f83446006c57b12358d93809cf16949f82c8773"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\Si_ClientModUI\\Client\\PortableCommands.cs",
+                        "sha256":  "f4fef7536f23463ce13da3af61857f7e22d6ece4ef41cbd3a5a43cc6631c9fe0"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\Si_ClientModUI\\Client\\RevisionCache.cs",
+                        "sha256":  "55e5437c24928bc24023554ab9ee2e42f3ca2ec6da37215f71fae1b2ad308abd"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\Si_ClientModUI\\Client\\ServerMenuParser.cs",
+                        "sha256":  "38426d805e6243f3c61b0bf75aaa4963b31f55b7d9a9d2c17c7bc73af4ee930f"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\Si_ClientModUI\\Client\\ShellRules.cs",
+                        "sha256":  "e0e1814c3f1daea310fdb915f59ad946b623d80a5179e44aae3b57104ed3f6af"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\Si_ClientModUI\\Client\\Sidebar.cs",
+                        "sha256":  "9a37dab4a7e52326523c50ecfad78c4afa68f14810fe682424b8c67524c43603"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\Si_ClientModUI\\Client\\SidebarSymbols.cs",
+                        "sha256":  "18b19cf29d451a091db6e126b2834daff46179fb2bf27d185534d191fd71bc61"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\Si_ClientModUI\\Client\\Si_ClientModUI.csproj",
+                        "sha256":  "ed7346e07f85065a2d1366176380ebd2c7374ff010b2237852c691d0730d1848"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\Si_ClientModUI\\Client\\SquadHud.cs",
+                        "sha256":  "cde97e47634c0f026f4868b160c30fd72f6e09bf5ba96c01986be762cac92c3d"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\Si_ClientModUI\\Client\\StructuredPanels.cs",
+                        "sha256":  "4b3f042c6382837580de64f8e1dd2489b16ea4d3be3f8e012688823c142ff532"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\Si_ClientModUI\\Client\\TrafficMeter.cs",
+                        "sha256":  "d93bc6dd641115f1fa5d01b181a49218a33427489217932bd3a89368c7fc52bf"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\Si_ClientModUI\\Client\\UiCache.cs",
+                        "sha256":  "cd5c416881c62ec7119087195217bc4b6ecc980ce454e386eed202a7ab7aeb2b"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\Si_ClientModUI\\Client\\UiPolicies.cs",
+                        "sha256":  "8c6c3f35d6af1225bf78912df3853a0affffc0b932764abc51a65ac4add16ea1"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\Si_ClientModUI\\Client\\WindowPlacement.cs",
+                        "sha256":  "4c66d565a6cb3656c841ef7df3bed4805a787323122a012a7f6739fb3c9a3c0b"
+                    },
+                    {
+                        "file":  "source\\ClientMods\\Si_ServerModUI\\Shared\\Protocol.cs",
+                        "sha256":  "52e53c922ac9b0cb2828507035809c7ff8e6bbed50f6e41f0b357eb86ddc83e9"
+                    }
+                ],
+    "runtimeVerified":  false,
+    "installed":  false,
+    "validation":  "Both affected Release builds: zero warnings/errors. No tests added/run. No game/server launches/stops.",
+    "checkpoint":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Backups\\ModUI-menu-followups-20261022T164103646Z"
+}

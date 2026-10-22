@@ -1,0 +1,30 @@
+﻿{
+    "checkedUtc":  "2026-10-20T15:47:27.2175468Z",
+    "verifiedFiles":  56,
+    "sourcesMatch":  true,
+    "networkChecks":  185,
+    "commandUiChecks":  189,
+    "installerChecks":  17,
+    "totalChecks":  391,
+    "buildWarnings":  0,
+    "buildErrors":  0,
+    "runtimeVerified":  false,
+    "deployed":  false,
+    "packages":  [
+                     {
+                         "entries":  3,
+                         "sha256":  "d554654bde4416030032738b0f31044ae6070ec6926d80eec671a14769d4efcb",
+                         "file":  "Si_ClientModUI-0.15.0-client.zip"
+                     },
+                     {
+                         "entries":  53,
+                         "sha256":  "13fe2a14b2ed3834f1b7e6de2f5c0d290f4200b6610d73579cbdf9a2160c5523",
+                         "file":  "Si_ModUI-0.15.0-source.zip"
+                     },
+                     {
+                         "entries":  2,
+                         "sha256":  "97cdd70f0a4e4bd81238a1ef6dd94bc8cc3556b84ba90b3213927183eb098701",
+                         "file":  "Si_ServerModUI-1.1.0-server.zip"
+                     }
+                 ]
+}

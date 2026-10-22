@@ -1,0 +1,192 @@
+[
+    {
+        "file":  "Si_AdminMod.dll",
+        "sha256":  "51F113348FA0FA30C200451EA4BDEDDFD0D7F65E40D15F13A9D007297C041432",
+        "exit":  0
+    },
+    {
+        "file":  "Si_AFKManager.dll",
+        "sha256":  "E369EA1BA6BA6C66D1006B68132CBDCDF0AB1A48819DCB73F5984319C3CFA830",
+        "exit":  0
+    },
+    {
+        "file":  "Si_Announcements.dll",
+        "sha256":  "CE6B84FF5E7B7139D723A9E2AB4B8A575FE637D9B69BB8E4B6E85F8585728285",
+        "exit":  0
+    },
+    {
+        "file":  "Si_AntiGrief.dll",
+        "sha256":  "9532D91B4093D502B2A2FFE9E0F74A68D12635D4EE9F8B1C52A97CA964261864",
+        "exit":  0
+    },
+    {
+        "file":  "Si_BasicBanlist.dll",
+        "sha256":  "5828A8A28BE735BFE40C8269E5D80FD3DD9373B46B1F409DA5412CDB4A8E15D7",
+        "exit":  0
+    },
+    {
+        "file":  "Si_BasicTeamBalance.dll",
+        "sha256":  "B3D5427A2C4960BC3A8B8523BB1A4DEDF3C9F2421A77B4461954B44E1A37DD11",
+        "exit":  0
+    },
+    {
+        "file":  "Si_BuildLimits.dll",
+        "sha256":  "8CEAB9A0AFF97AB65D631BA56C9010916514B17594D2B925919BE67F8CB189FA",
+        "exit":  0
+    },
+    {
+        "file":  "Si_ChatSilence.dll",
+        "sha256":  "3A950B823FE45EEAC6C632D4DBB9CBE099BEFBBD9866D79B62CE3482997D4800",
+        "exit":  0
+    },
+    {
+        "file":  "Si_ChipmunkVoices.dll",
+        "sha256":  "CBD35184675232A9B09F979DB46649271D13C4E3955CACF6AAB5E1B1E4B9C7DF",
+        "exit":  0
+    },
+    {
+        "file":  "Si_CommManagement.dll",
+        "sha256":  "F4235CA5B9FA7DB8DA0A2F78250CE8899A86FC33A2CFE8A2449C60D05EFBB266",
+        "exit":  0
+    },
+    {
+        "file":  "Si_CrabCannon.dll",
+        "sha256":  "803BFAB9601DF2C9C648AF7C3D2FEE675914FFE0966A7E862D8CA2B63E5BB62F",
+        "exit":  0
+    },
+    {
+        "file":  "Si_EarlyEncounters.dll",
+        "sha256":  "372156294FA6D24D61BDB594739FB50BEB0DC74219F24048C73C217F75BC1184",
+        "exit":  0
+    },
+    {
+        "file":  "Si_Eject.dll",
+        "sha256":  "805B19BC0CD043E2E5049488DC89582F5B484FEEC0A7C99D38FAF9E241C1F02B",
+        "exit":  0
+    },
+    {
+        "file":  "Si_EndRound.dll",
+        "sha256":  "C6831512B8BFD31B6F1BA229E79BDC7671BE2887172FA7E29A0B580E1D1346FB",
+        "exit":  0
+    },
+    {
+        "file":  "Si_Formation.dll",
+        "sha256":  "14E9AE2E4DF4536A80CA1C6AE01954D6C7F1A9C5B4F92EB1BFD40766D641B896",
+        "exit":  0
+    },
+    {
+        "file":  "Si_FriendlyFireLimits.dll",
+        "sha256":  "1712FA7E5D1B7EFD7FC9FA286DD8EB0B1A322648F09E9CB2C07490AA46BE1333",
+        "exit":  0
+    },
+    {
+        "file":  "Si_HeavyTeleporter.dll",
+        "sha256":  "2E94428CE783DB6FFE618265F3CCA32784830AD6FAED742E7DACF3E67640F6D3",
+        "exit":  0
+    },
+    {
+        "file":  "Si_HQlessHumansLose.dll",
+        "sha256":  "0F6762111289C004A84913C7546F139DC1BB4473E21D6349866FBDD3929A6917",
+        "exit":  0
+    },
+    {
+        "file":  "Si_KingOfTheHill.dll",
+        "sha256":  "5377B71A034E065DF76D5A3F595DE733DAF24D9A875DEF9D0C092BCCAAABF8BC",
+        "exit":  0
+    },
+    {
+        "file":  "Si_Logging.dll",
+        "sha256":  "156F94886F2EA01265B76FF2D61E4CE8486FEBB414043C7BFCFE38142B293107",
+        "exit":  0
+    },
+    {
+        "file":  "Si_Logistics.dll",
+        "sha256":  "9BA61FE9ACF1E9A34C6773BC9DE9C4D0B7E23CE44C1E99E48D34F27741EFE20E",
+        "exit":  0
+    },
+    {
+        "file":  "Si_MapBalance.dll",
+        "sha256":  "BEE9A77CCD71E6A6D5C49E9CCD4CAFD6564647497197152614CB21C88774A63C",
+        "exit":  0
+    },
+    {
+        "file":  "Si_Mapcycle.dll",
+        "sha256":  "E0BD3F635AD43790AFD622CAE87355D284B9F9C45E648E562141004E725B73BB",
+        "exit":  0
+    },
+    {
+        "file":  "Si_MatchSettings.dll",
+        "sha256":  "E2DD523EAC6A9E3038F8FAD0B894EC7D0F5A970F705BC33EF6A1235D113D8166",
+        "exit":  0
+    },
+    {
+        "file":  "Si_ModPerfMonitor.dll",
+        "sha256":  "34504BA843F4BAAC08219708187EC38B17698B8F5CBE37DD4445E0C2E2F69093",
+        "exit":  0
+    },
+    {
+        "file":  "Si_PacketChunker.dll",
+        "sha256":  "C3CF804ED5214C928DF57F3797D37A5833D7CC30DAB0BDCF841530F817866BB1",
+        "exit":  0
+    },
+    {
+        "file":  "Si_Ranks.dll",
+        "sha256":  "7DFB81694EC2F1149D4EEA8C3AD24711BB62EF4E469F22199B4A423A37E656B9",
+        "exit":  0
+    },
+    {
+        "file":  "Si_RepairFacility.dll",
+        "sha256":  "5B7A656360396F9BE2A3176A7BC5DDEE3A4E2874A1FC81EF380E563C8675C652",
+        "exit":  0
+    },
+    {
+        "file":  "Si_ReplayLogging.dll",
+        "sha256":  "BCDB3B7DFE29641BADAF71783CECBEBDD2035417BC1C5BF68EE6DF44318A4F80",
+        "exit":  0
+    },
+    {
+        "file":  "Si_Resources.dll",
+        "sha256":  "CC23ADC67DBEAF5483D4E973F589EE7C77D933C362886E74BD2A06D56B870544",
+        "exit":  0
+    },
+    {
+        "file":  "Si_ServerOptimizer.dll",
+        "sha256":  "FFF76A6A5590C4A6C38A24D3C570A1FCBD0121074C2408C2C42318C0A2AC8CB0",
+        "exit":  0
+    },
+    {
+        "file":  "Si_SpawnConfigs.dll",
+        "sha256":  "4F5FD7D3A233A17860FB6354CAF389CE6231B1BC5D909AA4BDEDD39D5A49FFDA",
+        "exit":  0
+    },
+    {
+        "file":  "Si_StarterUnits.dll",
+        "sha256":  "048C449449F89955E4E2AF6E21D75FE6EE466CFDFCE523954AFFAD48113412C2",
+        "exit":  0
+    },
+    {
+        "file":  "Si_SurrenderCommand.dll",
+        "sha256":  "EBA60464DFEB0B0A6DC79AAFACC31B49B19B9A12F023FC9256CF888855EC01CE",
+        "exit":  0
+    },
+    {
+        "file":  "Si_TechGlitch.dll",
+        "sha256":  "0919BB95F4C73F3176D77FD2947EDC12510A02161DC823567A9F362BB6CF09D9",
+        "exit":  0
+    },
+    {
+        "file":  "Si_TimeOfDay.dll",
+        "sha256":  "E49CE11A97A956F70BD8BA0E9895AB82D023644002A6AE85488B4F356258F97A",
+        "exit":  0
+    },
+    {
+        "file":  "Si_UnitBalance.dll",
+        "sha256":  "23E5F58F3337E081B784D4D940F46EC81451C630C900CC3610FAC11F68609C66",
+        "exit":  0
+    },
+    {
+        "file":  "Si_WormBounty.dll",
+        "sha256":  "F7A0A7CB37B828D1DFA6FF9FAF55669045A51903852FEA1040F213597B003278",
+        "exit":  0
+    }
+]

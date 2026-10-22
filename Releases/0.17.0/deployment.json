@@ -1,0 +1,16 @@
+﻿{
+    "installedUtc":  "2026-10-21T14:57:56.6052575Z",
+    "receipt":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\ClientMods\\Si_ClientModUI\\installation\\20261021T145722965Z\\installation.json",
+    "configSnapshot":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Backups\\ModUI-0.17.0-install-20261021T165701086\\pre-install.json",
+    "filesVerified":  5,
+    "configsPreserved":  602,
+    "unrelatedModsPreserved":  true,
+    "runtimeVerified":  false,
+    "versions":  {
+                     "formation":  "2.15.2",
+                     "server":  "2.0.0",
+                     "cheats":  "0.3.2",
+                     "logistics":  "0.9.1",
+                     "client":  "0.17.0"
+                 }
+}

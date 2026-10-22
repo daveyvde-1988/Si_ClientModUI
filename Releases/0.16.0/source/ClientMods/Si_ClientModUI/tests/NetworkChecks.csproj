@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net8.0</TargetFramework><ImplicitUsings>enable</ImplicitUsings><NuGetAudit>false</NuGetAudit></PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../Si_ServerModUI/Shared/Protocol.cs" Link="Protocol.cs"/>
+    <Compile Include="../Client/CompanionCatalog.cs" Link="CompanionCatalog.cs"/>
+    <Compile Include="../Client/CompanionNetwork.cs" Link="CompanionNetwork.cs"/>
+    <Compile Include="../Client/ServerMenuParser.cs" Link="ServerMenuParser.cs"/>
+    <Compile Include="../Client/UiPolicies.cs" Link="UiPolicies.cs"/>
+    <Compile Include="../Client/TrafficMeter.cs" Link="TrafficMeter.cs"/>
+    <Compile Include="../Client/RevisionCache.cs" Link="RevisionCache.cs"/>
+    <Compile Include="../Client/CommandModels.cs" Link="CommandModels.cs"/>
+    <Compile Include="../Client/LayoutModels.cs" Link="LayoutModels.cs"/>
+    <Compile Include="../Client/CustomCommands.cs" Link="CustomCommands.cs"/>
+    <Compile Include="../Client/PortableCommands.cs" Link="PortableCommands.cs"/>
+  </ItemGroup>
+</Project>

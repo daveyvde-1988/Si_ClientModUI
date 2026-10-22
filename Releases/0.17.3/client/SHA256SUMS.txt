@@ -1,0 +1,2 @@
+6204cbc10c1b72e7daaf3a62ad2053c04ec49ab30a7c0a360f9dc605062484a1  Mods\Si_ClientModUI.dll
+97eaf6e3f5d26d21eea27f3ed77d7191d83cb81e00f176a2497cebbc41bc9bd0  OptionalProviders\cheats.dll

@@ -1,0 +1,107 @@
+﻿{
+    "schema":  1,
+    "preparedUtc":  "2026-10-19T18:07:44.8413546Z",
+    "hudVersion":  "0.4.0",
+    "clientVersion":  "0.4.0",
+    "ranksVersion":  "1.4.3",
+    "formationVersion":  "2.15.0",
+    "serverCoreSha256":  "33969f93ebbe60c4182e18c590974bce046bd0f440b7003d888f2e7640b1bcf5",
+    "clientGameAssemblySha256":  "358b2a17997d1406b45d52c0f341034fb6fe614aba0eb390cb3b7ec310ed0601",
+    "clientMetadataSha256":  "7ba17d1dafaf8f0bb02651c3ccd618219b458fde4f4d22e859c0ee595ebe32b4",
+    "clientInteropSha256":  "235bee283a231aacb2a000744999e4249b8bbf15019b0d3f2c9c9ea6cf692a62",
+    "kohSha256":  "5377b71a034e065df76d5a3f595de733daf24d9a875def9d0c092bccaaabf8bc",
+    "adminModSha256":  "51f113348fa0fa30c200451ea4bdeddfd0d7f65e40d15f13a9d007297c041432",
+    "providers":  [
+                      {
+                          "sha256":  "b001ac5f18968029e2e5203228659a41e78121746f12a6ed2c83e2ee8f56d333",
+                          "file":  "Mods\\Si_Formation.dll"
+                      },
+                      {
+                          "sha256":  "7dfb81694ec2f1149d4eea8c3ad24711bb62ef4e469f22199b4a423a37e656b9",
+                          "file":  "Mods\\Si_Ranks.dll"
+                      },
+                      {
+                          "sha256":  "9ba61fe9acf1e9a34c6773bc9de9c4d0b7e23ce44c1e99e48d34f27741efe20e",
+                          "file":  "Mods\\Si_Logistics.dll"
+                      },
+                      {
+                          "sha256":  "803bfab9601df2c9c648af7c3d2fee675914ffe0966a7e862d8ca2b63e5bb62f",
+                          "file":  "Mods\\Si_CrabCannon.dll"
+                      },
+                      {
+                          "sha256":  "2e94428ce783db6ffe618265f3cca32784830ad6faed742e7dacf3e67640f6d3",
+                          "file":  "Mods\\Si_HeavyTeleporter.dll"
+                      }
+                  ],
+    "files":  [
+                  {
+                      "file":  "client\\Si_SquadHUD.dll",
+                      "bytes":  62976,
+                      "sha256":  "c2e0122b680b5a8ef51266e7017154b68298df54790130f035476fe255c2cfa8"
+                  },
+                  {
+                      "file":  "server\\Si_SquadHUD_Server.dll",
+                      "bytes":  65024,
+                      "sha256":  "20c91d86ffe2cdc6da38f07de3606ebb77eeed28af0588bdbf3dc30c9ae5dc23"
+                  }
+              ],
+    "sources":  [
+                    {
+                        "file":  "Client\\FactionAppearance.cs",
+                        "sha256":  "788d1598da2813b4a62b81c43367af6b9c9fb5cd71a7c33bc88263ab880da605"
+                    },
+                    {
+                        "file":  "Client\\FormationPanel.cs",
+                        "sha256":  "cc9b72c1cebc6945a352b2e6979af38c368290b6f0e50cea80c4755b671429ca"
+                    },
+                    {
+                        "file":  "Client\\Si_SquadHUD.csproj",
+                        "sha256":  "ede77c62cd432852d1cc7639fdc0050046d2c8985f4b72259da09efd55a0e90e"
+                    },
+                    {
+                        "file":  "Client\\SquadHud.cs",
+                        "sha256":  "e93f75f28fc8ae373b7415124244fb48901e889e1dcd60e38a26a0256ae1743f"
+                    },
+                    {
+                        "file":  "Client\\WindowPlacement.cs",
+                        "sha256":  "6eb598606b61a25ba9f6b331981b43577dac46810236abaf5864c10e0aeb17ed"
+                    },
+                    {
+                        "file":  "Server\\AdminControls.cs",
+                        "sha256":  "0c31afa8fcbb219fbe547e08a26d4558b0c23b325e16d68f12f3b28a8e079e81"
+                    },
+                    {
+                        "file":  "Server\\HudProviders.cs",
+                        "sha256":  "ba3c5a0efad425f4ad31667891f807ccf07a7f63beba322da2c62f4180b1379c"
+                    },
+                    {
+                        "file":  "Server\\MenuCatalog.cs",
+                        "sha256":  "f7893716e703bc033ba384d5146e12591570d526c79b28cc7314823ea2cac9e2"
+                    },
+                    {
+                        "file":  "Server\\PanelBackend.cs",
+                        "sha256":  "5b0fdbf5adca23a59eb75c200798ab744b2acb4aaef1303e6ffc0633f0a6455a"
+                    },
+                    {
+                        "file":  "Server\\ServerHud.cs",
+                        "sha256":  "b4ead06d346a639d7e2cb0ca92f9ee8c8dc3d38c20df08158e576e3e8568c906"
+                    },
+                    {
+                        "file":  "Server\\Si_SquadHUD_Server.csproj",
+                        "sha256":  "ad8222456a483aae84a8d453ceabf1c828f3bf0127f173545ed282c152e90d29"
+                    },
+                    {
+                        "file":  "Shared\\CatalogProtocol.cs",
+                        "sha256":  "8d21d7a016ebaac74a98e7d5298230b0109df9b195b965a907035a1eeb688da6"
+                    },
+                    {
+                        "file":  "Shared\\FormationProtocol.cs",
+                        "sha256":  "dcbca3dff07e5d95e327ca98566ccf5404b9d9ea13f5f2f23146e6e2f30a3541"
+                    },
+                    {
+                        "file":  "Shared\\HudProtocol.cs",
+                        "sha256":  "ec68b8d7655a06d52e7fcd0f93c57c01e7088ea4ba34e80592191d5800b41030"
+                    }
+                ],
+    "validation":  "Client and companion 0.4.0 compiled with zero warnings/errors. No tests or game/server launch performed for this release. New scrolling snapshots, tables, dragging, facility selection and authenticated admin controls require user live verification. No gameplay-mod DLLs or server settings are changed by installation."
+}

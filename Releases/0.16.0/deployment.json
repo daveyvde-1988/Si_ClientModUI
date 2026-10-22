@@ -1,0 +1,28 @@
+﻿{
+    "installedUtc":  "2026-10-20T17:57:13.9097153Z",
+    "receipt":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\ClientMods\\Si_ClientModUI\\installation\\20261020T175713587Z\\installation.json",
+    "files":  [
+                  {
+                      "source":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\ClientMods\\Si_ClientModUI\\Releases\\0.16.0\\client\\Mods\\Si_ClientModUI.dll",
+                      "destination":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Silica\\Mods\\Si_ClientModUI.dll",
+                      "root":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Silica",
+                      "sha256":  "c93fb1c3633033b6c4eb6774f7b8f753be7691b4c8e8f7f7ffe3b57b092532fa",
+                      "backup":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\ClientMods\\Si_ClientModUI\\installation\\20261020T175713587Z\\client-Si_ClientModUI.dll",
+                      "side":  "client",
+                      "oldSha256":  "6d4c8779fbda4afff331922751450f278df7e7f7cf93fb855167a7710d896093"
+                  },
+                  {
+                      "source":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\ClientMods\\Si_ClientModUI\\Releases\\0.16.0\\client\\OptionalProviders\\cheats.dll",
+                      "destination":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Silica\\Mods\\cheats.dll",
+                      "root":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Silica",
+                      "sha256":  "013e3802cf4968969ce49dbdcdbd02e812d57bd39ab58d7ea8886660d7e8fd4d",
+                      "backup":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\ClientMods\\Si_ClientModUI\\installation\\20261020T175713587Z\\client-cheats.dll",
+                      "side":  "client",
+                      "oldSha256":  "53ed5f3adeaae47de2467036d33ccfb372dc905ef8c94528638ada772987ea81"
+                  }
+              ],
+    "hashesVerified":  true,
+    "settingsUnchanged":  true,
+    "settingsBackup":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Backups\\ModUI-followups-20261020T173532836Z",
+    "runtimeVerified":  false
+}

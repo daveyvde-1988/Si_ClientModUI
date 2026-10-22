@@ -1,0 +1,163 @@
+{
+  "Enabled": true,
+  "Debug": false,
+  "LogisticsScore": true,
+  "ScoreUnload": 2,
+  "ScoreTransfer": 1,
+  "CommanderScore": {
+    "Enabled": true,
+    "Rules": [
+      {
+        "Event": "UnitProduced",
+        "Enabled": true,
+        "ValueSource": "Cost",
+        "Divisor": 100,
+        "Minimum": 1,
+        "Multiplier": 1,
+        "FixedPoints": 0,
+        "Objects": [],
+        "Overrides": {}
+      },
+      {
+        "Event": "UnitLost",
+        "Enabled": true,
+        "ValueSource": "Cost",
+        "Divisor": 100,
+        "Minimum": 1,
+        "Multiplier": -1,
+        "FixedPoints": 0,
+        "Objects": [],
+        "Overrides": {}
+      },
+      {
+        "Event": "BuildingCompleted",
+        "Enabled": true,
+        "ValueSource": "Cost",
+        "Divisor": 50,
+        "Minimum": 1,
+        "Multiplier": 1,
+        "FixedPoints": 0,
+        "Objects": [],
+        "Overrides": {}
+      },
+      {
+        "Event": "BuildingLost",
+        "Enabled": true,
+        "ValueSource": "Cost",
+        "Divisor": 50,
+        "Minimum": 1,
+        "Multiplier": -1,
+        "FixedPoints": 0,
+        "Objects": [],
+        "Overrides": {}
+      },
+      {
+        "Event": "TechnologyReached",
+        "Enabled": true,
+        "ValueSource": "Fixed",
+        "Divisor": 100,
+        "Minimum": 1,
+        "Multiplier": 1,
+        "FixedPoints": 500,
+        "Objects": [],
+        "Overrides": {}
+      },
+      {
+        "Event": "EnemyUnitDestroyed",
+        "Enabled": true,
+        "ValueSource": "Cost",
+        "Divisor": 100,
+        "Minimum": 1,
+        "Multiplier": 1,
+        "FixedPoints": 0,
+        "Objects": [],
+        "Overrides": {}
+      },
+      {
+        "Event": "EnemyBuildingDestroyed",
+        "Enabled": true,
+        "ValueSource": "Cost",
+        "Divisor": 50,
+        "Minimum": 1,
+        "Multiplier": 1,
+        "FixedPoints": 0,
+        "Objects": [],
+        "Overrides": {}
+      },
+      {
+        "Event": "BalteriumDeposited",
+        "Enabled": true,
+        "ValueSource": "Amount",
+        "Divisor": 1000,
+        "Minimum": 0,
+        "Multiplier": 1,
+        "FixedPoints": 0,
+        "Objects": [],
+        "Overrides": {}
+      }
+    ]
+  },
+  "TransportUnits": [
+    "Shuttle",
+    "Dropship",
+    "Squad Transport",
+    "Platoon Hauler"
+  ],
+  "AirCargoCapacity": 9000,
+  "GroundCargoCapacity": 3000,
+  "LoadUnitsPerSecond": 300,
+  "UnloadUnitsPerSecond": 300,
+  "LoadRadius": 40,
+  "UnloadRadius": 65,
+  "DeliveryCooldownSeconds": 20,
+  "PersonalBonus": {
+    "Share": 0.1,
+    "TransferShare": 0.08,
+    "AnnounceToPlayer": true
+  },
+  "Chat": {
+    "ProgressIntervalSeconds": 3,
+    "ProgressBarLength": 10,
+    "BarFilled": "#",
+    "BarEmpty": "-"
+  },
+  "Sounds": {
+    "Enabled": true,
+    "OnFull": "logistics_ding.wav",
+    "OnLoad": "logistics_tick.wav"
+  },
+  "Commands": {
+    "HideFromChat": true
+  },
+  "harvesterfix": {
+    "Enabled": true,
+    "MaximumReservationsPerRefinery": 5,
+    "NearPatchDistanceMetres": 400,
+    "MediumPatchDistanceMetres": 800,
+    "NearPatchReservations": 1,
+    "MediumPatchReservations": 2,
+    "FarPatchReservations": 3,
+    "TransferWaitingTimeSeconds": 120,
+    "ReservationCheckTimeSeconds": 10,
+    "ReservationDistanceIncrementMetres": 50
+  },
+  "AItransport": {
+    "NearHarvesterDistanceMetres": 300,
+    "MediumHarvesterDistanceMetres": 600,
+    "NearGroundTransports": 2,
+    "NearAirTransports": 1,
+    "MediumGroundTransports": 3,
+    "MediumAirTransports": 1,
+    "FarGroundTransports": 4,
+    "FarAirTransports": 2,
+    "ReassignmentCheckSeconds": 10,
+    "NoProgressTimeoutSeconds": 120,
+    "Enabled": false,
+    "airloadradius": 150,
+    "airunloadradius": 150,
+    "groundloadradius": 40,
+    "groundunloadradius": 65
+  },
+  "airloadunitspersecond": 500,
+  "airunloadunitspersecond": 500
+}

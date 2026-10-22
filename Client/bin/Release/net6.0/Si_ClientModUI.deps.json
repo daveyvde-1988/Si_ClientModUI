@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Si_ClientModUI/0.17.3": {
+        "runtime": {
+          "Si_ClientModUI.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Si_ClientModUI/0.17.3": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,28 @@
+﻿{
+    "schema":  3,
+    "createdUtc":  "2026-10-22T14:20:06.3673685Z",
+    "complete":  true,
+    "files":  [
+                  {
+                      "source":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\ClientMods\\Si_ClientModUI\\Releases\\0.17.1\\client\\Mods\\Si_ClientModUI.dll",
+                      "destination":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Silica\\Mods\\Si_ClientModUI.dll",
+                      "root":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Silica",
+                      "sha256":  "41ae304fd8229d7dc3452a37afdc5db159ffd750af19448d723c5d049d19ff31",
+                      "backup":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\ClientMods\\Si_ClientModUI\\installation\\20261022T142005952Z\\client-Si_ClientModUI.dll",
+                      "side":  "client",
+                      "oldSha256":  "b81ba9a55311eb1000b5dd89e00181d89b9ce7d064f0f5c6cb80d9b593fd28d5"
+                  },
+                  {
+                      "source":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\ClientMods\\Si_ClientModUI\\Releases\\0.17.1\\client\\OptionalProviders\\cheats.dll",
+                      "destination":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Silica\\Mods\\cheats.dll",
+                      "root":  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Silica",
+                      "sha256":  "0b957b446035b6874b527d3ca0ddf1d929d8ebc23e742cd202d0832fd40ddcdf",
+                      "backup":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\ClientMods\\Si_ClientModUI\\installation\\20261022T142005952Z\\client-cheats.dll",
+                      "side":  "client",
+                      "oldSha256":  "d0e4d5a4dbb96485f359b0a280bd27eb8c19a7dc5b77aa41fdfa9394bb960bd3"
+                  }
+              ],
+    "retired":  [
+
+                ]
+}

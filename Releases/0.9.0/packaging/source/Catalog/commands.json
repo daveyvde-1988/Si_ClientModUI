@@ -1,0 +1,706 @@
+﻿[
+    {
+        "Mod":  "si_afkmanager",
+        "Command":  "!afk",
+        "Description":  "Kicks any AFK players immediately. Usage: !afk",
+        "Role":  "admin",
+        "Arguments":  false,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_afkmanager",
+        "Command":  "!kick",
+        "Description":  "Kicks target player. Usage: !kick \u003cplayer\u003e",
+        "Role":  "admin",
+        "Arguments":  true,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_basicbanlist",
+        "Command":  "!ban",
+        "Description":  "Bans target player. Usage: !ban \u003cplayer\u003e",
+        "Role":  "admin",
+        "Arguments":  true,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_basicbanlist",
+        "Command":  "!banid",
+        "Description":  "Bans target player by SteamID. Usage !banid \u003cSteam64ID\u003e \u003cplayer name\u003e",
+        "Role":  "admin",
+        "Arguments":  true,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_basicbanlist",
+        "Command":  "!kickban",
+        "Description":  "Bans target player. Usage: !kickban \u003cplayer\u003e",
+        "Role":  "admin",
+        "Arguments":  true,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_basicbanlist",
+        "Command":  "!unban",
+        "Description":  "Unbans target player. Usage: !unban \u003cplayername | Steam64ID\u003e",
+        "Role":  "admin",
+        "Arguments":  true,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_basicteambalance",
+        "Command":  "!team",
+        "Description":  "Moves target player to target team. Usage: !team [optional:\u003cplayer\u003e] \u003cteamname\u003e",
+        "Role":  "admin",
+        "Arguments":  true,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_chatsilence",
+        "Command":  "!mute",
+        "Description":  "Prevents target player from sending voice messages. Usage: !mute \u003cplayer\u003e",
+        "Role":  "admin",
+        "Arguments":  true,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_chatsilence",
+        "Command":  "!silence",
+        "Description":  "Prevents target player from sending chat messages. Usage: !silence \u003cplayer\u003e",
+        "Role":  "admin",
+        "Arguments":  true,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_chatsilence",
+        "Command":  "!unmute",
+        "Description":  "Allows target player to send voice messages. Usage: !unmute \u003cplayer\u003e",
+        "Role":  "admin",
+        "Arguments":  true,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_chatsilence",
+        "Command":  "!unsilence",
+        "Description":  "Allows target player to send chat messages. Usage: !unsilence \u003cplayer\u003e",
+        "Role":  "admin",
+        "Arguments":  true,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_chipmunkvoices",
+        "Command":  "!chipmunk",
+        "Description":  "Toggles chipmunk voices. Usage: !chipmunk",
+        "Role":  "admin",
+        "Arguments":  false,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_commmanagement",
+        "Command":  "!cban",
+        "Description":  "Prevents target player from applying or playing as a Commander. Usage: !cban \u003cplayer\u003e",
+        "Role":  "admin",
+        "Arguments":  true,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_commmanagement",
+        "Command":  "!cmdrban",
+        "Description":  "Prevents target player from applying or playing as a Commander. Usage: !cmdrban \u003cplayer\u003e",
+        "Role":  "admin",
+        "Arguments":  true,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_commmanagement",
+        "Command":  "!commanderban",
+        "Description":  "Prevents target player from applying or playing as a Commander. Usage: !commanderban \u003cplayer\u003e",
+        "Role":  "admin",
+        "Arguments":  true,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_commmanagement",
+        "Command":  "!demote",
+        "Description":  "Demotes target player from their current Commander role. Usage: !demote \u003cplayer\u003e",
+        "Role":  "admin",
+        "Arguments":  true,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_commmanagement",
+        "Command":  "!removecommanderban",
+        "Description":  "Allows target player to apply or play as a Commander. Usage: !removecommanderban \u003cplayer\u003e",
+        "Role":  "admin",
+        "Arguments":  true,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_commmanagement",
+        "Command":  "!uncban",
+        "Description":  "Allows target player to apply or play as a Commander. Usage: !uncban \u003cplayer\u003e",
+        "Role":  "admin",
+        "Arguments":  true,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_commmanagement",
+        "Command":  "/commander",
+        "Description":  "Registered chat command. Click to request the native response; use EDIT to supply arguments.",
+        "Role":  "shared",
+        "Arguments":  false,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_commmanagement",
+        "Command":  "/mutiny",
+        "Description":  "Registered chat command. Click to request the native response; use EDIT to supply arguments.",
+        "Role":  "shared",
+        "Arguments":  false,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_crabcannon",
+        "Command":  "/cc",
+        "Description":  "Registered chat command. Click to request the native response; use EDIT to supply arguments.",
+        "Role":  "shared",
+        "Arguments":  false,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_crabcannon",
+        "Command":  "/ccaim",
+        "Description":  "Read current cannon aim; EDIT to provide angle/speed or range.",
+        "Role":  "shared",
+        "Arguments":  false,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_eject",
+        "Command":  "!eject",
+        "Description":  "Ejects target player from their vehicle. Usage: !eject \u003cplayer\u003e",
+        "Role":  "admin",
+        "Arguments":  true,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_endround",
+        "Command":  "!endgame",
+        "Description":  "Ends the current round of the game. Usage: !endgame",
+        "Role":  "admin",
+        "Arguments":  false,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_endround",
+        "Command":  "!endround",
+        "Description":  "Ends the current round of the game. Usage: !endround",
+        "Role":  "admin",
+        "Arguments":  false,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_formation",
+        "Command":  "/disband",
+        "Description":  "Registered chat command. Click to request the native response; use EDIT to supply arguments.",
+        "Role":  "shared",
+        "Arguments":  false,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_formation",
+        "Command":  "/disband all",
+        "Description":  "Dismiss eligible AI followers using Formation rules.",
+        "Role":  "fps",
+        "Arguments":  false,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_formation",
+        "Command":  "/followformation",
+        "Description":  "Registered chat command. Click to request the native response; use EDIT to supply arguments.",
+        "Role":  "shared",
+        "Arguments":  false,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_formation",
+        "Command":  "/followformation lock",
+        "Description":  "Lock your FPS formation.",
+        "Role":  "fps",
+        "Arguments":  false,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_formation",
+        "Command":  "/followformation status",
+        "Description":  "Read FPS formation lock state.",
+        "Role":  "fps",
+        "Arguments":  false,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_formation",
+        "Command":  "/followformation unlock",
+        "Description":  "Unlock your FPS formation.",
+        "Role":  "fps",
+        "Arguments":  false,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_formation",
+        "Command":  "/formation",
+        "Description":  "Registered chat command. Click to request the native response; use EDIT to supply arguments.",
+        "Role":  "shared",
+        "Arguments":  false,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_formation",
+        "Command":  "/formation help",
+        "Description":  "Show Formation commands for your role.",
+        "Role":  "shared",
+        "Arguments":  false,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_formation",
+        "Command":  "/formation lock",
+        "Description":  "Arm the commander snapshot move, subject to Formation validation.",
+        "Role":  "commander",
+        "Arguments":  false,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_formation",
+        "Command":  "/formation off",
+        "Description":  "Disable Formation for this match using its own cleanup. Requires Generic power.",
+        "Role":  "admin",
+        "Arguments":  false,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_formation",
+        "Command":  "/formation on",
+        "Description":  "Enable Formation for this match. Requires Generic power.",
+        "Role":  "admin",
+        "Arguments":  false,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_formation",
+        "Command":  "/formation rallyfix status",
+        "Description":  "Read production parking state.",
+        "Role":  "shared",
+        "Arguments":  false,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_formation",
+        "Command":  "/formation status",
+        "Description":  "Read the current Formation state once.",
+        "Role":  "shared",
+        "Arguments":  false,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_formation",
+        "Command":  "/formation unlock",
+        "Description":  "Unlock commander formations and cancel pending lock/scout actions.",
+        "Role":  "commander",
+        "Arguments":  false,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_formation",
+        "Command":  "/FormationFallof",
+        "Description":  "Formation setting. Enter the value documented by /formation help; server permissions apply.",
+        "Role":  "admin",
+        "Arguments":  true,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_formation",
+        "Command":  "/formationsize",
+        "Description":  "Registered chat command. Click to request the native response; use EDIT to supply arguments.",
+        "Role":  "shared",
+        "Arguments":  false,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_formation",
+        "Command":  "/formationsizecommander",
+        "Description":  "Registered chat command. Click to request the native response; use EDIT to supply arguments.",
+        "Role":  "shared",
+        "Arguments":  false,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_formation",
+        "Command":  "/formationsizeglobal",
+        "Description":  "Registered chat command. Click to request the native response; use EDIT to supply arguments.",
+        "Role":  "shared",
+        "Arguments":  false,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_formation",
+        "Command":  "/Formationspeedcap",
+        "Description":  "Formation setting. Enter the value documented by /formation help; server permissions apply.",
+        "Role":  "admin",
+        "Arguments":  true,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_formation",
+        "Command":  "/formationTolerance",
+        "Description":  "Formation setting. Enter the value documented by /formation help; server permissions apply.",
+        "Role":  "admin",
+        "Arguments":  true,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_formation",
+        "Command":  "/formationTravel",
+        "Description":  "Formation setting. Enter the value documented by /formation help; server permissions apply.",
+        "Role":  "admin",
+        "Arguments":  true,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_formation",
+        "Command":  "/Formationtraveldistance",
+        "Description":  "Formation setting. Enter the value documented by /formation help; server permissions apply.",
+        "Role":  "admin",
+        "Arguments":  true,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_formation",
+        "Command":  "/scout",
+        "Description":  "Arm the next commander scout order.",
+        "Role":  "commander",
+        "Arguments":  false,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_formation",
+        "Command":  "/startdelay",
+        "Description":  "Formation setting. Enter the value documented by /formation help; server permissions apply.",
+        "Role":  "admin",
+        "Arguments":  true,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_formation",
+        "Command":  "/startdelaylock",
+        "Description":  "Formation setting. Enter the value documented by /formation help; server permissions apply.",
+        "Role":  "admin",
+        "Arguments":  true,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_formation",
+        "Command":  "/startdelaysoftlock",
+        "Description":  "Formation setting. Enter the value documented by /formation help; server permissions apply.",
+        "Role":  "admin",
+        "Arguments":  true,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_formation",
+        "Command":  "/startdelayspeedlock",
+        "Description":  "Formation setting. Enter the value documented by /formation help; server permissions apply.",
+        "Role":  "admin",
+        "Arguments":  true,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_heavyteleporter",
+        "Command":  "/st",
+        "Description":  "Registered chat command. Click to request the native response; use EDIT to supply arguments.",
+        "Role":  "shared",
+        "Arguments":  false,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_heavyteleporter",
+        "Command":  "/st status",
+        "Description":  "Read heavy teleporter status once.",
+        "Role":  "shared",
+        "Arguments":  false,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_kingofthehill",
+        "Command":  "/buy",
+        "Description":  "Registered chat command. Click to request the native response; use EDIT to supply arguments.",
+        "Role":  "shared",
+        "Arguments":  false,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_kingofthehill",
+        "Command":  "/koh",
+        "Description":  "Registered chat command. Click to request the native response; use EDIT to supply arguments.",
+        "Role":  "shared",
+        "Arguments":  false,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_kingofthehill",
+        "Command":  "/koh status",
+        "Description":  "Read King of the Hill capture/economy status once.",
+        "Role":  "shared",
+        "Arguments":  false,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_logistics",
+        "Command":  "/logi",
+        "Description":  "Registered chat command. Click to request the native response; use EDIT to supply arguments.",
+        "Role":  "shared",
+        "Arguments":  false,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_logistics",
+        "Command":  "/logistics",
+        "Description":  "Registered chat command. Click to request the native response; use EDIT to supply arguments.",
+        "Role":  "shared",
+        "Arguments":  false,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_logistics",
+        "Command":  "/logisticsscore",
+        "Description":  "Registered chat command. Click to request the native response; use EDIT to supply arguments.",
+        "Role":  "shared",
+        "Arguments":  false,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_logistics",
+        "Command":  "/logisticsscorecomander",
+        "Description":  "Registered chat command. Click to request the native response; use EDIT to supply arguments.",
+        "Role":  "shared",
+        "Arguments":  false,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_logistics",
+        "Command":  "/logisticsscorecommander",
+        "Description":  "Registered chat command. Click to request the native response; use EDIT to supply arguments.",
+        "Role":  "shared",
+        "Arguments":  false,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_logistics",
+        "Command":  "/scoretransfer",
+        "Description":  "Registered chat command. Click to request the native response; use EDIT to supply arguments.",
+        "Role":  "shared",
+        "Arguments":  false,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_logistics",
+        "Command":  "/scoreunload",
+        "Description":  "Registered chat command. Click to request the native response; use EDIT to supply arguments.",
+        "Role":  "shared",
+        "Arguments":  false,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_mapbalance",
+        "Command":  "!mapdump",
+        "Description":  "Native administrator chat command. Server permission checks apply.",
+        "Role":  "admin",
+        "Arguments":  false,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_mapcycle",
+        "Command":  "!map",
+        "Description":  "Registered chat command. Click to request the native response; use EDIT to supply arguments.",
+        "Role":  "admin",
+        "Arguments":  false,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_mapcycle",
+        "Command":  "/nominate",
+        "Description":  "Registered chat command. Click to request the native response; use EDIT to supply arguments.",
+        "Role":  "shared",
+        "Arguments":  false,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_mapcycle",
+        "Command":  "/rockthevote",
+        "Description":  "Registered chat command. Click to request the native response; use EDIT to supply arguments.",
+        "Role":  "shared",
+        "Arguments":  false,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_mapcycle",
+        "Command":  "/rtv",
+        "Description":  "Registered chat command. Click to request the native response; use EDIT to supply arguments.",
+        "Role":  "shared",
+        "Arguments":  false,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_ranks",
+        "Command":  "/debug status",
+        "Description":  "Read Ranks diagnostics. Requires Generic power.",
+        "Role":  "admin",
+        "Arguments":  false,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_ranks",
+        "Command":  "/demote",
+        "Description":  "Demote the named player using Ranks. Distinct from Commander Management !demote.",
+        "Role":  "admin",
+        "Arguments":  true,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_ranks",
+        "Command":  "/promote",
+        "Description":  "Promote the named player using Ranks. Enter a player name; Generic power required.",
+        "Role":  "admin",
+        "Arguments":  true,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_ranks",
+        "Command":  "/rank",
+        "Description":  "Read your current rank, squad allowance and recruitment rules.",
+        "Role":  "shared",
+        "Arguments":  false,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_resources",
+        "Command":  "!resources",
+        "Description":  "Provides resources to a team. Usage: !resources \u003camount\u003e [optional:\u003cteamname\u003e]",
+        "Role":  "admin",
+        "Arguments":  true,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_spawnconfigs",
+        "Command":  "!addconfig",
+        "Description":  "Keeps all current objects and adds set objects from file. Usage !addconfig \u003cfilename\u003e",
+        "Role":  "admin",
+        "Arguments":  true,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_spawnconfigs",
+        "Command":  "!loadconfig",
+        "Description":  "Removes all current objects and loads set objects from file. Usage !loadconfig \u003cfilename\u003e",
+        "Role":  "admin",
+        "Arguments":  true,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_spawnconfigs",
+        "Command":  "!saveconfig",
+        "Description":  "Saves all current objects to a file. Usage: !saveconfig \u003cfilename\u003e",
+        "Role":  "admin",
+        "Arguments":  true,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_spawnconfigs",
+        "Command":  "!spawn",
+        "Description":  "Spawns an object. Usage: !spawn \u003cobjectname\u003e",
+        "Role":  "admin",
+        "Arguments":  true,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_spawnconfigs",
+        "Command":  "!undospawn",
+        "Description":  "Removes last spawned object. Usage !undospawn",
+        "Role":  "admin",
+        "Arguments":  false,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_surrendercommand",
+        "Command":  "/surrender",
+        "Description":  "Registered chat command. Click to request the native response; use EDIT to supply arguments.",
+        "Role":  "shared",
+        "Arguments":  false,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_techglitch",
+        "Command":  "/techglitch",
+        "Description":  "Registered chat command. Click to request the native response; use EDIT to supply arguments.",
+        "Role":  "shared",
+        "Arguments":  false,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_timeofday",
+        "Command":  "!time",
+        "Description":  "Sets the current game time. Usage: !time [0.0 - 23.99]",
+        "Role":  "admin",
+        "Arguments":  false,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_unitbalance",
+        "Command":  "!b",
+        "Description":  "Native administrator chat command. Server permission checks apply.",
+        "Role":  "admin",
+        "Arguments":  false,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_unitbalance",
+        "Command":  "!rebalance",
+        "Description":  "Native administrator chat command. Server permission checks apply.",
+        "Role":  "admin",
+        "Arguments":  false,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_unitbalance",
+        "Command":  "/b",
+        "Description":  "Open the native Unit Balance editor. Requires server administrator rights.",
+        "Role":  "admin",
+        "Arguments":  false,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_unitbalance",
+        "Command":  "/rebalance",
+        "Description":  "Request the native balance reload. Requires administrator rights.",
+        "Role":  "admin",
+        "Arguments":  false,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_unitbalance",
+        "Command":  "/stats",
+        "Description":  "Open the native public unit-stat inspector.",
+        "Role":  "shared",
+        "Arguments":  false,
+        "Source":  "catalog"
+    },
+    {
+        "Mod":  "si_wormbounty",
+        "Command":  "!devour",
+        "Description":  "Spawns a Great Worm at the location of the player. Usage: !devour \u003cplayer\u003e",
+        "Role":  "admin",
+        "Arguments":  true,
+        "Source":  "catalog"
+    }
+]

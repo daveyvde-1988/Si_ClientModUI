@@ -1,0 +1,41 @@
+﻿{
+    "schema":  3,
+    "gameplayProviders":  [
+                              "Si_Logistics.dll",
+                              "Si_Formation.dll"
+                          ],
+    "files":  [
+                  {
+                      "file":  "client\\Mods\\Si_ClientModUI.dll",
+                      "sha256":  "041af8fc8627f01e3ed045135f50a360e357ddf0e5042c7e1e7c055075e118a0"
+                  },
+                  {
+                      "file":  "client\\OptionalProviders\\cheats.dll",
+                      "sha256":  "31be6bfa013ce903860de0297c05dc65c2a24b1be1a6086abba4262ff6bd1e62"
+                  },
+                  {
+                      "file":  "server\\Mods\\Si_ServerModUI.dll",
+                      "sha256":  "cf3e890ffda251f1997d1df0bfe94fcd7ab9fdb61af166e8f3fcfea0cc87bb58"
+                  },
+                  {
+                      "file":  "server\\GameplayProviders\\Si_Logistics.dll",
+                      "sha256":  "cc323ad55d8f4db95454d0faa868208ceccbd32e338f0cb895e734bf3b860b99"
+                  },
+                  {
+                      "file":  "server\\GameplayProviders\\Si_Formation.dll",
+                      "sha256":  "69953b3dd9867845a443ee5d8c1496e4783f47434714fc8d5a95d8e8297b3f9f"
+                  }
+              ],
+    "gameInputs":  [
+                       {
+                           "sha256":  "d274e8292b6f66d952419b9394cc8a71c0177c14db645f48e9b9becad60c668d",
+                           "path":  "reference.dll"
+                       }
+                   ],
+    "serverInputs":  [
+                         {
+                             "sha256":  "2c58ae363e089c1b6ae8e95682cfa4fd01868312815d2ac9537c74a4c4f845d7",
+                             "path":  "reference.dll"
+                         }
+                     ]
+}

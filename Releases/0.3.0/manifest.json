@@ -1,0 +1,83 @@
+﻿{
+    "schema":  1,
+    "preparedUtc":  "2026-10-19T16:51:24.3801775Z",
+    "hudVersion":  "0.3.0",
+    "clientVersion":  "0.3.0",
+    "ranksVersion":  "1.4.3",
+    "formationVersion":  "2.15.0",
+    "serverCoreSha256":  "33969f93ebbe60c4182e18c590974bce046bd0f440b7003d888f2e7640b1bcf5",
+    "clientGameAssemblySha256":  "358b2a17997d1406b45d52c0f341034fb6fe614aba0eb390cb3b7ec310ed0601",
+    "clientMetadataSha256":  "7ba17d1dafaf8f0bb02651c3ccd618219b458fde4f4d22e859c0ee595ebe32b4",
+    "clientInteropSha256":  "235bee283a231aacb2a000744999e4249b8bbf15019b0d3f2c9c9ea6cf692a62",
+    "kohSha256":  "5377b71a034e065df76d5a3f595de733daf24d9a875def9d0c092bccaaabf8bc",
+    "adminModSha256":  "51f113348fa0fa30c200451ea4bdeddfd0d7f65e40d15f13a9d007297c041432",
+    "files":  [
+                  {
+                      "file":  "client\\Si_SquadHUD.dll",
+                      "bytes":  49152,
+                      "sha256":  "544e0c842d7b78b605ab8f06b0caa6c4de85c4db6682ab991e18e7097c0c2b44"
+                  },
+                  {
+                      "file":  "server\\Si_SquadHUD_Server.dll",
+                      "bytes":  47104,
+                      "sha256":  "3574d75c4bab79be9d8357cbe7cd2f142925d7a28ece8f8946a9de8feb87a888"
+                  },
+                  {
+                      "file":  "server\\Si_Ranks.dll",
+                      "bytes":  78336,
+                      "sha256":  "7dfb81694ec2f1149d4eea8c3ad24711bb62ef4e469f22199b4a423a37e656b9"
+                  },
+                  {
+                      "file":  "server\\Si_Formation.dll",
+                      "bytes":  637952,
+                      "sha256":  "b001ac5f18968029e2e5203228659a41e78121746f12a6ed2c83e2ee8f56d333"
+                  }
+              ],
+    "sources":  [
+                    {
+                        "file":  "Client\\FactionAppearance.cs",
+                        "sha256":  "021173d6250a8d4e3f6eff67671a6656a2051e4875b4565528c1ddc22b7854dc"
+                    },
+                    {
+                        "file":  "Client\\FormationPanel.cs",
+                        "sha256":  "d2a329fb42fc00160954cb4fad42bd998b4b22371ad8d28724cfa6f60a16854d"
+                    },
+                    {
+                        "file":  "Client\\Si_SquadHUD.csproj",
+                        "sha256":  "0a7154cff7d1116eff55fbdfe9c0fa30cb634cad58f8b6c12d5bcfdbb21d8925"
+                    },
+                    {
+                        "file":  "Client\\SquadHud.cs",
+                        "sha256":  "22979b003000dd47842c8041548896b61d69205dc852325b79d6ac42b31941c3"
+                    },
+                    {
+                        "file":  "Server\\HudProviders.cs",
+                        "sha256":  "ba3c5a0efad425f4ad31667891f807ccf07a7f63beba322da2c62f4180b1379c"
+                    },
+                    {
+                        "file":  "Server\\MenuCatalog.cs",
+                        "sha256":  "9693a98da52b7e80b5915eaa6f9f1f7fbe41f37d7f1bbff6cffbd06ccc334c32"
+                    },
+                    {
+                        "file":  "Server\\PanelBackend.cs",
+                        "sha256":  "df353000356ddfbc7e0e9ad45d3ea58db8ba2cb738d089e35cb06c4544b09b13"
+                    },
+                    {
+                        "file":  "Server\\ServerHud.cs",
+                        "sha256":  "32c17bb536e95573b78dec1f5d6a3af325521d9bebe134e51992e89031f51599"
+                    },
+                    {
+                        "file":  "Server\\Si_SquadHUD_Server.csproj",
+                        "sha256":  "21d3ee2f89a3138be41112e925cc74b5c66247ff89fd8065ff241ce4e6fc5fa8"
+                    },
+                    {
+                        "file":  "Shared\\FormationProtocol.cs",
+                        "sha256":  "9087dda27c3fe1f5622d26bdcb3e080eda0270f97d8722991c170196e7469e9b"
+                    },
+                    {
+                        "file":  "Shared\\HudProtocol.cs",
+                        "sha256":  "ec68b8d7655a06d52e7fcd0f93c57c01e7088ea4ba34e80592191d5800b41030"
+                    }
+                ],
+    "validation":  "Client and companion 0.3.0 compiled with zero warnings/errors. No tests or game/server launch performed for this release. Screenshots establish the earlier 0.2.0 UI renders; new tabs, delayed descriptions, F6 stages and KoH purchases require user live verification. Formation 2.15.0 and Ranks 1.4.3 are unchanged."
+}
