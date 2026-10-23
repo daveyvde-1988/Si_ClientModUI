@@ -1,0 +1,23 @@
+﻿{
+    "state":  "installed-and-hash-verified",
+    "clientVersion":  "0.18.0",
+    "serverName":  "Si_ModUI_Server",
+    "serverVersion":  "1.4.4",
+    "marker":  "SiModUI/2",
+    "receipt":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\ClientMods\\Si_ClientModUI\\installation\\20261023T185733468Z-default-branch/installation.json",
+    "checkpoint":  "D:\\SteamLibrary\\steamapps\\common\\Silica Dedicated Server\\Backups\\ModUI-default-compat-20261023T184819805Z",
+    "installedDLLs":  15,
+    "retiredCompanions":  1,
+    "preservedBaselineFiles":  902,
+    "preservedSettings":  850,
+    "preservationIssues":  [
+
+                           ],
+    "installIssues":  [
+
+                      ],
+    "buildWarnings":  0,
+    "buildErrors":  0,
+    "offlineChecks":  292,
+    "runtimeVerified":  false
+}

@@ -7,6 +7,7 @@ namespace SiSquadHud;
 internal sealed class ServerCommand
 {
     [JsonPropertyName("v")] public string Value {get;set;}
+    [JsonPropertyName("m")] public bool Multi {get;set;}
     [JsonPropertyName("o")] public int Order {get;set;}=1000;
     [JsonPropertyName("role")] public string Role {get;set;}="shared";
     [JsonPropertyName("ui")] public ControlPresentation Ui {get;set;}
@@ -14,16 +15,19 @@ internal sealed class ServerCommand
     [JsonPropertyName("l")] public string Label {get;set;}="";
     [JsonPropertyName("d")] public string Description {get;set;}="";
     [JsonPropertyName("a")] public bool Admin {get;set;}
+    [JsonPropertyName("p")] public string Power {get;set;}="";
     [JsonPropertyName("x")] public List<string> Aliases {get;set;}=new();
     [JsonPropertyName("arg")] public string Argument {get;set;}="";
     [JsonPropertyName("ch")] public List<string[]> Choices {get;set;}=new();
 }
 internal sealed class ServerModule
 {
+    [JsonIgnore] internal ServerPanelData Panel;
     [JsonPropertyName("data")] public JsonElement? Data {get;set;}
     [JsonPropertyName("cat")] public string Category {get;set;}="player";
     [JsonPropertyName("id")] public string Id {get;set;}="";
     [JsonPropertyName("name")] public string Name {get;set;}="";
+    [JsonPropertyName("ver")] public string Version {get;set;}="";
     [JsonPropertyName("hash")] public string Hash {get;set;}="";
     [JsonPropertyName("nav")] public string Navigation {get;set;}="/";
     [JsonPropertyName("prio")] public int Priority {get;set;}
@@ -71,8 +75,9 @@ internal sealed class CompanionCatalog
                 if(cmd.Value?.Length>2048||cmd.Role is not ("shared" or "player" or "commander" or "admin")||cmd.Ui!=null&&!cmd.Ui.Valid())
                     throw new InvalidDataException("Invalid control metadata.");
             }
-            if(mod.Data.HasValue && (mod.Data.Value.ValueKind!=JsonValueKind.Object||mod.Data.Value.GetRawText().Length>512*1024))
+            if(mod.Data.HasValue && (mod.Data.Value.ValueKind!=JsonValueKind.Object||mod.Data.Value.GetRawText().Length>3*1024*1024))
                 throw new InvalidDataException("Invalid module data.");
+            mod.Panel=ServerPanelData.Parse(mod.Data); // Validate known panel shapes before committing any part of a frame.
             next[mod.Id]=mod;
         }
         if(next.Count>256||next.Values.Sum(m=>m.Commands.Sum(c=>1+c.Aliases.Count+c.Choices.Count))>8192)throw new InvalidDataException("Catalog too large.");

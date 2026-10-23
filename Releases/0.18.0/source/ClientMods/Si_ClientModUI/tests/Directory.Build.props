@@ -1,0 +1,1 @@
+﻿<Project><PropertyGroup Condition="'$(MSBuildProjectName)' == 'ServerExportChecks'"><BaseIntermediateOutputPath>obj\ServerExports\</BaseIntermediateOutputPath><BaseOutputPath>bin\ServerExports\</BaseOutputPath></PropertyGroup></Project>

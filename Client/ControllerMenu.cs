@@ -1,4 +1,4 @@
-﻿using Il2Cpp;
+using Il2Cpp;
 using UnityEngine;
 
 namespace SiSquadHud;
@@ -53,7 +53,7 @@ public sealed partial class SquadHud
     {
         var rect=WindowRect(Math.Min(1200,UiWidth-24),Math.Min(900,UiHeight-24));
         WindowSurface(rect);DragWindow(rect);
-        GUI.Label(new Rect(rect.x+16,rect.y+12,180,32),"MOD UI 0.17.3",titleStyle);
+        GUI.Label(new Rect(rect.x+16,rect.y+12,180,32),"MOD UI 0.18.0",titleStyle);
         if(Button(new Rect(rect.x+210,rect.y+14,Math.Max(100,rect.width-330),28),CompanionStatus,
             allowed:serverRequest==null&&!Game.GetIsSingleplayer(),description:"Recheck the optional server companion.",style:smallStyle))ResetCompanion();
         if(Button(new Rect(rect.xMax-96,rect.y+12,80,32),"CLOSE",style:tabStyle)){ClosePanel();return;}
@@ -112,7 +112,7 @@ public sealed partial class SquadHud
     }
     private void RenderHelpPage(Rect view)
     {
-        const string help="Si_ClientModUI 0.17.3\nOptional server addon: Si_ServerModUI 2.0.0\n\nOne place for your mods' commands, settings and information. Each mod decides which features it provides and who may use them.\n\nCOMMANDS: find known commands by client or server mod, or use ALL. Client mods can also supply their own command reference here. Click a complete command to run it; commands needing values prompt first. The chat box accepts normal chat too.\n\nMODS: open interactive panels supplied by client mods or the server. Switches, dropdowns and value controls use the mod's real commands.\n\nSETTINGS: adjust appearance, status values, sidebar, notifications and diagnostics.\n\nPress F6 to open or close. FPS players can hold F7 to use sidebar buttons with the mouse. Release F7 to return to the game.\n\nLocal features and ordinary chat work without a server addon. The header shows whether the addon was detected. Some internal commands remain unknown unless a mod describes them. Your server permissions always apply.";
+        const string help="Si_ClientModUI 0.18.0\nOptional server addon: Si_ModUI_Server 1.4.4 (SiModUI/2)\n\nOne place for your mods' commands, settings and information. Each mod decides which features it provides and who may use them.\n\nCOMMANDS: find known commands by client or server mod, or use ALL. Client mods can also supply their own command reference here. Click a complete command to run it; commands needing values prompt first. The chat box accepts normal chat too.\n\nMODS: open interactive panels supplied by client mods or the server. Switches, dropdowns and value controls use the mod's real commands.\n\nSETTINGS: adjust appearance, status values, sidebar, notifications and diagnostics.\n\nPress F6 to open or close. FPS players can hold F7 to use sidebar buttons with the mouse. Release F7 to return to the game.\n\nLocal features and ordinary chat work without a server addon. The header shows whether the addon was detected. Some internal commands remain unknown unless a mod describes them. Your server permissions always apply.";
         float height=MeasureText(bodyStyle,help,view.width-30);
         helpScroll=GUI.BeginScrollView(view,helpScroll,new Rect(0,0,view.width-24,height+16),false,true);
         try{GUI.Label(new Rect(4,4,view.width-32,height),help,bodyStyle);}finally{GUI.EndScrollView();}

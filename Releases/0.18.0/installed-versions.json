@@ -1,0 +1,77 @@
+﻿[
+    {
+        "DLL":  "Si_ClientModUI.dll",
+        "Version":  "0.18.0",
+        "Hash":  "a23f42c7a1c2112690f3b08dcfb4197288560cbcb58abba9263743286949e5ca"
+    },
+    {
+        "DLL":  "Si_AntiCheat.dll",
+        "Version":  "0.3.0",
+        "Hash":  "4bf6580834293b2371d5c843481408f10fc4b91520b5d91a7804b31f704334ed"
+    },
+    {
+        "DLL":  "Si_Buy.dll",
+        "Version":  "1.3.2",
+        "Hash":  "00362823bc11ba44d1c1c158d354dc04e92bbe5d39b198a24c16accc205395d6"
+    },
+    {
+        "DLL":  "Si_CrabCannon.dll",
+        "Version":  "2.8.4",
+        "Hash":  "07b9cfbc3e004d34f3a91eaf8692c4e821d07b16e63e933438a72ca4dbd96aa1"
+    },
+    {
+        "DLL":  "Si_EloMatchmaking.dll",
+        "Version":  "0.6.2",
+        "Hash":  "69a76e07819f647428023b16c64755d1f1e5c3117b02248a6fc6d8cbdc111cf7"
+    },
+    {
+        "DLL":  "Si_HeavyTeleporter.dll",
+        "Version":  "1.3.2",
+        "Hash":  "bc25a3b7fdd6b3d68fc30be067f84e192cf656c4c311afbfa959b3b53962705e"
+    },
+    {
+        "DLL":  "Si_KingOfTheHill.dll",
+        "Version":  "0.5.4",
+        "Hash":  "b067c79597f79c68f429f6b56a97493cb4338acb1c4974bb4e3be13436fd90e9"
+    },
+    {
+        "DLL":  "Si_Leaderboard.dll",
+        "Version":  "0.1.4",
+        "Hash":  "aede95eccec4da80de302311bb0ada0b6a3609ebf131f8e77522c2a9d59c6cf6"
+    },
+    {
+        "DLL":  "Si_MapBalance.dll",
+        "Version":  "3.3.0",
+        "Hash":  "d675774d2f5d2d73ca4a76daa77f39d9e22524c52ba6d07184a6bf4457723ead"
+    },
+    {
+        "DLL":  "Si_ModUI_Server.dll",
+        "Version":  "1.4.4",
+        "Hash":  "6147a9bf23072efe32ec544c302c5e49bd35adaa9fd03b279bca741c679ad7f5"
+    },
+    {
+        "DLL":  "Si_PacketChunker.dll",
+        "Version":  "1.2.0",
+        "Hash":  "e1daaebe95051343743b1490798d751ae64e760410db43b071bc9c1a705064a5"
+    },
+    {
+        "DLL":  "Si_RTS_AI.dll",
+        "Version":  "0.94.7",
+        "Hash":  "7c9c29a736767a82c807f19e00d081c078ad6cb084df0977f66eb23d1bc60020"
+    },
+    {
+        "DLL":  "Si_Spawn.dll",
+        "Version":  "1.1.0",
+        "Hash":  "484a7b176e35a3b1b4e4013ecba0bf2e979c9c88941ecf4e898cd0bb7c086a2e"
+    },
+    {
+        "DLL":  "Si_StarterUnits.dll",
+        "Version":  "1.1.0",
+        "Hash":  "294a3aa1c900ea4d0ca0ccbd8ad36b15c5ae28bd26553e9dc8d353aacd4d37c7"
+    },
+    {
+        "DLL":  "Si_UnitBalance.dll",
+        "Version":  "7.10.3",
+        "Hash":  "4bbc7c57f3d17fb9724a482efba3655327243dce192a6f5bf98d8eecd8e9eebd"
+    }
+]

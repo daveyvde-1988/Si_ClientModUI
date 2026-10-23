@@ -1,3 +1,11 @@
+Installed 23 October 2026: **Si_ClientModUI 0.18.0** and the friend's original **Si_ModUI_Server 1.4.4**, using **SiModUI/2**. All 14 server DLLs from the default-branch package except Logistics are installed unchanged. Our Logistics 0.9.3, Formation, cheats 0.4.2, settings and shell are preserved. Si_ServerModUI 2.0.0 is backed up and disabled; the friend's client is not active. The Elo balance conflict remains deferred.
+
+Client Release build: zero warnings/errors. **292 offline checks pass**. All installed/backup hashes match; **902** other pre-existing DLL/configuration files, including **850 settings files**, are unchanged. No game/server was started or stopped. Live verification remains pending.
+
+[Release notes](FOLLOW_UP_0.18.0.md) · [installation receipt](installation/20261023T185733468Z-default-branch/installation.json) · [deployment verification](Releases/0.18.0/deployment.json). Rollback: `powershell -NoProfile -ExecutionPolicy Bypass -File ClientMods/Si_ClientModUI/Rollback-DefaultBranch.ps1 -InstallRecord ClientMods/Si_ClientModUI/installation/20261023T185733468Z-default-branch/installation.json` with affected game/server closed.
+
+Historical installation notes follow.
+
 Provider update installed on 22 October 2026: **cheats 0.4.2** now supplies only Cheats (enabled/disabled) and Active cheats (one combined status list). **Si_ClientModUI remains 0.17.3**, verified unchanged. DLL backup and all 23 preservation hashes verified. [Provider installation record](../cheats/INSTALLATION_STATUS.md). Historical UI installation notes follow.
 
 # Installed: Si_ClientModUI 0.17.3 / cheats 0.4.1 - 22 October 2026

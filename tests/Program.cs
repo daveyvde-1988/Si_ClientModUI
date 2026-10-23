@@ -84,5 +84,6 @@ catalog.Clear();Check(catalog.Root==""&&catalog.Modules.Count==0,"Disconnect cle
 SquadHud.RunNetworkChecks(Check);
 MenuChecks.Run(Check);
 RuntimeChecks.Run(Check);
+FriendPanelChecks.Run(Check);
 SquadHud.RunPersistenceChecks(Check);
 Console.WriteLine($"PASS: {checks} network, catalog and client lifecycle checks. No game/server started.");

@@ -7,7 +7,11 @@ public sealed partial class SquadHud
 {
     private static string JsonText(JsonElement e,string key)=>e.ValueKind==JsonValueKind.Object&&e.TryGetProperty(key,out var v)&&v.ValueKind==JsonValueKind.String?v.GetString()??"":"";
     private static bool JsonArray(JsonElement e,string key,out JsonElement a){a=default;return e.ValueKind==JsonValueKind.Object&&e.TryGetProperty(key,out a)&&a.ValueKind==JsonValueKind.Array;}
-    private sealed class PanelRow {internal string Heading,Text,Key;internal ServerCommand Command;internal float Height;}
+    private sealed class PanelRow
+    {
+        internal string Heading,Text,Key;internal ServerCommand Command;internal float Height;
+        internal ServerCommand[] Buttons;internal float[] Widths;internal string[] Cells,Navigation;internal bool Header,Allowed=true;
+    }
     private readonly Dictionary<string,string> controlDrafts=new();
     private readonly Dictionary<string,string> controlConfirmed=new();
     private readonly HashSet<string> controlDirty=new(),expandedControlDetails=new();
@@ -16,20 +20,44 @@ public sealed partial class SquadHud
     private readonly HashSet<string> collapsedServerGroups=new();
     private PanelRow[] preparedPanelRows=Array.Empty<PanelRow>();
     private Vector2 serverPanelScroll,pickScroll;
+    private string catalogFaction="";
+    private ServerPanelData PanelData(ServerModule mod)=>mod.Panel??=ServerPanelData.Parse(mod.Data);
+    private bool HasCatalog(ServerModule mod)=>PanelData(mod).CatalogVisible(modAdmin,CurrentAdmin,mod.Commands);
+    private static string LocalCatalogFaction()
+    {
+        var team=Player.CurrentPlayer?.Team;
+        string name=team?.TeamShortName??"";
+        if(name.Contains("Cent",StringComparison.OrdinalIgnoreCase))return "Centauri";
+        if(name.Contains("Alien",StringComparison.OrdinalIgnoreCase))return "Alien";
+        if(name.Contains("Sol",StringComparison.OrdinalIgnoreCase))return "Sol";
+        string objectName=team?.name??"";
+        if(objectName.Contains("Centauri",StringComparison.OrdinalIgnoreCase))return "Centauri";
+        if(objectName.Contains("Alien",StringComparison.OrdinalIgnoreCase))return "Alien";
+        if(objectName.Contains("Sol",StringComparison.OrdinalIgnoreCase))return "Sol";
+        return name;
+    }
     private static bool RemoteAllowed(ServerCommand c)=>c!=null&&(!c.Admin||CurrentAdmin)&&RoleAllowed(c.Role);
     private void RenderServerPanel(ServerModule mod,Rect view)
     {
-        if(panelModule!=mod.Id){panelModule=mod.Id;serverPanelMode="";browseSection=browseEntry="";panelRowsKey="";serverPanelScroll=Vector2.zero;pickerCommand=null;}
+        if(panelModule!=mod.Id){panelModule=mod.Id;serverPanelMode="";browseSection=browseEntry=catalogFaction="";panelRowsKey="";serverPanelScroll=Vector2.zero;pickerCommand=null;}
         if(pickerCommand!=null){RenderArgumentPicker(view);return;}
         float split=FeedbackDivider(view.x,view.y+120,view.yMax-30,view.width,"server-panel",100,70);
         var body=new Rect(view.x,view.y,view.width,Math.Max(60,split-view.y-10));
         float x=body.x;
-        bool catalog=!modAdmin&&mod.Data.HasValue&&mod.Data.Value.TryGetProperty("catalog",out _),browse=!modAdmin&&mod.Data.HasValue&&mod.Data.Value.TryGetProperty("browse",out _);
+        var panelData=PanelData(mod);
+        bool catalog=HasCatalog(mod),browse=!modAdmin&&mod.Data.HasValue&&mod.Data.Value.TryGetProperty("browse",out _);
+        if(serverPanelMode=="CATALOG"&&!catalog||serverPanelMode=="BROWSE"&&!browse)serverPanelMode="";
         if(serverPanelMode.Length==0)serverPanelMode=catalog?"CATALOG":browse?"BROWSE":"CONTROLS";
         foreach(var mode in new[]{"CONTROLS","CATALOG","BROWSE"})
         {
             if(mode=="CONTROLS"&&!catalog&&!browse||mode=="CATALOG"&&!catalog||mode=="BROWSE"&&!browse)continue;
-            if(Tab(new Rect(x,body.y,122,32),mode=="CONTROLS"?"OPTIONS":mode,serverPanelMode==mode)){serverPanelMode=mode;panelRowsKey="";serverPanelScroll=Vector2.zero;}x+=128;
+            if(Tab(new Rect(x,body.y,122,32),mode=="CONTROLS"?"COMMANDS":mode,serverPanelMode==mode)){serverPanelMode=mode;panelRowsKey="";serverPanelScroll=Vector2.zero;}x+=128;
+        }
+        if(catalog&&serverPanelMode=="CATALOG")
+        {
+            var root=mod.Commands.FirstOrDefault(c=>c.Text.Equals(panelData.Command,StringComparison.OrdinalIgnoreCase)||c.Aliases.Contains(panelData.Command,StringComparer.OrdinalIgnoreCase));
+            if(root!=null&&Button(new Rect(body.xMax-122,body.y,122,32),"CHAT MENU",allowed:serverRequest==null))
+            {serverPanelMode="CONTROLS";panelRowsKey="";serverPanelScroll=Vector2.zero;SubmitServerControl(mod,root,null,true);}
         }
         if(serverPanelMode=="BROWSE")
         {
@@ -48,13 +76,45 @@ public sealed partial class SquadHud
                 if(y+row.Height>=serverPanelScroll.y&&y<=serverPanelScroll.y+region.height)
                 {
                     var rect=new Rect(0,y,w,row.Height-6);
-                    if(row.Command!=null)RenderTypedControl(rect,mod.Id+":"+row.Command.Text,row.Command,v=>SubmitServerControl(mod,row.Command,v));
+                    if(row.Buttons!=null)
+                    {
+                        float bx=0;
+                        for(int i=0;i<row.Buttons.Length;i++)
+                        {
+                            var command=row.Buttons[i];
+                            if(Button(new Rect(bx,rect.y,row.Widths[i]-6,rect.height),command.Label,allowed:row.Allowed&&serverRequest==null&&RemoteAllowed(command)))SubmitServerControl(mod,command,null);
+                            bx+=row.Widths[i];
+                        }
+                    }
+                    else if(row.Navigation!=null)
+                    {
+                        float nx=0;
+                        for(int i=0;i<row.Navigation.Length;i++)
+                        {
+                            string faction=row.Navigation[i];
+                            if(Tab(new Rect(nx,rect.y,row.Widths[i]-6,rect.height),faction,faction.Equals(catalogFaction,StringComparison.OrdinalIgnoreCase)))
+                            {catalogFaction=faction;panelRowsKey="";serverPanelScroll=Vector2.zero;}
+                            nx+=row.Widths[i];
+                        }
+                    }
+                    else if(row.Cells!=null)
+                    {
+                        float cx=4;
+                        for(int i=0;i<row.Widths.Length;i++)
+                        {
+                            if(i<row.Cells.Length)GUI.Label(new Rect(cx,rect.y+3,row.Widths[i]-8,rect.height-4),Plain(row.Cells[i]),row.Header?smallStyle:bodyStyle);
+                            cx+=row.Widths[i];
+                        }
+                    }
+                    else if(row.Command!=null)RenderRemoteControl(rect,mod.Id+":"+row.Command.Text,row.Command,v=>SubmitServerControl(mod,row.Command,v));
                     else if(row.Key!=null)
                     {
                         if(Button(rect,row.Text))
                         {
                             if(row.Key.StartsWith("section:")){browseSection=row.Key.Substring(8);browseEntry="";}
                             else if(row.Key.StartsWith("entry:"))browseEntry=row.Key.Substring(6);
+                            else if(row.Key.StartsWith("faction:"))catalogFaction=row.Key.Substring(8);
+                            else if(row.Key=="balance")RequestCatalogBalance(mod);
                             else if(row.Key.StartsWith("group:")){string g=mod.Id+":"+row.Key.Substring(6);if(!collapsedServerGroups.Add(g))collapsedServerGroups.Remove(g);}
                             panelRowsKey="";serverPanelScroll=Vector2.zero;
                         }
@@ -69,33 +129,53 @@ public sealed partial class SquadHud
     }
     private void PreparePanelRows(ServerModule mod,float width)
     {
-        string key=mod.Id+":"+mod.Hash+":"+serverPanelMode+":"+modAdmin+":"+CurrentRole+":"+CurrentAdmin+":"+CurrentSidebarTeam+":"+browseSection+":"+browseEntry+":"+changesOnly+":"+width+":"+smallStyle.fontSize+":"+serverChoices.Count+":"+uiRevision;
+        string key=mod.Id+":"+mod.Hash+":"+serverPanelMode+":"+modAdmin+":"+CurrentRole+":"+CurrentAdmin+":"+CurrentSidebarTeam+":"+browseSection+":"+browseEntry+":"+changesOnly+":"+catalogFaction+":"+width+":"+smallStyle.fontSize+":"+serverChoices.Count+":"+uiRevision;
         if(key==panelRowsKey)return;panelRowsKey=key;
         var rows=new List<PanelRow>();
         void Text(string t,bool heading=false){if(rows.Count<4096)rows.Add(new PanelRow{Heading=heading?t:null,Text=t,Height=Math.Max(34,MeasureText(heading?titleStyle:smallStyle,t,width)+12)});}
+        var panelData=PanelData(mod);
+        Text(Plain(mod.Name)+(mod.Version.Length>0?"  "+mod.Version:""),true);
+        foreach(string line in panelData.Info)Text(Plain(line));
+        if(serverPanelMode=="CONTROLS")AddPanelTables(rows,panelData,width);
         if(mod.Data.HasValue)
         {
             var data=mod.Data.Value;
-            if(JsonArray(data,"info",out var info))foreach(var line in info.EnumerateArray().Take(8))if(line.ValueKind==JsonValueKind.String)Text(Plain(line.GetString()));
-            if(serverPanelMode=="CATALOG"&&data.TryGetProperty("catalog",out var catalog)&&catalog.ValueKind==JsonValueKind.Object)
+            if(serverPanelMode=="CATALOG"&&HasCatalog(mod))
             {
-                string faction=Player.CurrentPlayer?.Team?.TeamShortName??"";
-                if(catalog.TryGetProperty(faction,out var categories)&&categories.ValueKind==JsonValueKind.Array)
-                foreach(var category in categories.EnumerateArray().Take(64))
+                string faction=LocalCatalogFaction();
+                if(panelData.AllFactions)
                 {
-                    Text(JsonText(category,"c"),true);
-                    if(JsonArray(category,"u",out var units))foreach(var unit in units.EnumerateArray().Take(256))
+                    if(!panelData.Factions.ContainsKey(catalogFaction))catalogFaction=panelData.Factions.ContainsKey(faction)?faction:panelData.Factions.Keys.FirstOrDefault()??"";
+                    faction=catalogFaction;
+                    var names=new List<string>();var sizes=new List<float>();float used=0;
+                    void FlushFactions(){if(names.Count==0)return;rows.Add(new PanelRow{Navigation=names.ToArray(),Widths=sizes.ToArray(),Height=40});names.Clear();sizes.Clear();used=0;}
+                    foreach(string name in panelData.Factions.Keys)
                     {
-                        if(unit.ValueKind!=JsonValueKind.Array||unit.GetArrayLength()<2||unit[0].ValueKind!=JsonValueKind.String)continue;
-                        string name=unit[0].GetString()??"",command=JsonText(data,"cmd")+" "+name;
-                        if(Protocol.ValidCommandText(command))
-                        {
-                            var choice=new ServerCommand{Text=command,Label=name+" — "+unit[1],Description="Purchase through this mod's normal command handler."};
-                            rows.Add(new PanelRow{Command=choice,Height=TypedControlHeight(mod.Id+":"+choice.Text,choice,width-4)+6});
-                        }
+                        float size=Math.Min(width,Math.Max(90,tabStyle.CalcSize(new GUIContent(name)).x+28));
+                        if(used>0&&used+size>width)FlushFactions();
+                        names.Add(name);sizes.Add(size);used+=size;
                     }
+                    FlushFactions();
                 }
-                else Text("No catalog supplied for your current faction.");
+                if(panelData.Credits)
+                    rows.Add(new PanelRow{Text="Credits: "+(catalogBalances.TryGetValue(mod.Id,out var balance)?balance:"?")+"   / REFRESH",Key="balance",Height=40});
+                if(!panelData.Enabled)Text(panelData.OffText);
+                if(panelData.Factions.TryGetValue(faction,out var categories))
+                foreach(var category in categories)
+                {
+                    Text(category.Name,true);
+                    var buttons=new List<ServerCommand>();var widths=new List<float>();float used=0;
+                    void Flush(){if(buttons.Count==0)return;rows.Add(new PanelRow{Buttons=buttons.ToArray(),Widths=widths.ToArray(),Allowed=panelData.Enabled,Height=42});buttons.Clear();widths.Clear();used=0;}
+                    foreach(var item in category.Items)
+                    {
+                        string label=Plain(item.Label)+(panelData.Credits&&item.Cost>0?"  "+item.Cost+"cr":"");
+                        float size=Math.Min(width,Math.Max(120,buttonStyle.CalcSize(new GUIContent(label)).x+30));
+                        if(used>0&&used+size>width)Flush();
+                        buttons.Add(new ServerCommand{Text=panelData.Command+" "+item.Token,Label=label,Admin=panelData.CatalogAdmin,Role=panelData.CatalogAdmin?"admin":"shared"});widths.Add(size);used+=size;
+                    }
+                    Flush();
+                }
+                else Text(panelData.AllFactions?"The catalog is empty.":"Join a team to see its catalog.");
             }
             else if(serverPanelMode=="BROWSE"&&data.TryGetProperty("browse",out var browser)&&JsonArray(browser,"sections",out var sections))
             foreach(var section in sections.EnumerateArray().Take(128))
@@ -124,22 +204,112 @@ public sealed partial class SquadHud
         }
         if(serverPanelMode=="CONTROLS")
         {
-            string group=null;
-            foreach(var cmd in mod.Commands.Where(c=>RemoteAllowed(c)&&UiPolicies.ModCategory(c.Admin||c.Role=="admin",modAdmin,CurrentAdmin)).OrderBy(c=>c.Order).ThenBy(c=>c.Admin))
-            {
-                string next=cmd.Ui?.Group??(cmd.Admin?"Admin":"Player");
-                if(next!=group){group=next;if(group.Length>0)rows.Add(new PanelRow{Text=(collapsedServerGroups.Contains(mod.Id+":"+group)?"+ ":"− ")+group,Key="group:"+group,Height=44});}
-                if(group.Length>0&&collapsedServerGroups.Contains(mod.Id+":"+group))continue;
-                rows.Add(new PanelRow{Command=cmd,Height=TypedControlHeight(mod.Id+":"+cmd.Text,cmd,width-4)+6});
-            }
-            foreach(var c in serverChoices.Where(c=>c.Group==mod.Id&&CommandAllowed(c)&&UiPolicies.ModCategory(c.AdminOnly||c.Role=="admin",modAdmin,CurrentAdmin)))
+            var menuChoices=serverChoices.Where(c=>c.Group==mod.Id&&CommandAllowed(c)&&UiPolicies.ModCategory(c.AdminOnly||c.Role=="admin",modAdmin,CurrentAdmin)).ToArray();
+            if(menuChoices.Length>0)Text("Chat menu",true);
+            foreach(var c in menuChoices)
             {
                 var choice=new ServerCommand{Text=c.Command,Label=c.Label,Description=c.Description,Argument=c.RequiresInput?"text":"",Admin=c.AdminOnly};
-                rows.Add(new PanelRow{Command=choice,Height=TypedControlHeight(mod.Id+":"+choice.Text,choice,width-4)+6});
+                rows.Add(new PanelRow{Command=choice,Height=RemoteControlHeight(mod.Id+":"+choice.Text,choice,width-4)+6});
             }
-            if(rows.Count==0)Text("No panel information supplied. Known commands remain available under COMMANDS.");
+            if(menuChoices.Length>0)Text("Commands",true);
+            string group=null;
+            var commands=mod.Commands.Where(c=>RemoteAllowed(c)&&UiPolicies.ModCategory(c.Admin||c.Role=="admin",modAdmin,CurrentAdmin)).OrderBy(c=>c.Order).ThenBy(c=>c.Admin).ToArray();
+            foreach(var cmd in commands)
+            {
+                string next=cmd.Ui?.Group??"";
+                if(next!=group){group=next;if(group.Length>0)rows.Add(new PanelRow{Text=(collapsedServerGroups.Contains(mod.Id+":"+group)?"+ ":"− ")+group,Key="group:"+group,Height=44});}
+                if(group.Length>0&&collapsedServerGroups.Contains(mod.Id+":"+group))continue;
+                rows.Add(new PanelRow{Command=cmd,Height=RemoteControlHeight(mod.Id+":"+cmd.Text,cmd,width-4)+6});
+            }
+            if(commands.Length==0&&menuChoices.Length==0&&panelData.Tables.Count==0)Text("No controls supplied for this view. Known commands remain available under COMMANDS.");
         }
         preparedPanelRows=rows.Take(4096).ToArray();
+    }
+    private void AddPanelTables(List<PanelRow> rows,ServerPanelData data,float width)
+    {
+        foreach(var table in data.Tables)
+        {
+            if(table.Name.Length>0)rows.Add(new PanelRow{Heading=Plain(table.Name),Height=Math.Max(34,MeasureText(titleStyle,Plain(table.Name),width)+10)});
+            int columns=Math.Max(table.Headers.Count,table.Rows.Count>0?table.Rows.Max(r=>r.Length):0);
+            if(columns==0)continue;
+            float[] widths=new float[columns];
+            for(int i=0;i<columns;i++)
+            {
+                widths[i]=i<table.Headers.Count?smallStyle.CalcSize(new GUIContent(Plain(table.Headers[i]))).x+16:40;
+                foreach(var row in table.Rows)if(i<row.Length)widths[i]=Math.Max(widths[i],Math.Min(260,bodyStyle.CalcSize(new GUIContent(Plain(row[i]))).x+16));
+                widths[i]=Math.Max(40,widths[i]);
+            }
+            float total=widths.Sum();if(total>width)for(int i=0;i<columns;i++)widths[i]*=width/total;
+            void Add(string[] cells,bool header)
+            {
+                float height=28;
+                for(int i=0;i<cells.Length;i++)height=Math.Max(height,MeasureText(header?smallStyle:bodyStyle,Plain(cells[i]),Math.Max(12,widths[i]-8))+10);
+                rows.Add(new PanelRow{Cells=cells,Widths=widths,Header=header,Height=height+4});
+            }
+            if(table.Headers.Count>0)Add(table.Headers.ToArray(),true);
+            foreach(var row in table.Rows)Add(row,false);
+        }
+    }
+    private void RequestCatalogBalance(ServerModule mod)
+    {
+        var data=PanelData(mod);
+        var status=mod.Commands.FirstOrDefault(c=>c.Text.Equals(data.Command+" status",StringComparison.OrdinalIgnoreCase)&&RemoteAllowed(c));
+        if(status!=null)SubmitServerControl(mod,status,null);
+    }
+    private List<Rect> RemoteChoiceLayout(ServerCommand command,float width,out float height)
+    {
+        float labelWidth=Math.Min(width,bodyStyle.CalcSize(new GUIContent(Plain(command.Label))).x+20);
+        float labelHeight=Math.Max(32,MeasureText(bodyStyle,Plain(command.Label),width-8)+8);
+        var widths=command.Choices.Select(c=>Math.Min(width,Math.Max(64,buttonStyle.CalcSize(new GUIContent(Plain(c[1]))).x+28))).ToArray();
+        bool inline=labelWidth+widths.Sum()+widths.Length*6<=width;
+        float x=inline?labelWidth:0,y=inline?0:labelHeight;
+        var result=new List<Rect>();
+        foreach(float w in widths)
+        {
+            if(x>0&&x+w>width){x=0;y+=40;}
+            result.Add(new Rect(x,y,w,34));x+=w+6;
+        }
+        height=Math.Max(labelHeight,y+38);return result;
+    }
+    private float RemoteControlHeight(string key,ServerCommand command,float width)
+    {
+        if(command.Ui!=null)return TypedControlHeight(key,command,width);
+        float height=Math.Max(34,MeasureText(bodyStyle,Plain(command.Label),width-8)+8);
+        if(command.Value!=null&&command.Choices.Count>0)RemoteChoiceLayout(command,width,out height);
+        else if(command.Value!=null)height=Math.Max(38,MeasureText(bodyStyle,Plain(command.Label),Math.Max(60,width*.42f-10))+8);
+        return height+ControlDescriptionHeight(command.Description,width)+8;
+    }
+    private void RenderRemoteControl(Rect rect,string key,ServerCommand command,Action<string> submit)
+    {
+        if(command.Ui!=null){RenderTypedControl(rect,key,command,submit);return;}
+        bool allowed=RemoteAllowed(command)&&serverRequest==null;
+        float height=Math.Max(34,MeasureText(bodyStyle,Plain(command.Label),rect.width-8)+8);
+        if(command.Value!=null&&command.Choices.Count>0)
+        {
+            var choices=RemoteChoiceLayout(command,rect.width,out height);
+            float labelWidth=choices.Count>0&&choices[0].y==0?choices[0].x:rect.width;
+            GUI.Label(new Rect(rect.x,rect.y+4,labelWidth,Math.Max(32,choices.Count>0?choices[0].y:32)),Plain(command.Label),bodyStyle);
+            for(int i=0;i<choices.Count;i++)
+            {
+                Rect r=choices[i];r.x+=rect.x;r.y+=rect.y;
+                bool selected=ServerPanelData.ChoiceSelected(command,command.Choices[i][0]);
+                if(Button(r,command.Choices[i][1],selected,allowed&&(command.Multi||!selected)))submit(command.Choices[i][0]);
+            }
+        }
+        else if(command.Value!=null)
+        {
+            float labelWidth=rect.width*.42f,inputWidth=Math.Max(40,rect.width-labelWidth-90);
+            height=Math.Max(38,MeasureText(bodyStyle,Plain(command.Label),Math.Max(60,labelWidth-10))+8);
+            GUI.Label(new Rect(rect.x,rect.y+4,labelWidth-8,height),Plain(command.Label),bodyStyle);
+            if(!controlDrafts.ContainsKey(key)||!controlDirty.Contains(key)&&(!controlConfirmed.TryGetValue(key,out var prior)||prior!=command.Value))
+            {controlDrafts[key]=command.Value;controlConfirmed[key]=command.Value;}
+            string next=GUI.TextField(new Rect(rect.x+labelWidth,rect.y,inputWidth,34),controlDrafts[key],160,inputStyle);
+            if(next!=controlDrafts[key]){controlDrafts[key]=next;controlDirty.Add(key);}
+            if(Button(new Rect(rect.xMax-82,rect.y,82,34),"SET",allowed:allowed&&next.Trim().Length>0)){submit(next.Trim());controlDirty.Remove(key);}
+        }
+        else if(Button(new Rect(rect.x,rect.y,rect.width,height),command.Label,allowed:allowed,description:command.Description))submit(null);
+        float descriptionHeight=ControlDescriptionHeight(command.Description,rect.width);
+        if(descriptionHeight>0)GUI.Label(new Rect(rect.x+4,rect.y+height+2,rect.width-8,descriptionHeight),Plain(command.Description),smallStyle);
     }
     private static bool TypedAction(ServerCommand c)=>c.Value==null&&c.Choices.Count==0&&c.Argument.Length==0&&c.Ui?.Kind!="readonly";
     private static bool TypedEditor(ServerCommand c)=>c.Ui?.Kind!="readonly"&&!TypedAction(c)&&(c.Value!=null||c.Choices.Count>0||c.Argument.Length>0);
@@ -243,11 +413,11 @@ public sealed partial class SquadHud
         }
         finally{GUI.EndScrollView();}
     }
-    private void SubmitServerControl(ServerModule mod,ServerCommand cmd,string value)
+    private void SubmitServerControl(ServerModule mod,ServerCommand cmd,string value,bool direct=false)
     {
         if(!companionReady||!RemoteAllowed(cmd)||serverRequest!=null||!serverCatalog.Modules.TryGetValue(mod.Id,out var currentModule))return;
         if(currentModule.Hash!=mod.Hash){controllerMessage="This mod changed; select the current control again.";return;}
-        if(value==null&&(cmd.Argument.Length>0||cmd.Choices.Count>0)){StartPicker(mod,cmd);return;}
+        if(!direct&&value==null&&(cmd.Argument.Length>0||cmd.Choices.Count>0)){StartPicker(mod,cmd);return;}
         string text=cmd.Text+(value!=null?" "+value:"");
         if(!Protocol.ValidCommandText(text)){controllerMessage="Command exceeds the supported length.";return;}
         activeExchange=new Exchange{Entry=new CommandEntry{Mod=ModLabel(mod.Name),Group=mod.Id,Command=cmd.Text,Role=cmd.Admin?"admin":cmd.Role,AdminOnly=cmd.Admin,Source="server",Scope=ServerScope},At=clock.Elapsed.TotalSeconds};
@@ -264,6 +434,8 @@ public sealed partial class SquadHud
     {
         if(!companionReady||!serverCatalog.Modules.TryGetValue(pickerModule.Id,out var currentPickerModule)||currentPickerModule.Hash!=pickerModule.Hash||!RemoteAllowed(pickerCommand)){pickerCommand=null;return;}
         var stages=PickerStages();int index=pickerTokens.Count;
+        if(index==0&&stages.Length==2&&stages.Contains("player",StringComparer.OrdinalIgnoreCase)&&stages.Contains("team",StringComparer.OrdinalIgnoreCase))
+        {RenderPlayerTeamPicker(view,stages);return;}
         if(index>=stages.Length){var cmd=pickerCommand;var mod=pickerModule;string value=string.Join(" ",pickerTokens);pickerCommand=null;SubmitServerControl(mod,cmd,value);return;}
         string stage=stages[index].TrimEnd('?').ToLowerInvariant();bool optional=stages[index].EndsWith('?');
         GUI.Label(new Rect(view.x,view.y,view.width-110,38),pickerCommand.Label+" / "+stage+" ("+(index+1)+"/"+stages.Length+")",titleStyle);
@@ -281,6 +453,35 @@ public sealed partial class SquadHud
         {
             for(int i=Math.Max(0,(int)(pickScroll.y/42)-1);i<Math.Min(options.Count,(int)((pickScroll.y+area.height)/42)+2);i++)if(Button(new Rect(0,i*42,view.width-30,34),options[i].label)){pickerTokens.Add(options[i].value);pickScroll=Vector2.zero;break;}
             if(options.Count==0)GUI.Label(new Rect(0,0,view.width-30,60),"No unambiguous options available. Use COMMANDS to enter arguments manually.",smallStyle);
+        }
+        finally{GUI.EndScrollView();}
+    }
+    private void RenderPlayerTeamPicker(Rect view,string[] stages)
+    {
+        GUI.Label(new Rect(view.x,view.y,view.width-110,38),pickerCommand.Label+" / PLAYER + TEAM",titleStyle);
+        if(Button(new Rect(view.xMax-100,view.y,100,32),"CANCEL")){pickerCommand=null;return;}
+        var players=PickerOptions("player",stages).ToArray();
+        var teams=PickerOptions("team",stages).ToArray();
+        bool stacked=teams.Length>0&&(view.width*.6f)/teams.Length<68;
+        float rowHeight=stacked?78:42;
+        var area=new Rect(view.x,view.y+48,view.width,view.height-48);
+        pickScroll=GUI.BeginScrollView(area,pickScroll,new Rect(0,0,view.width-26,Math.Max(60,players.Length*rowHeight)),false,true);
+        try
+        {
+            float w=view.width-30,labelWidth=stacked?w:w*.4f;
+            for(int i=Math.Max(0,(int)(pickScroll.y/rowHeight)-1);i<Math.Min(players.Length,(int)((pickScroll.y+area.height)/rowHeight)+2);i++)
+            {
+                float y=i*rowHeight;
+                GUI.Label(new Rect(0,y+4,labelWidth-6,32),players[i].label,bodyStyle);
+                float x=stacked?0:labelWidth,bw=(stacked?w:w-labelWidth)/Math.Max(1,teams.Length);
+                for(int t=0;t<teams.Length;t++)if(Button(new Rect(x+t*bw,y+(stacked?36:0),bw-6,34),teams[t].label,allowed:serverRequest==null))
+                {
+                    var command=pickerCommand;var module=pickerModule;
+                    string args=stages[0].Equals("team",StringComparison.OrdinalIgnoreCase)?teams[t].value+" "+players[i].value:players[i].value+" "+teams[t].value;
+                    pickerCommand=null;SubmitServerControl(module,command,args);return;
+                }
+            }
+            if(players.Length==0||teams.Length==0)GUI.Label(new Rect(0,0,w,60),"No unambiguous players or active teams available.",smallStyle);
         }
         finally{GUI.EndScrollView();}
     }

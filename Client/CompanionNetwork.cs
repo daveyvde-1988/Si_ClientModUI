@@ -23,15 +23,25 @@ public sealed partial class SquadHud
     private double voteExpires;
     private string voteQuestion="";
     private readonly List<CommandEntry> serverChoices=new(),serverVotes=new();
-    private string CompanionStatus=>Game.GetIsSingleplayer()?"Singleplayer: local mods":!HasSession?"Si_ServerModUI: offline":
-        !companionTransport?"Si_ServerModUI: transport unavailable":companionReady?"Si_ServerModUI: detected":
-        companionHelloTries>=3&&clock.Elapsed.TotalSeconds-companionHelloAt>5?"Si_ServerModUI: not detected":"Si_ServerModUI: checking...";
+    private readonly Dictionary<string,string> catalogBalances=new();
+    private void ObserveCatalogBalance(string module,IEnumerable<string> lines)
+    {
+        if(module==null)return;
+        foreach(string line in lines)
+        {
+            var match=Regex.Match(Plain(line),@"(?:Credits|Balance|Remaining):\s*(\d+)|you have (\d+)\b",RegexOptions.IgnoreCase);
+            if(match.Success){catalogBalances[module]=match.Groups[1].Success?match.Groups[1].Value:match.Groups[2].Value;InvalidateUi();}
+        }
+    }
+    private string CompanionStatus=>Game.GetIsSingleplayer()?"Singleplayer: local mods":!HasSession?"Si_ModUI_Server: offline":
+        !companionTransport?"Si_ModUI_Server: transport unavailable":companionReady?"Si_ModUI_Server: detected":
+        companionHelloTries>=3&&clock.Elapsed.TotalSeconds-companionHelloAt>5?"Si_ModUI_Server: not detected":"Si_ModUI_Server: checking...";
 
     private void InitializeCompanion()=>companionTransport=!Enum.GetValues(typeof(ENetworkPacketType)).Cast<object>().Any(v=>Convert.ToInt32(v)==Protocol.PacketType);
     private void ResetCompanion()
     {
         companionContext="";companionNonce=Protocol.NewNonce();companionReady=false;companionHelloTries=0;companionHelloAt=-100;
-        serverCatalog.Clear();serverTransfers.Clear();serverRequest=null;serverChoices.Clear();serverVotes.Clear();voteQuestion="";companionCachePath="";
+        serverCatalog.Clear();serverTransfers.Clear();serverRequest=null;serverChoices.Clear();serverVotes.Clear();catalogBalances.Clear();voteQuestion="";companionCachePath="";
         InvalidateUi(true);
         nextNetworkMaintenance=0;
     }
@@ -47,7 +57,7 @@ public sealed partial class SquadHud
         if(context!=companionContext)
         {
             ResetCompanion();companionContext=context;
-            string key=Protocol.ShortHash(NetworkGameClient.GetServerID().SteamID.m_SteamID+":"+player.PlayerID.SteamID.m_SteamID+":"+player.PlayerChannel);
+            string key=Protocol.ShortHash(Protocol.Marker+":panels3:"+NetworkGameClient.GetServerID().SteamID.m_SteamID+":"+player.PlayerID.SteamID.m_SteamID+":"+player.PlayerChannel);
             companionCachePath=Path.Combine(MelonLoader.Utils.MelonEnvironment.UserDataDirectory,"Si_ModMenu","server-frames",key+".json");
             // Cache is a diff hint only. Nothing from disk becomes available until an authenticated frame confirms it.
             try
@@ -181,6 +191,7 @@ public sealed partial class SquadHud
         activeExchange=new Exchange{Entry=request.Entry,At=clock.Elapsed.TotalSeconds};
         string error=root.GetProperty("err").GetString()??"";
         var lines=root.GetProperty("lines").EnumerateArray().Take(200).Select(l=>l.GetString()??"").ToArray();
+        if(error.Length==0)ObserveCatalogBalance(request.Entry.Group,lines);
         foreach(string line in lines)ObserveFeedback(line,true);
         if(error.Length>0)ObserveFeedback(error,true);
         controllerMessage=error.Length>0?error:lines.Length==0?"The command completed without captured output.":"Server reply received.";

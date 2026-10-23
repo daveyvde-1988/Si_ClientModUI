@@ -65,6 +65,7 @@ namespace SiSquadHud
         private CommandEntry selectedCommand,pendingInputEntry;
         private string commandDraft="";
         private string UserCommandsPath=>Path.Combine(MelonLoader.Utils.MelonEnvironment.UserDataDirectory,"commands.json");
+        private string placementPath=>Path.Combine(MelonLoader.Utils.MelonEnvironment.UserDataDirectory,"layout.json");
         private IEnumerable<SidebarBinding> CurrentSidebarBindings=>layout.SidebarButtons;
         private IEnumerable<CommandEntry> ProviderCommands()=>Array.Empty<CommandEntry>();
         private IEnumerable<CommandEntry> UserSidebarCommands()=>layout.SidebarButtons.Select(b=>new CommandEntry{Mod=b.Mod,Command=b.Command,Role=b.Role,Scope="portable",Source="sidebar"});
@@ -102,6 +103,8 @@ namespace SiSquadHud
             check(!Receive(fake,Il2Cpp.NetworkID.Of(999))&&!c.companionReady&&fake.m_MemoryStream.Position==0,"Non-server peer ignored and reader restored");
             fake=new(Packet(body,"OtherMod/2"));
             check(Receive(fake,Il2Cpp.NetworkID.Of(222))&&fake.m_MemoryStream.Position==0,"Other packet owner retains native processing");
+            fake=new(Packet(body,"SiSquadHUD/2"));
+            check(Receive(fake,Il2Cpp.NetworkID.Of(222))&&!c.companionReady&&fake.m_MemoryStream.Position==0,"Previous SquadHUD marker is no longer consumed");
             fake=new(Packet(body));Receive(fake,Il2Cpp.NetworkID.Of(222));
             check(c.companionReady&&c.CompanionStatus.Contains("detected")&&c.ServerCommands().Count()==1&&fake.m_MemoryStream.Position==0,"Authenticated frame enables catalog");
             check(!c.TrySendCompanionCommand("ordinary chat",null),"Free text remains native");
@@ -111,7 +114,8 @@ namespace SiSquadHud
             void Deliver(string doc){foreach(string p in Protocol.Transfer(c.companionNonce,doc)){Protocol.TryTransfer(p,out var chunk);c.ReceiveCompanionChunk(chunk);}}
             Deliver(JsonSerializer.Serialize(new{k="reply",seq=seq+1,cmd="/buy",lines=new[]{"1. Wrong"},err=""}));
             check(c.serverRequest!=null&&c.serverChoices.Count==0,"Uncorrelated reply ignored");
-            Deliver(JsonSerializer.Serialize(new{k="reply",seq,cmd="/buy",lines=new[]{"1. Buy vehicle","2) Buy infantry","/back returns; /0 to close"},err=""}));
+            Deliver(JsonSerializer.Serialize(new{k="reply",seq,cmd="/buy",lines=new[]{"Credits: 321","1. Buy vehicle","2) Buy infantry","/back returns; /0 to close"},err=""}));
+            check(c.catalogBalances.TryGetValue("Buy",out var confirmedBalance)&&confirmedBalance=="321","Catalog balance is learned from an authenticated correlated reply");
             check(c.serverRequest==null&&c.serverChoices.Any(x=>x.Command=="/1")&&c.serverChoices.Any(x=>x.Command=="/back")&&c.serverChoices.Any(x=>x.Command=="/0"),"Reply produces explicit server navigation");
             Deliver(JsonSerializer.Serialize(new{k="event",e="vote",data=new{q="Next map?",dur=20,opts=new[]{new{c="1",d="Map A"}}}}));
             check(c.serverVotes.Count==1&&c.ServerCommands().Any(x=>x.Source=="server-vote"),"Vote appears in existing command list");
@@ -120,7 +124,7 @@ namespace SiSquadHud
             c.serverRequest.At=-100;c.nextNetworkMaintenance=0;count=Il2Cpp.NetworkLayer.Sent.Count;c.TickCompanion();
             check(c.serverRequest==null&&Il2Cpp.NetworkLayer.Sent.Count==count&&c.controllerMessage.Contains("not resent"),"Timeout does not replay command or send native fallback");
             c.nextNetworkMaintenance=0;c.TickCompanion();check(Il2Cpp.NetworkLayer.Sent.Count==count+1&&!c.companionReady,"Timeout recovery sends discovery only");
-            c.ResetCompanion();check(!c.companionReady&&!c.ServerCommands().Any()&&c.serverVotes.Count==0,"Scene/reset clears confirmed data");
+            c.ResetCompanion();check(!c.companionReady&&!c.ServerCommands().Any()&&c.serverVotes.Count==0&&c.catalogBalances.Count==0,"Scene/reset clears confirmed data and personal balances");
             c.TickCompanion();check(!c.companionReady&&c.serverCatalog.Modules.Count==1&&!c.ServerCommands().Any(),"Cached frame remains unavailable before confirmation");
             Deliver(JsonSerializer.Serialize(new{k="frame",root=c.serverCatalog.Root,same=true}));
             check(c.companionReady,"Fresh unchanged confirmation enables cached catalog");

@@ -1,3 +1,5 @@
+Current deployment: client **0.18.0** with the friend's original **Si_ModUI_Server 1.4.4**, marker **SiModUI/2**. Its legacy fields include command `m` for multi-select, shared/personal `tables:[{n,h,r}]`, and catalogs with `admin`, `all`, `credits`, `offText` and optional item labels. Client validation is bounded and atomic. Our separate server's additional `ui`/`role` and personalized-command extensions described below require a backend that implements them; they are not added to the original 1.4.4 DLL. Local provider APIs are unchanged. See [0.18.0 deployment notes](FOLLOW_UP_0.18.0.md).
+
 Current additions in 0.17.3: Definition.Description supplies the Commands summary. Definition.PlayerPanelAvailable optionally exposes an admin-only DrawPanel/DrawCommands in PLAYER while a local condition is true; ADMIN remains admin-only. Execution callbacks must independently recheck access. See [follow-ups](FOLLOW_UP_0.17.3.md).
 
 Client patch: [0.17.1 category, action and custom-panel behavior](FOLLOW_UP_0.17.1.md). For a custom admin-only panel, set Definition.PanelAdminOnly=true; generic controls retain their individual AdminOnly/Role metadata.

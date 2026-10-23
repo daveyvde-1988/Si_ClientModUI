@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework><AssemblyName>Si_ClientModUI</AssemblyName><Version>0.17.3</Version>
+    <TargetFramework>net6.0</TargetFramework><AssemblyName>Si_ClientModUI</AssemblyName><Version>0.18.0</Version>
     <Nullable>disable</Nullable><ImplicitUsings>enable</ImplicitUsings><EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <RestoreIgnoreFailedSources>true</RestoreIgnoreFailedSources><NuGetAudit>false</NuGetAudit>
     <ClientLoaderRoot Condition="'$(ClientLoaderRoot)' == ''">C:\Program Files (x86)\Steam\steamapps\common\Silica\MelonLoader</ClientLoaderRoot>

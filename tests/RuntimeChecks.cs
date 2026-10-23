@@ -79,8 +79,8 @@ public sealed partial class SquadHud
         c.LoadPortableCommands();check(c.portableCommands.Count==0,"Deleted definitions do not return on import/restart");
         c.layout.SidebarButtons.Add(new(){Mod="Custom",Label="Example",Command="/example",Role="player",TeamScope="team:sol"});c.ExportCreatedCommands();
         c.RemoveCustomCommand(c.UserSidebarCommands().First());
-        check(c.layout.SidebarButtons.Count==0&&JsonSerializer.Deserialize<LocalLayout>(File.ReadAllText(Path.Combine(MelonLoader.Utils.MelonEnvironment.UserDataDirectory,"layout.json"))).SidebarButtons.Count==0,"Removing a sidebar-derived custom control persists its binding removal");
-        check(JsonSerializer.Deserialize<PortableCommandFile>(File.ReadAllText(PortableCommandsPath)).Commands.Count==0,"Sidebar removal clears its exported definition");
+        check(c.layout.SidebarButtons.Count==1&&JsonSerializer.Deserialize<LocalLayout>(File.ReadAllText(Path.Combine(MelonLoader.Utils.MelonEnvironment.UserDataDirectory,"layout.json"))).SidebarButtons.Count==1,"Removing a command-list entry preserves deliberately saved sidebar bindings");
+        check(c.layout.RemovedCustomCommands.Count>0&&JsonSerializer.Deserialize<PortableCommandFile>(File.ReadAllText(PortableCommandsPath)).Commands.Count==0,"Deletion markers prevent retained sidebar definitions from returning in exports");
         check(Directory.GetFiles(MelonLoader.Utils.MelonEnvironment.UserDataDirectory,"*.bak").Length>0,"JSON replacements retain verified backups");
         check(c.Errors.Count==0,"Custom command persistence checks finish without hidden errors");
         string temporary=Path.GetFullPath(MelonLoader.Utils.MelonEnvironment.UserDataDirectory);

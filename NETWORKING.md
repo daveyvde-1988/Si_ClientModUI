@@ -1,3 +1,5 @@
+Current deployment, 23 October 2026: **0.18.0 uses SiModUI/2 only**, with the friend's unchanged **Si_ModUI_Server 1.4.4**. Legacy frames without a schema version are accepted, with validated multi-select, tables and catalog metadata. Expanded documents are bounded at four MiB. Cache identity includes the marker/panel format; settings paths remain unchanged. No automatic gameplay-command retry or recurring client catalog polling was added. Our prior server DLL is inactive. See [0.18.0 details](FOLLOW_UP_0.18.0.md). Older protocol descriptions below are historical.
+
 0.17.3 keeps the existing wire protocol/server addon unchanged. Alphabetical navigation, descriptions and deletion markers are local. Player cheats access follows the native local CheatsEnabled report and uses the existing native console dispatcher; it adds no permission grant, server query or transport.
 
 # Structured transport extension: 2.0.0 candidate

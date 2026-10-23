@@ -6,7 +6,7 @@ using MelonLoader;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-[assembly: MelonInfo(typeof(SiSquadHud.SquadHud), "Si_ClientModUI", "0.17.3", "Davey, DrMuck")]
+[assembly: MelonInfo(typeof(SiSquadHud.SquadHud), "Si_ClientModUI", "0.18.0", "Davey, DrMuck")]
 [assembly: MelonGame("Bohemia Interactive", "Silica")]
 [assembly: MelonPlatform(MelonPlatformAttribute.CompatiblePlatforms.WINDOWS_X64)]
 [assembly: MelonPlatformDomain(MelonPlatformDomainAttribute.CompatibleDomains.IL2CPP)]

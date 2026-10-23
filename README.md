@@ -1,6 +1,8 @@
 # Si_ClientModUI
 
-A client-side mod menu for Silica. Browse available commands, use controls exposed by installed mods, and build your own shortcut sidebar. **Current client version: 0.17.3.** Requires the client's MelonLoader installation.
+A client-side mod menu for Silica. Browse available commands, use controls exposed by installed mods, and build your own shortcut sidebar. **Current client version: 0.18.0.** Requires the client's MelonLoader installation.
+
+Current deployment uses the friend's original **Si_ModUI_Server 1.4.4**, marker **SiModUI/2**, with your existing shell and his structure inside server panels. Tables, multi-select switches and admin Spawn catalogs are supported. Our previous companion is backed up and inactive. See [0.18.0 notes](FOLLOW_UP_0.18.0.md) and [installation status](INSTALLATION_STATUS.md).
 
 ## Features at a glance
 
@@ -11,7 +13,7 @@ A client-side mod menu for Silica. Browse available commands, use controls expos
 - Movable, resizable windows with saved layout, text size and transparency preferences.
 - Client diagnostics and network activity displays.
 
-Works in singleplayer and as a standalone client menu. **Si_ServerModUI** adds server-advertised commands and structured controls; available features depend on installed providers and your permissions. The optional **cheats** mod is a separate provider.
+Works in singleplayer and as a standalone client menu. A compatible **SiModUI/2** server companion adds server-advertised commands and structured controls; available features depend on installed providers and your permissions. The optional **cheats** mod is a separate provider.
 
 ## Commands and controls
 

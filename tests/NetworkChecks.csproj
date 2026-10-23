@@ -5,6 +5,7 @@
     <Compile Include="../Client/ControlPresentation.cs" Link="ControlPresentation.cs"/>
     <Compile Include="../../Si_ServerModUI/Shared/Protocol.cs" Link="Protocol.cs"/>
     <Compile Include="../Client/CompanionCatalog.cs" Link="CompanionCatalog.cs"/>
+    <Compile Include="../Client/ServerPanelData.cs" Link="ServerPanelData.cs"/>
     <Compile Include="../Client/CompanionNetwork.cs" Link="CompanionNetwork.cs"/>
     <Compile Include="../Client/ServerMenuParser.cs" Link="ServerMenuParser.cs"/>
     <Compile Include="../Client/UiPolicies.cs" Link="UiPolicies.cs"/>
